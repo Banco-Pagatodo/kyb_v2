@@ -1,0 +1,109 @@
+{
+  "nombre_template": "Dictamen Jurídico DJ-1",
+  "banco": "Banco PagaTodo S.A. Institución de Banca Múltiple",
+  "paginas": 3,
+  "secciones": [
+    {
+      "id": "encabezado",
+      "titulo": "Dictamen Jurídico DJ-1",
+      "campos": [
+        {"campo": "razon_denominacion_social", "tipo": "text"},
+        {"campo": "fecha", "tipo": "date"}
+      ]
+    },
+    {
+      "id": "datos_constitucion",
+      "titulo": "Datos de la Constitución de la Sociedad",
+      "campos": [
+        {"campo": "escritura_numero", "tipo": "text"},
+        {"campo": "de_fecha", "tipo": "date"},
+        {"campo": "numero_notario", "tipo": "text"},
+        {"campo": "nombre_notario", "tipo": "text"},
+        {"campo": "residencia_notario", "tipo": "text"},
+        {"campo": "folio_mercantil", "tipo": "text"},
+        {"campo": "fecha_folio_mercantil", "tipo": "date"},
+        {"campo": "lugar_folio_mercantil", "tipo": "text"}
+      ]
+    },
+    {
+      "id": "ultimos_estatutos",
+      "titulo": "Datos Donde Constan los Últimos Estatutos Sociales",
+      "campos": [
+        {"campo": "escritura_numero", "tipo": "text"},
+        {"campo": "de_fecha", "tipo": "date"},
+        {"campo": "numero_notario", "tipo": "text"},
+        {"campo": "nombre_notario", "tipo": "text"},
+        {"campo": "residencia_notario", "tipo": "text"},
+        {"campo": "folio_mercantil", "tipo": "text"},
+        {"campo": "fecha_folio_mercantil", "tipo": "date"},
+        {"campo": "lugar_folio_mercantil", "tipo": "text"}
+      ]
+    },
+    {
+      "id": "actividad_giro",
+      "titulo": "Actividad / Giro de la Empresa",
+      "campos": [
+        {"campo": "actividad_giro", "tipo": "text"},
+        {"campo": "sufrio_modificaciones", "tipo": "boolean", "opciones": ["Sí", "No"]},
+        {"campo": "observaciones", "tipo": "text"}
+      ]
+    },
+    {
+      "id": "tenencia_accionaria",
+      "titulo": "Tenencia accionaria",
+      "campos": [
+        {"campo": "accionistas", "tipo": "table", "columnas": ["Nombre", "% Porcentaje"]},
+        {"campo": "accionista_extranjero", "tipo": "boolean", "opciones": ["Sí", "No"]}
+      ]
+    },
+    {
+      "id": "regimen_administracion",
+      "titulo": "Régimen de Administración",
+      "campos": [
+        {"campo": "tipo", "tipo": "choice", "opciones": ["Administrador Único", "Consejo de Administración"]},
+        {"campo": "miembros", "tipo": "table", "columnas": ["Nombre", "Cargo"]}
+      ]
+    },
+    {
+      "id": "facultades_apoderado",
+      "titulo": "Facultades de Representante / Apoderado",
+      "campos": [
+        {"campo": "nombre_apoderado", "tipo": "text"},
+        {"campo": "administracion", "tipo": "boolean"},
+        {"campo": "dominio", "tipo": "boolean"},
+        {"campo": "delegacion_facultades", "tipo": "boolean"},
+        {"campo": "especiales", "tipo": "boolean"},
+        {"campo": "apertura_cuentas", "tipo": "boolean"},
+        {"campo": "limitaciones", "tipo": "text"},
+        {"campo": "regimen_firmas", "tipo": "choice", "opciones": ["individual", "Mancomunado"]},
+        {"campo": "vigencia", "tipo": "text"},
+        {"campo": "nacionalidad", "tipo": "choice", "opciones": ["Mexicana", "Extranjero"]},
+        {"campo": "cuenta_fm3", "tipo": "boolean", "condicion": "extranjero"},
+        {"campo": "puede_firmar_contrato", "tipo": "boolean"},
+        {"campo": "puede_designar_web_banking", "tipo": "boolean"}
+      ]
+    },
+    {
+      "id": "observaciones_adicionales",
+      "titulo": "Observaciones Adicionales de la Sociedad",
+      "campos": [
+        {"campo": "observacion_1", "tipo": "text"},
+        {"campo": "observacion_2", "tipo": "text"},
+        {"campo": "observacion_3", "tipo": "text"},
+        {"campo": "observacion_4", "tipo": "text"}
+      ]
+    },
+    {
+      "id": "elaboracion_revision",
+      "titulo": "Elaboración y Revisión",
+      "campos": [
+        {"campo": "elaboro_fecha", "tipo": "date"},
+        {"campo": "elaboro_nombre", "tipo": "text"},
+        {"campo": "elaboro_firma", "tipo": "signature"},
+        {"campo": "reviso_fecha", "tipo": "date"},
+        {"campo": "reviso_nombre", "tipo": "text"},
+        {"campo": "reviso_firma", "tipo": "signature"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "archivo_procesado": "BPTpodernotarial.PDF",
+  "texto_extraido": "C:\\Users\\oaguirre_ext\\Documents\\GitHub\\KYB\\OCR_AGENTS\\PoderNota\\JSON\\output.txt",
+  "datos_extraidos": {
+    "ocupacion": "NO ESPECIFICADO",
+    "nacionalidad": "MEXICO",
+    "pais_nacimiento": "MEXICO",
+    "telefono": "+56012105",
+    "correo_electronico": "NO ESPECIFICADO"
+  },
+  "datos_usuario": {
+    "ocupacion": "S.A. DE C.V",
+    "nacionalidad": "MEXICANA",
+    "pais_nacimiento": "MEXICO",
+    "telefono": "4491191881",
+    "correo_electronico": "OAGUIRRE@GMAIL.COM"
+  }
+}

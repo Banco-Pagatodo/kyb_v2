@@ -1,0 +1,4 @@
+# Logs de validación de portales — contienen RFC / CURP.
+# No versionar; cada ambiente genera los suyos.
+*
+!.gitignore

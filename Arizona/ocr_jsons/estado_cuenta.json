@@ -1,0 +1,67 @@
+{
+  "banco": {
+    "valor": "Scotiabank",
+    "pagina": 1,
+    "parrafo": "WWW.SCOTIABANK.COM.MX/TRANSPARENCIA/COSTOS-COMISIONES.ASP",
+    "confiabilidad": 100.0
+  },
+  "clabe": {
+    "valor": "044320256050882755",
+    "pagina": 1,
+    "parrafo": "5082900200045116wÎ Estado de Cuenta CU EMP C/CHEQ C/CC Cuenta 25605088275 CLABE 044320256050882755 Fecha de corte 29-AGO-25 Periodo 01-AGO-25/29-AGO-25 No. de días en el período",
+    "confiabilidad": 100.0
+  },
+  "periodo": {
+    "valor": "01/08/2025 - 29/08/2025",
+    "pagina": 1,
+    "parrafo": "C Cuenta 25605088275 CLABE 044320256050882755 Fecha de corte 29-AGO-25 Periodo 01-AGO-25/29-AGO-25 No. de días en el período 29 Moneda NACIONAL Banca RED DE SUCURSAL SOLUCIONES CAPITA",
+    "confiabilidad": 100.0
+  },
+  "titular": {
+    "valor": "DEL\nBENEFICIARIO\nES\nUN\nDATO\nNO\nCERTIFICADO\nPOR\nESTA\nINSTITUCION",
+    "pagina": 15,
+    "parrafo": "TERMINOS ANUALES SIMPLES. EN EL CASO DE ENVIO DE TRANSFERENCIAS SPEI EL NOMBRE DEL BENEFICIARIO ES UN DATO NO CERTIFICADO POR ESTA INSTITUCION. CoDi ES UNA MARCA REGISTRADA DEL BANCO DE MEXICO, Y LA M",
+    "confiabilidad": 100.0
+  },
+  "saldo_final": {
+    "valor": "44164807.45",
+    "pagina": 1,
+    "parrafo": "Saldo inicial = $23,318,422.09 Saldo final= $44,164,807.45",
+    "confiabilidad": 100.0
+  },
+  "numero_cuenta": {
+    "valor": "25605088275",
+    "pagina": 1,
+    "parrafo": "Ì0100256050882752025082900200045116wÎ",
+    "confiabilidad": 100.0
+  },
+  "saldo_inicial": {
+    "valor": "23318422.09",
+    "pagina": 1,
+    "parrafo": "Saldo inicial = $23,318,422.09 Saldo final= $44,164,807.45",
+    "confiabilidad": 100.0
+  },
+  "total_retiros": {
+    "valor": "98213437.54",
+    "pagina": 1,
+    "parrafo": "0,000.00 $119,060,314.74 $0.00 $0.00 $98,213,505.38 $424.00 Depósitos Intereses Retiros en efectivo Otros cargos* Comisiones * Incluye impuestos P or us o de L ín ea d e S",
+    "confiabilidad": 100.0
+  },
+  "total_depositos": {
+    "valor": "119060314.74",
+    "pagina": 1,
+    "parrafo": "65,400,000.00 98,100,000.00 $119,060,314.74 $0.00 $0.00 $98,213,505.38 $424.00 Depósitos Intereses Retiros en efectivo Otros cargos* Comisiones * Incluye impuestos P or us",
+    "confiabilidad": 100.0
+  },
+  "_nombres_parseados": {
+    "titular": {
+      "primer_nombre": "Del",
+      "segundo_nombre": null,
+      "nombre_completo": "DEL\nBENEFICIARIO\nES\nUN\nDATO\nNO\nCERTIFICADO\nPOR\nESTA\nINSTITUCION",
+      "primer_apellido": "Beneficiario",
+      "segundo_apellido": "Es",
+      "confianza_parsing": 0.8
+    }
+  },
+  "campos_no_encontrados": []
+}

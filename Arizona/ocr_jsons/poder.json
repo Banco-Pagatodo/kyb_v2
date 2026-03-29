@@ -1,0 +1,91 @@
+{
+  "facultades": {
+    "valor": "Representar a la sociedad con el poder más amplio judicial y para pleitos y cobranzas con todas las facultades generales y las especiales que requieran cláusula especial conforme a la Ley. Facultades generales y especiales para desistirse, transigir, comprometer en árbitros, absolver y articular posiciones, recusar, recibir pagos, promover el juicio de amparo y desistirse del mismo, asistir a audiencia conciliatoria, representación administrativa ante dependencias gubernamentales, organismos públicos y empresas estatales. Facultades para expedir, suscribir, otorgar, garantizar y negociar títulos de crédito, abrir y cancelar cuentas bancarias, y el ejercicio de operaciones de crédito sin limitaciones de monto. Con limitación a operaciones en que se requiera firma mancomunada para créditos que representen más de cinco millones de pesos.",
+    "pagina": 3,
+    "parrafo": "delegación o sustitución de dichos poderes o de facultades para representar a la Sociedad .... \"",
+    "confiabilidad": 100.0
+  },
+  "tipo_poder": {
+    "valor": "GENERAL JUDICIAL Y PARA PLEITOS Y COBRANZAS, GENERAL PARA ACTOS DE ADMINISTRACIÓN, CAMBIARIO, ESPECIAL PARA CONSTITUIR FIDEICOMISOS",
+    "pagina": 2,
+    "parrafo": "por la sección tercera del Capitulo V quinto de la Ley General de Sociedades Mercantiles, excepto por lo siguiente:",
+    "confiabilidad": 100.0
+  },
+  "estado_notaria": {
+    "valor": "Jalisco",
+    "pagina": 1,
+    "parrafo": "Notario Público No. 26 Guadalajara, Jalisco, México",
+    "confiabilidad": 100.0
+  },
+  "nombre_notario": {
+    "valor": "David Alfaro Ramírez",
+    "pagina": 1,
+    "parrafo": "Lic David Alfaro Ramirez",
+    "confiabilidad": 100.0
+  },
+  "numero_notaria": {
+    "valor": "26",
+    "pagina": 1,
+    "parrafo": "Notario Público No. 26 Guadalajara, Jalisco, México",
+    "confiabilidad": 100.0
+  },
+  "fecha_expedicion": {
+    "valor": "",
+    "pagina": null,
+    "parrafo": null,
+    "confiabilidad": 0.0
+  },
+  "nombre_apoderado": {
+    "valor": "Arturo Pons Aguirre",
+    "pagina": 1,
+    "parrafo": "ARTURO PONS AGUIRRE, en su carácter de Delegado Especial del ACTA DE SESIÓN DEL CONSEJO DE ADMINISTRACIÓN",
+    "confiabilidad": 100.0
+  },
+  "numero_escritura": {
+    "valor": "33181",
+    "pagina": 19,
+    "parrafo": "DE C.V. DATOS DEL DOCUMENTO QUE SE PRESENTA No. de documento Tipo de documento 33181 Escritura Fedatario / Autoridad David Alfaro Ramirez ACTOS INSCRITOS FME Formas",
+    "confiabilidad": 100.0
+  },
+  "nombre_poderdante": {
+    "valor": "Soluciones Capital X, S.A.P.I. de C.V.",
+    "pagina": 2,
+    "parrafo": "\"SOLUCIONES CAPITAL X, S.A.P.I. DE C.V.\"",
+    "confiabilidad": 100.0
+  },
+  "_nombres_parseados": {
+    "nombre_notario": {
+      "primer_nombre": "David",
+      "segundo_nombre": null,
+      "nombre_completo": "David Alfaro Ramírez",
+      "primer_apellido": "Alfaro",
+      "segundo_apellido": "Ramírez",
+      "confianza_parsing": 0.85
+    },
+    "nombre_apoderado": {
+      "primer_nombre": "Arturo",
+      "segundo_nombre": null,
+      "nombre_completo": "Arturo Pons Aguirre",
+      "primer_apellido": "Pons",
+      "segundo_apellido": "Aguirre",
+      "confianza_parsing": 0.85
+    },
+    "nombre_poderdante": {
+      "primer_nombre": "Soluciones",
+      "segundo_nombre": null,
+      "nombre_completo": "Soluciones Capital X, S.A.P.I. de C.V.",
+      "primer_apellido": "Capital",
+      "segundo_apellido": "X,",
+      "confianza_parsing": 0.8
+    }
+  },
+  "fecha_otorgamiento": {
+    "valor": "2025-08-14",
+    "pagina": 21,
+    "parrafo": "nsejo de administración Por instrumento No. 33181 Volumen 168 Libro 13 De fecha 14/08/2025 Formalizado ante Notario Público Nombre David Alfaro Ramirez No. 26 Estado Jali",
+    "confiabilidad": 100.0
+  },
+  "campos_no_encontrados": [
+    "fecha_expedicion"
+  ]
+}

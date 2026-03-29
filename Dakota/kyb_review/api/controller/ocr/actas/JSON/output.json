@@ -1,0 +1,28 @@
+{
+  "archivo_procesado": "Constitutiva1.pdf",
+  "texto_extraido": "C:\\Users\\oaguirre_ext\\Documents\\GitHub\\KYB\\OCR_AGENTS\\Actas\\JSON\\output.txt",
+  "datos_extraidos": {
+    "numero_escritura_poliza": "314423",
+    "fecha_constitucion": "17/12/2012",
+    "folio_mercantil": "410333",
+    "fecha_expedicion": "17/12/2012",
+    "numero_notaria_correduria": "Diez",
+    "estado_notaria_correduria": "Ciudad De México",
+    "primer_nombre_fedatario": "Tomas",
+    "segundo_nombre_fedatario": "N/A",
+    "primer_apellido_fedatario": "Lozano",
+    "segundo_apellido_fedatario": "Molina"
+  },
+  "datos_usuario": {
+    "numero_escritura_poliza": "314423",
+    "fecha_constitucion": "17/12/2012",
+    "folio_mercantil": "488838",
+    "fecha_expedicion": "17/12/2012",
+    "numero_notaria_correduria": "10",
+    "estado_notaria_correduria": "CIUDAD DE MÉXICO",
+    "primer_nombre_fedatario": "TOMÁS",
+    "segundo_nombre_fedatario": "",
+    "primer_apellido_fedatario": "LOZANO",
+    "segundo_apellido_fedatario": "MOLINA"
+  }
+}

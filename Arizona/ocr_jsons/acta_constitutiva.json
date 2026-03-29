@@ -1,0 +1,193 @@
+{
+  "_suma_acciones": {
+    "valor": 100,
+    "pagina": null,
+    "parrafo": null,
+    "confiabilidad": 100.0
+  },
+  "capital_social": {
+    "valor": 0,
+    "pagina": 3,
+    "parrafo": "los que la represente, teniéndose por reducido el capital social en una cantidad igual al valor de la participación cancelada. --- QUINTA .- El objeto principal de la sociedad es: --- a) .- Efectuar t",
+    "confiabilidad": 70.0
+  },
+  "estado_notaria": {
+    "valor": "JALISCO",
+    "pagina": 1,
+    "parrafo": "GUADALAJARA, JALISCO.",
+    "confiabilidad": 100.0
+  },
+  "moneda_capital": {
+    "valor": "MXN",
+    "pagina": null,
+    "parrafo": null,
+    "confiabilidad": 100.0
+  },
+  "nombre_notario": {
+    "valor": "RICARDO LOPEZ CAMARENA",
+    "pagina": 1,
+    "parrafo": "Lic. Ricardo López Camarena",
+    "confiabilidad": 100.0
+  },
+  "numero_notaria": {
+    "valor": "49",
+    "pagina": 1,
+    "parrafo": "NOTARIO PUBLICO No. 49",
+    "confiabilidad": 100.0
+  },
+  "total_acciones": {
+    "valor": "100",
+    "pagina": 6,
+    "parrafo": "$100,000.00 (CIEN MIL PESOS 00/100 MONEDA NACIONAL) y",
+    "confiabilidad": 100.0
+  },
+  "folio_mercantil": {
+    "valor": "N-2019050847",
+    "pagina": 51,
+    "parrafo": "TA DE INSCRIPCIÓN ANTECEDENTES REGISTRALES FME Nombre/Denominación razón social N-2019050847 SOLUCIONES CAPITAL X, S.A.P.I. DE C.V. DATOS DE INGRESO NCI Fecha y hora Solici",
+    "confiabilidad": 100.0
+  },
+  "fecha_expedicion": {
+    "valor": "2019-06-04",
+    "pagina": 48,
+    "parrafo": "--- GUADALAJARA, JALISCO, A 04 CUATRO DE JUNIO DE 2019",
+    "confiabilidad": 100.0
+  },
+  "_acciones_validas": {
+    "valor": true,
+    "pagina": null,
+    "parrafo": null,
+    "confiabilidad": 100.0
+  },
+  "_suma_porcentajes": {
+    "valor": 100.0,
+    "pagina": null,
+    "parrafo": null,
+    "confiabilidad": 100.0
+  },
+  "_nombres_parseados": {
+    "nombre_notario": {
+      "primer_nombre": "Ricardo",
+      "segundo_nombre": null,
+      "nombre_completo": "RICARDO LOPEZ CAMARENA",
+      "primer_apellido": "Lopez",
+      "segundo_apellido": "Camarena",
+      "confianza_parsing": 0.85
+    }
+  },
+  "fecha_constitucion": {
+    "valor": "2019-05-22",
+    "pagina": 53,
+    "parrafo": "ersión Modalidad de capital variable X Si No Por instrumento No. 2072 De fecha: 22/05/2019 Formalizado ante: Notario Público Nombre: Ricardo López Camarena No. 49 Estado:",
+    "confiabilidad": 100.0
+  },
+  "denominacion_social": {
+    "valor": "SOLUCIONES CAPITAL X",
+    "pagina": 1,
+    "parrafo": "denominarán \"SOLUCIONES CAPITAL X\", SOCIEDAD ANÓNIMA",
+    "confiabilidad": 100.0
+  },
+  "_porcentajes_validos": {
+    "valor": true,
+    "pagina": null,
+    "parrafo": null,
+    "confiabilidad": 100.0
+  },
+  "_propietarios_reales": {
+    "valor": [
+      {
+        "nombre": "ARTURO PONS AGUIRRE",
+        "criterio": "PROPIEDAD_25PCT",
+        "porcentaje": 45.0
+      },
+      {
+        "nombre": "ESTEBAN SANTIAGO VARELA VEGA",
+        "criterio": "PROPIEDAD_25PCT",
+        "porcentaje": 35.0
+      }
+    ],
+    "pagina": null,
+    "parrafo": null,
+    "confiabilidad": 0
+  },
+  "clausula_extranjeros": {
+    "valor": "EXCLUSION DE EXTRANJEROS",
+    "pagina": 2,
+    "parrafo": "sociales con CLÁUSULA DE EXCLUSIÓN DE EXTRANJEROS, de",
+    "confiabilidad": 100.0
+  },
+  "valor_nominal_accion": {
+    "valor": "1000.00",
+    "pagina": null,
+    "parrafo": null,
+    "confiabilidad": 100.0
+  },
+  "campos_no_encontrados": [],
+  "estructura_accionaria": {
+    "valor": [
+      {
+        "rfc": null,
+        "tipo": "fisica",
+        "nombre": "ARTURO PONS AGUIRRE",
+        "_rfc_tipo": null,
+        "porcentaje": 45.0,
+        "_rfc_valido": null,
+        "_tipo_detectado": "fisica"
+      },
+      {
+        "rfc": null,
+        "tipo": "fisica",
+        "nombre": "ESTEBAN SANTIAGO VARELA VEGA",
+        "_rfc_tipo": null,
+        "porcentaje": 35.0,
+        "_rfc_valido": null,
+        "_tipo_detectado": "fisica"
+      },
+      {
+        "rfc": null,
+        "tipo": "fisica",
+        "nombre": "ALEJANDRO PÉREZ ONTIVEROS",
+        "_rfc_tipo": null,
+        "porcentaje": 15.0,
+        "_rfc_valido": null,
+        "_tipo_detectado": "fisica"
+      },
+      {
+        "rfc": null,
+        "tipo": "fisica",
+        "nombre": "RICARDO ELIAS FERNÁNDEZ",
+        "_rfc_tipo": null,
+        "porcentaje": 5.0,
+        "_rfc_valido": null,
+        "_tipo_detectado": "fisica"
+      }
+    ],
+    "pagina": null,
+    "parrafo": null,
+    "confiabilidad": 100.0
+  },
+  "numero_escritura_poliza": {
+    "valor": "2072",
+    "pagina": 48,
+    "parrafo": "testimonio de la escritura pública número 2072 (dos mil setenta y dos) de",
+    "confiabilidad": 100.0
+  },
+  "_estructura_confiabilidad": {
+    "valor": 1.0,
+    "pagina": null,
+    "parrafo": null,
+    "confiabilidad": 100.0
+  },
+  "_estructura_accionaria_status": {
+    "valor": "VERIFICADA",
+    "pagina": null,
+    "parrafo": null,
+    "confiabilidad": 100.0
+  },
+  "_estructura_enriquecida_por_fallback": {
+    "valor": true,
+    "pagina": null,
+    "parrafo": null,
+    "confiabilidad": 100.0
+  }
+}

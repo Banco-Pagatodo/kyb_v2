@@ -1,0 +1,45 @@
+{
+  "rfc": {
+    "valor": "SCX190531824",
+    "pagina": 1,
+    "parrafo": "El Servicio de Administración Tributaria certifica que el contribuyente: SOLUCIONES CAPITAL X S A P I DE CV con RFC: SCX190531824,",
+    "confiabilidad": 100.0
+  },
+  "extranjeras": {
+    "valor": false,
+    "pagina": null,
+    "parrafo": null,
+    "confiabilidad": 0.0
+  },
+  "razon_social": {
+    "valor": "SOLUCIONES CAPITAL X S A P I DE CV",
+    "pagina": 1,
+    "parrafo": "El Servicio de Administración Tributaria certifica que el contribuyente: SOLUCIONES CAPITAL X S A P I DE CV con RFC: SCX190531824,",
+    "confiabilidad": 100.0
+  },
+  "vigencia_desde": {
+    "valor": "2023-05-15",
+    "pagina": 1,
+    "parrafo": "15/05/2023 13:15:18 horas",
+    "confiabilidad": 100.0
+  },
+  "vigencia_hasta": {
+    "valor": "2027-05-15",
+    "pagina": 1,
+    "parrafo": "Código Fiscal de la Federación vigente, tiene una vigencia de 4 años, contados a partir del 15-05-2023 19:15:18 horas, hasta el 15-05-2027 19:15:58 horas, y clave pública: MIIBCgKCAQEAiIMjgMCx7mu3k7y9",
+    "confiabilidad": 70.0
+  },
+  "fecha_solicitud": {
+    "valor": "2023-05-15",
+    "pagina": 1,
+    "parrafo": "15/05/2023 13:15:18 horas",
+    "confiabilidad": 100.0
+  },
+  "campos_no_encontrados": [],
+  "numero_serie_certificado": {
+    "valor": "00001000000600172442",
+    "pagina": 1,
+    "parrafo": "archivo que contiene el nuevo certificado de firma electrónica con número de serie: 00001000000600172442, que de conformidad con el",
+    "confiabilidad": 100.0
+  }
+}

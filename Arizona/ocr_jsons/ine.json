@@ -1,0 +1,111 @@
+{
+  "Sex": {
+    "valor": "H",
+    "pagina": 1,
+    "parrafo": "TITUTO NACIONAL ELECTORAL CREDENCIAL PARA VOTAR NOMBRE PONS AGUIRRE ARTURO SEXO H DOMICILIO FRACC VALLE REAL 45019 ZAPOPAN, JAL. CLAVE DE ELECTOR PNAGAR95032519H",
+    "confiabilidad": 99.0
+  },
+  "curp": {
+    "valor": "POAA950325HNLNGR02",
+    "pagina": 1,
+    "parrafo": "O FRACC VALLE REAL 45019 ZAPOPAN, JAL. CLAVE DE ELECTOR PNAGAR95032519H300 CURP POAA950325HNLNGR02 AÑO DE REGISTRO 2013 02 FECHA DE NACIMIENTO 25/03/1995 SECCIÓN 3567 VIGENCIA 20",
+    "confiabilidad": 90.0
+  },
+  "Address": {
+    "valor": "FRACC VALLE REAL 45019 ZAPOPAN, JAL.",
+    "pagina": 1,
+    "parrafo": "FRACC VALLE REAL 45019",
+    "confiabilidad": 99.0
+  },
+  "Seccion": {
+    "valor": "3567",
+    "pagina": 1,
+    "parrafo": "AA950325HNLNGR02 AÑO DE REGISTRO 2013 02 FECHA DE NACIMIENTO 25/03/1995 SECCIÓN 3567 VIGENCIA 2022 - 2032",
+    "confiabilidad": 0
+  },
+  "LastName": {
+    "valor": "PONS AGUIRRE",
+    "pagina": 1,
+    "parrafo": "IDOS MEXICANOS MÉXICO INSTITUTO NACIONAL ELECTORAL CREDENCIAL PARA VOTAR NOMBRE PONS AGUIRRE ARTURO SEXO H DOMICILIO FRACC VALLE REAL 45019 ZAPOPAN, JAL. CLAVE DE ELECTOR P",
+    "confiabilidad": 79.9
+  },
+  "FirstName": {
+    "valor": "ARTURO",
+    "pagina": 1,
+    "parrafo": "S MÉXICO INSTITUTO NACIONAL ELECTORAL CREDENCIAL PARA VOTAR NOMBRE PONS AGUIRRE ARTURO SEXO H DOMICILIO FRACC VALLE REAL 45019 ZAPOPAN, JAL. CLAVE DE ELECTOR PNAGAR95",
+    "confiabilidad": 89.0
+  },
+  "DateOfBirth": {
+    "valor": "1995-03-25",
+    "pagina": 1,
+    "parrafo": "5032519H300 CURP POAA950325HNLNGR02 AÑO DE REGISTRO 2013 02 FECHA DE NACIMIENTO 25/03/1995 SECCIÓN 3567 VIGENCIA 2022 - 2032",
+    "confiabilidad": 99.0
+  },
+  "AnioRegistro": {
+    "valor": "2013 02",
+    "pagina": 1,
+    "parrafo": "AL. CLAVE DE ELECTOR PNAGAR95032519H300 CURP POAA950325HNLNGR02 AÑO DE REGISTRO 2013 02 FECHA DE NACIMIENTO 25/03/1995 SECCIÓN 3567 VIGENCIA 2022 - 2032",
+    "confiabilidad": 99.0
+  },
+  "primer_nombre": {
+    "valor": "Arturo",
+    "pagina": null,
+    "parrafo": null,
+    "confiabilidad": 71.8
+  },
+  "DocumentNumber": {
+    "valor": "PNAGAR95032519H300",
+    "pagina": 1,
+    "parrafo": "CLAVE DE ELECTOR PNAGAR95032519H300",
+    "confiabilidad": 99.0
+  },
+  "segundo_nombre": {
+    "valor": "",
+    "pagina": null,
+    "parrafo": null,
+    "confiabilidad": 0.0
+  },
+  "_nombre_parsing": {
+    "valor": {
+      "nombre_original": "ARTURO PONS AGUIRRE",
+      "confianza_parsing": 0.85
+    },
+    "pagina": null,
+    "parrafo": null,
+    "confiabilidad": 100.0
+  },
+  "nombre_completo": {
+    "valor": "ARTURO PONS AGUIRRE",
+    "pagina": null,
+    "parrafo": null,
+    "confiabilidad": 84.5
+  },
+  "primer_apellido": {
+    "valor": "Pons",
+    "pagina": null,
+    "parrafo": null,
+    "confiabilidad": 71.8
+  },
+  "DateOfExpiration": {
+    "valor": "2032",
+    "pagina": 1,
+    "parrafo": "DE REGISTRO 2013 02 FECHA DE NACIMIENTO 25/03/1995 SECCIÓN 3567 VIGENCIA 2022 - 2032",
+    "confiabilidad": 93.1
+  },
+  "segundo_apellido": {
+    "valor": "Aguirre",
+    "pagina": null,
+    "parrafo": null,
+    "confiabilidad": 71.8
+  },
+  "_nombres_parseados": {
+    "nombre_completo": {
+      "primer_nombre": "Arturo",
+      "segundo_nombre": null,
+      "nombre_completo": "ARTURO PONS AGUIRRE",
+      "primer_apellido": "Pons",
+      "segundo_apellido": "Aguirre",
+      "confianza_parsing": 0.85
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "info": {
+    "_postman_id": "eb07609a-9638-45a5-9e6a-13e87cc1d8c8",
+    "name": "ocr-results",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "27944471",
+    "_collection_link": "https://go.postman.co/collection/27944471-eb07609a-9638-45a5-9e6a-13e87cc1d8c8?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Informacion Prospecto",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "bpt-apikey",
+            "value": "ZN8_xK2vQ7mWlp9LOS3g5H6j-B4vR2cX9tU7yD4eGlA"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://sandbox-hub.pagatodo.com/prospects/data/A7D7D908-972C-4EB0-8E0F-4B3639F16D0F",
+          "protocol": "https",
+          "host": [
+            "sandbox-hub",
+            "pagatodo",
+            "com"
+          ],
+          "path": [
+            "prospects",
+            "data",
+            "A7D7D908-972C-4EB0-8E0F-4B3639F16D0F"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Resultados OCR",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "bpt-apikey",
+            "value": "ZN8_xK2vQ7mWlp9LOS3g5H6j-B4vR2cX9tU7yD4eGlA"
+          }
+        ],
+        "url": {
+          "raw": "https://sandbox-hub.pagatodo.com/prospects/ocr/A7D7D908-972C-4EB0-8E0F-4B3639F16D0F?DocumentType=Csf",
+          "protocol": "https",
+          "host": [
+            "sandbox-hub",
+            "pagatodo",
+            "com"
+          ],
+          "path": [
+            "prospects",
+            "ocr",
+            "A7D7D908-972C-4EB0-8E0F-4B3639F16D0F"
+          ],
+          "query": [
+            {
+              "key": "DocumentType",
+              "value": "Csf",
+              "description": "Valores: ReformaEstatustos, PR_FrenteIne, RL_FrenteIne, EdoCuenta, Fiel, Csf, ActaCons, EM_ComDomicilio, RL_ComDomicilio, PR_ComDomicilio, PoderNotarial"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

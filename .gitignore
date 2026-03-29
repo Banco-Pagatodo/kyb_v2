@@ -1,0 +1,64 @@
+# ============================================================
+# .gitignore — Raíz del monorepo KYB (Dakota + Colorado + Orquestrator)
+# ============================================================
+
+# ── Entorno y secretos ──────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Virtual-env ─────────────────────────────────────────────
+.venv/
+venv/
+ENV/
+
+# ── Python bytecode / cache ─────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# ── Eggs / builds / distribución ────────────────────────────
+*.egg-info/
+*.egg
+dist/
+build/
+
+# ── Pytest / coverage ──────────────────────────────────────
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# ── IDE ─────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Logs y reportes generados ───────────────────────────────
+*.log
+reporte_*.txt
+log_*.txt
+
+# ── Screenshots de Playwright (portal validation) ──────────
+screenshots/
+
+# ── PDFs de prueba ──────────────────────────────────────────
+*.pdf
+
+# ── Archivos temporales del proyecto ────────────────────────
+temp/
+
+# ── OS ──────────────────────────────────────────────────────
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ── Alembic auto-generados ─────────────────────────────────
+# (NO ignorar versions/ — las migraciones sí van al repo)
+
+# ── Test Files (documentos de prueba, pesados) ──────────────
+# Descomentar si no deben ir al repo:
+# Test_Files/

@@ -1,0 +1,63 @@
+{
+  "calle": {
+    "valor": "AV PASEO ROYAL COUNTRY",
+    "pagina": 1,
+    "parrafo": "Nombre de Vialidad: PASEO ROYAL COUNTRY",
+    "confiabilidad": 100.0
+  },
+  "ciudad": {
+    "valor": "ZAPOPAN",
+    "pagina": 1,
+    "parrafo": "ZAPOPAN , JALISCO A 25 DE SEPTIEMBRE DE 2025",
+    "confiabilidad": 100.0
+  },
+  "estado": {
+    "valor": "JAL",
+    "pagina": 1,
+    "parrafo": "ZAPOPAN , JALISCO A 25 DE SEPTIEMBRE DE 2025",
+    "confiabilidad": 100.0
+  },
+  "colonia": {
+    "valor": "PUERTA DE HIERRO",
+    "pagina": 1,
+    "parrafo": "Nombre de la Colonia: PUERTA DE HIERRO",
+    "confiabilidad": 100.0
+  },
+  "alcaldia": {
+    "valor": "ZAPOPAN",
+    "pagina": 1,
+    "parrafo": "ZAPOPAN , JALISCO A 25 DE SEPTIEMBRE DE 2025",
+    "confiabilidad": 100.0
+  },
+  "codigo_postal": {
+    "valor": "45116",
+    "pagina": 1,
+    "parrafo": "bio de estado: 31 DE MAYO DE 2019 Datos del domicilio registrado Código Postal:45116 Tipo de Vialidad: AVENIDA (AV.) Nombre de Vialidad: PASEO ROYAL COUNTRY Número",
+    "confiabilidad": 100.0
+  },
+  "fecha_emision": {
+    "valor": "2025-09-25",
+    "pagina": null,
+    "parrafo": null,
+    "confiabilidad": 50.0
+  },
+  "numero_exterior": {
+    "valor": "4596",
+    "pagina": 1,
+    "parrafo": "Número Exterior: 4596",
+    "confiabilidad": 100.0
+  },
+  "numero_interior": {
+    "valor": "2B",
+    "pagina": 1,
+    "parrafo": ") Nombre de Vialidad: PASEO ROYAL COUNTRY Número Exterior: 4596 Número Interior:2B Nombre de la Colonia: PUERTA DE HIERRO Nombre de la Localidad: ZAPOPAN Nombre d",
+    "confiabilidad": 100.0
+  },
+  "entidad_federativa": {
+    "valor": "Jalisco",
+    "pagina": 1,
+    "parrafo": "ZAPOPAN , JALISCO A 25 DE SEPTIEMBRE DE 2025",
+    "confiabilidad": 100.0
+  },
+  "campos_no_encontrados": []
+}

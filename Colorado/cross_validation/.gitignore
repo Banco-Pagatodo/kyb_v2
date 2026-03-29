@@ -1,0 +1,23 @@
+# Runtime (generados automáticamente)
+cross_validation/logs/
+cross_validation/screenshots/
+cross_validation/reports/
+__pycache__/
+*.pyc
+
+# Reportes de prueba
+reporte_*.txt
+log_*.txt
+
+# Eggs / builds
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+
+# Entorno
+.env
+.venv/

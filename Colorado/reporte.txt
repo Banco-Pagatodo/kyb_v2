@@ -1,0 +1,285 @@
+════════════════════════════════════════════════════════════
+  REPORTE DE VALIDACIÓN CRUZADA KYB
+════════════════════════════════════════════════════════════
+
+  EMPRESA: AVANZA SOLIDO
+  RFC: ASO110413438
+  EMPRESA_ID: 85584938-09fd-46c6-a2a0-96a11c85b8a4
+  FECHA DE ANÁLISIS: 2026-03-27 15:34
+  DOCUMENTOS EN EXPEDIENTE: acta_constitutiva, csf, domicilio, domicilio_propietario_real, domicilio_rl, estado_cuenta, fiel, ine, ine_propietario_real, poder, reforma
+
+────────────────────────────────────────────────────────────
+  DATOS CLAVE DE LA PERSONA MORAL
+────────────────────────────────────────────────────────────
+
+  Razón Social: AVANZA SOLIDO
+  RFC:          ASO110413438
+
+  ▸ REPRESENTANTE LEGAL
+    Nombre:      Arturo Pons Aguirre
+    Facultades:  GENERAL JUDICIAL Y PARA PLEITOS Y COBRANZAS, GENERAL PARA ACTOS DE ADMINISTRACIÓN, CAMBIARIO, ESPECIAL PARA CONSTITUIR F
+    Fuente:      poder_notarial
+
+  ▸ PODER PARA ABRIR CUENTAS BANCARIAS: ✅ SÍ
+
+  ▸ APODERADO(S) LEGAL(ES)
+    1. Arturo Pons Aguirre (poder_notarial) — GENERAL JUDICIAL Y PARA PLEITOS Y COBRANZAS, GENERAL PARA ACTOS DE ADMINISTRACIÓ
+
+  ▸ ACCIONISTAS / SOCIOS
+    #    Nombre                                   Tipo                  %  Fuente
+    ────────────────────────────────────────────────────────────────────────────────
+    1    Roberto Bibiano Dorantes                 P. Física           N/D  reforma_estatutos
+    2    Rusell Herrera Palomo                    P. Física           N/D  reforma_estatutos
+
+  ▸ CONSEJO DE ADMINISTRACIÓN
+    1. ROBERTO BIBIANO DORANTES — Presidente
+    2. RUSELL HERRERA PALOMO — Secretario
+
+────────────────────────────────────────────────────────────
+  RESUMEN EJECUTIVO
+────────────────────────────────────────────────────────────
+
+  DICTAMEN: ❌ RECHAZADO
+
+  Validaciones que pasan (✅): 19
+  Hallazgos Críticos  (🔴): 5
+  Hallazgos Medios    (🟡): 3
+  Hallazgos Informativos (ℹ️): 5
+
+────────────────────────────────────────────────────────────
+  DETALLE DE VALIDACIONES
+────────────────────────────────────────────────────────────
+
+  BLOQUE 1: IDENTIDAD CORPORATIVA
+  ··················································
+    V1.1 RFC consistente: ✅ PASA
+      RFC ASO110413438 coincide en todos los documentos
+        - csf: ASO110413438
+        - fiel: ASO110413438
+        - BD (empresas): ASO110413438
+
+    V1.2 Razón social consistente: ❌ FALLA 🔴
+      DISCREPANCIA en razón social:
+        poder: SOLUCIONES CAPITAL X, S.A.P.I. DE C.V. → No coinciden (30%): 'AVANZA SOLIDO' vs 'SOLUCIONES CAPITAL X'
+        reforma: Arenosos Opciones En Construccion, S.A. De C.V. → No coinciden (26%): 'AVANZA SOLIDO' vs 'ARENOSOS OPCIONES EN CONSTRUCCION'
+        - csf: AVANZA SOLIDO
+        - fiel: AVANZA SOLIDO SA DE CV SOFOM ENR
+        - poder: SOLUCIONES CAPITAL X, S.A.P.I. DE C.V.
+        - reforma: Arenosos Opciones En Construccion, S.A. De C.V.
+        - BD (empresas): AVANZA SOLIDO
+
+    V1.3 Estatus padrón fiscal: ⚪ N/A 🔴
+      No se pudo extraer el estatus del padrón fiscal de la CSF
+
+
+  BLOQUE 2: DOMICILIO
+  ··················································
+    V2.1 CP consistente: ⚪ N/A 🟡
+      No hay suficientes documentos para comparar CP
+        - domicilio: 45116
+
+    V2.2 Domicilio fiscal vs comprobante: ⚪ N/A 🟡
+      No se pudo extraer dirección de uno o ambos documentos
+        Comprobante: AV PASEO ROYAL COUNTRY 4596 2B PUERTA DE HIERRO ZAPOPAN JAL
+
+    V2.3 Domicilio constitutivo vs actual: ⚪ N/A ℹ️
+      No hay suficientes datos para comparar domicilio constitutivo vs fiscal
+
+    V2.4 Domicilio campo por campo: ⚪ N/A 🟡
+      La CSF no tiene domicilio fiscal para comparar
+
+
+  BLOQUE 3: VIGENCIA DE DOCUMENTOS
+  ··················································
+    V3.1 FIEL vigente: ✅ PASA
+      FIEL vigente hasta 2028-09-23
+
+    V3.2 INE vigente: ⚪ N/A 🔴
+      No se pudo parsear la fecha de vigencia INE: 'SOMUNDO'
+
+    V3.3 Comprobante de domicilio reciente: ⚪ N/A 🔴
+      No se pudo extraer la fecha del Comprobante de domicilio
+
+    V3.4 Constancia de Situación Fiscal reciente: ⚪ N/A 🔴
+      No se pudo extraer la fecha del Constancia de Situación Fiscal
+
+    V3.5 Estado de cuenta reciente: ❌ FALLA 🔴
+      Estado de cuenta tiene 7 meses de antigüedad (máximo 3)
+
+
+  BLOQUE 4: APODERADO LEGAL
+  ··················································
+    V4.1 Apoderado INE vs Poder: ❌ FALLA 🔴
+      DISCREPANCIA: INE 'JOAN ANTONIO VILLANUEVA GONZALEZ' vs Poder 'Arturo Pons Aguirre' (31%)
+
+    V4.2 Apoderado en estructura: ⚪ N/A ℹ️
+      Apoderado 'JOAN ANTONIO VILLANUEVA GONZALEZ' no aparece como accionista ni consejero en la estructura societaria. Esto es normal — el apoderado/RL no está obligado a ser socio o consejero.
+
+    V4.3 Poder otorgado por empresa: ❌ FALLA 🔴
+      DISCREPANCIA: Poderdante 'SOLUCIONES CAPITAL X, S.A.P.I. DE C.V.' vs empresa 'AVANZA SOLIDO' — No coinciden (30%): 'SOLUCIONES CAPITAL X' vs 'AVANZA SOLIDO'
+
+    V4.4 Facultades suficientes: ✅ PASA
+      Poder con actos de administración y facultades bancarias expresas. Tipo de poder: GENERAL JUDICIAL Y PARA PLEITOS Y COBRANZAS, GENERAL PARA ACTOS DE ADMINISTRACIÓN, CAMBIARIO, ESPECIAL PARA CONSTITUIR FIDEICOMISOS. Facultades: Representar en juicios, administrar bienes, firmar títulos de crédito, constituir fideicomisos, abrir cuentas bancarias.. Keywords bancarias detectadas: ABRIR CUENTAS, CUENTAS BANCARIAS, CAMBIARIO
+
+    V4.5 INE anverso vs reverso: ❌ FALLA 🔴
+      Identificación INCOMPLETA: falta(n) INE reverso. Se requieren ambas caras de la INE para validar la identidad del apoderado.
+
+    V4.6 Poderes del representante: ✅ PASA
+      Poderes verificados mediante Poder Notarial independiente. Apoderado: Arturo Pons Aguirre. Facultades: GENERAL JUDICIAL Y PARA PLEITOS Y COBRANZAS, GENERAL PARA ACTOS DE ADMINISTRACIÓN, CAMBIARIO, ESPECIAL PARA CONSTITUIR F
+
+
+  BLOQUE 6: DATOS BANCARIOS
+  ··················································
+    V6.1 Titular = empresa: ❌ FALLA 🟡
+      Titular NO legible — contiene saltos de línea. Texto extraído: 'ALMIRANTE CAPITAL PERÍODO'. Requiere re-extracción del documento original.
+
+    V6.2 CLABE válida: ✅ PASA
+      CLABE con formato válido: 152***********4243 (18 dígitos)
+
+
+  BLOQUE 7: CONSISTENCIA NOTARIAL
+  ··················································
+    V7.1 Datos notariales: ✅ PASA
+      Todos los datos notariales presentes con buena confiabilidad
+
+    V7.2 Folio mercantil: ✅ PASA
+      Folio mercantil: 28308*2
+
+    V7.3 Consistencia folio: ✅ PASA
+      Folio mercantil consistente: acta '28308' = reforma '28308*2'
+        Folio acta:    28308
+        Folio reforma: 28308*2
+        Nota: el folio base debe coincidir entre documentos.
+
+    V7.4 Inscripción Registro Público: ✅ PASA
+      Acta inscrita en el Registro Público de Comercio (Folio mercantil: 28308*2)
+
+
+  BLOQUE 8: CALIDAD DE EXTRACCIÓN
+  ··················································
+    V8.1 Confiabilidad de campos: ❌ FALLA ℹ️
+      Campos con confiabilidad < 70%:
+        ine.LastName: 66.7%
+        ine.Vigencia: 2.0%
+        ine.primer_nombre: 69.2%
+        ine.segundo_nombre: 69.2%
+        ine.primer_apellido: 69.2%
+        ine.segundo_apellido: 69.2%
+        ine_propietario_real.Estado: 34.0%
+        ine_propietario_real.Vigencia: 2.0%
+        ine_propietario_real.Localidad: 61.8%
+        ine_propietario_real.primer_nombre: 66.9%
+        ine_propietario_real.primer_apellido: 66.9%
+        ine_propietario_real.segundo_apellido: 66.9%
+        - ine.LastName: 66.7%
+        - ine.Vigencia: 2.0%
+        - ine.primer_nombre: 69.2%
+        - ine.segundo_nombre: 69.2%
+        - ine.primer_apellido: 69.2%
+        - ine.segundo_apellido: 69.2%
+        - ine_propietario_real.Estado: 34.0%
+        - ine_propietario_real.Vigencia: 2.0%
+        - ine_propietario_real.Localidad: 61.8%
+        - ine_propietario_real.primer_nombre: 66.9%
+        - ine_propietario_real.primer_apellido: 66.9%
+        - ine_propietario_real.segundo_apellido: 66.9%
+
+    V8.2 Campos faltantes: ✅ PASA
+      9 campos no críticos faltantes
+        - csf.telefono
+        - poder.fecha_expedicion
+        - reforma.fecha_expedicion
+        - reforma.estructura_accionaria
+        - reforma.consejo_administracion
+        - reforma.estado_notaria
+        - reforma.objeto_social
+        - reforma.capital_social
+        - reforma.domicilio_social
+
+    V8.3 Parsing de nombres: ✅ PASA
+      Parsing de nombres sin alertas (personas morales ignoradas)
+
+    V8.4 Titular estado de cuenta: ✅ PASA
+      Titular con formato irregular pero primera línea legible: 'ALMIRANTE CAPITAL'
+        Valor extraído: "ALMIRANTE CAPITAL"
+        · Contiene saltos de línea
+
+
+  BLOQUE 9: COMPLETITUD DEL EXPEDIENTE
+  ··················································
+    V9.1 Documentos mínimos: ✅ PASA
+      Todos los documentos mínimos presentes (7/7)
+
+    V9.2 Documentos complementarios: ❌ FALLA 🟡
+      Documentos complementarios faltantes: INE reverso
+
+────────────────────────────────────────────────────────────
+  ALERTAS Y RIESGOS
+────────────────────────────────────────────────────────────
+
+  🔴 CRÍTICOS (requieren acción inmediata):
+    1. [V1.2] DISCREPANCIA en razón social:
+  poder: SOLUCIONES CAPITAL X, S.A.P.I. DE C.V. → No coinciden (30%): 'AVANZA SOLIDO' vs 'SOLUCIONES CAPITAL X'
+  reforma: Arenosos Opciones En Construccion, S.A. De C.V. → No coinciden (26%): 'AVANZA SOLIDO' vs 'ARENOSOS OPCIONES EN CONSTRUCCION'
+    2. [V3.5] Estado de cuenta tiene 7 meses de antigüedad (máximo 3)
+    3. [V4.1] DISCREPANCIA: INE 'JOAN ANTONIO VILLANUEVA GONZALEZ' vs Poder 'Arturo Pons Aguirre' (31%)
+    4. [V4.3] DISCREPANCIA: Poderdante 'SOLUCIONES CAPITAL X, S.A.P.I. DE C.V.' vs empresa 'AVANZA SOLIDO' — No coinciden (30%): 'SOLUCIONES CAPITAL X' vs 'AVANZA SOLIDO'
+    5. [V4.5] Identificación INCOMPLETA: falta(n) INE reverso. Se requieren ambas caras de la INE para validar la identidad del apoderado.
+
+  🟡 MEDIOS (requieren seguimiento):
+    1. [V5.1] No se encontró estructura accionaria en el Acta Constitutiva
+    2. [V6.1] Titular NO legible — contiene saltos de línea. Texto extraído: 'ALMIRANTE CAPITAL PERÍODO'. Requiere re-extracción del documento original.
+    3. [V9.2] Documentos complementarios faltantes: INE reverso
+
+  ℹ️ INFORMATIVOS (para registro):
+    1. [V2.3] No hay suficientes datos para comparar domicilio constitutivo vs fiscal
+    2. [V4.2] Apoderado 'JOAN ANTONIO VILLANUEVA GONZALEZ' no aparece como accionista ni consejero en la estructura societaria. Esto es normal — el apoderado/RL no está obligado a ser socio o consejero.
+    3. [V5.2] No se puede comparar estructura (datos incompletos)
+    4. [V5.7] Estructura accionaria incompleta en documentos
+    5. [V8.1] Campos con confiabilidad < 70%:
+  ine.LastName: 66.7%
+  ine.Vigencia: 2.0%
+  ine.primer_nombre: 69.2%
+  ine.segundo_nombre: 69.2%
+  ine.primer_apellido: 69.2%
+  ine.segundo_apellido: 69.2%
+  ine_propietario_real.Estado: 34.0%
+  ine_propietario_real.Vigencia: 2.0%
+  ine_propietario_real.Localidad: 61.8%
+  ine_propietario_real.primer_nombre: 66.9%
+  ine_propietario_real.primer_apellido: 66.9%
+  ine_propietario_real.segundo_apellido: 66.9%
+
+────────────────────────────────────────────────────────────
+  RECOMENDACIONES
+────────────────────────────────────────────────────────────
+
+    1. URGENTE: Verificar razón social — posible persona moral incorrecta
+    2. URGENTE: Verificar identidad del apoderado legal
+    3. URGENTE: Verificar que el poder notarial corresponda a esta empresa
+    4. Verificar estructura accionaria manualmente
+    5. Solicitar estado de cuenta con titular legible
+    6. Solicitar documentos complementarios: Documentos complementarios faltantes: INE reverso
+
+────────────────────────────────────────────────────────────
+  SIGUIENTE PASO
+────────────────────────────────────────────────────────────
+
+    ❌ Expediente RECHAZADO.
+    Motivos principales:
+      - V1.2: Razón social consistente
+      - V3.5: Estado de cuenta reciente
+      - V4.1: Apoderado INE vs Poder
+      - V4.3: Poder otorgado por empresa
+      - V4.5: INE anverso vs reverso
+
+    Documentos requeridos para re-evaluación:
+      - URGENTE: Verificar razón social — posible persona moral incorrecta
+      - URGENTE: Verificar identidad del apoderado legal
+      - URGENTE: Verificar que el poder notarial corresponda a esta empresa
+      - Verificar estructura accionaria manualmente
+      - Solicitar estado de cuenta con titular legible
+
+════════════════════════════════════════════════════════════
+  Fin del reporte — AVANZA SOLIDO
+════════════════════════════════════════════════════════════

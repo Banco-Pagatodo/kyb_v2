@@ -1,0 +1,225 @@
+════════════════════════════════════════════════════════════════════════════════════════════════════
+                         BANCO PAGATODO S.A., INSTITUCIÓN DE BANCA MÚLTIPLE                         
+                                  DICTAMEN LEGAL — PERSONA MORAL                                   
+════════════════════════════════════════════════════════════════════════════════════════════════════
+
+  Dictamen ID:       DJ-1-SCX190531824-20260319
+  Fecha elaboración: 2026-03-19
+  Razón Social:      SOLUCIONES CAPITAL X
+  RFC:               SCX190531824
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  ──── 1. DENOMINACIÓN SOCIAL ──────────────────────────────────────────────────────────────────────
+
+  Denominación (Acta Constitutiva):   SOLUCIONES CAPITAL X
+  Denominación (CSF):                 SOLUCIONES CAPITAL X
+  ¿Cambio de denominación?:           No
+
+  ──── 2. DATOS CORPORATIVOS ───────────────────────────────────────────────────────────────────────
+
+  Estatus en Padrón SAT:       ACTIVO
+  Giro Mercantil (CSF):        Servicios relacionados con la intermediación crediticia
+  Domicilio Fiscal:            AVENIDA PASEO ROYAL COUNTRY 4596, INT. 2B, COL. PUERTA DE HIERRO, ZAPOPAN, JALISCO
+  Capital Social:              0 MXN
+  Cláusula de Extranjeros:     EXCLUSION DE EXTRANJEROS
+
+  ──── 3. DATOS DE CONSTITUCIÓN ────────────────────────────────────────────────────────────────────
+
+  No. de Escritura / Póliza:    2072
+  Fecha de Escritura:           2019-05-22
+  Notario:                      RICARDO LOPEZ CAMARENA — Notaría 49, JALISCO
+  Folio Mercantil Electrónico:  N-2019050847
+  Fecha del Folio Mercantil:    N/A
+  Lugar del Folio Mercantil:    N/A
+
+  ──── 4. ÚLTIMOS ESTATUTOS SOCIALES ───────────────────────────────────────────────────────────────
+
+  No. de Escritura / Póliza:    2072
+  Fecha de Escritura:           2019-05-22
+  Notario:                      RICARDO LOPEZ CAMARENA — Notaría 49, JALISCO
+  Folio Mercantil Electrónico:  N-2019050847
+  Fecha del Folio Mercantil:    N/A
+  Lugar del Folio Mercantil:    N/A
+
+  ──── 5. ACTIVIDAD / GIRO ─────────────────────────────────────────────────────────────────────────
+
+  Actividad / Giro:             Servicios relacionados con la intermediación crediticia
+  ¿Sufrió modificaciones?:      No
+  Instrumento de cambio:        N/A
+  Fuente del dato:              csf
+  Observaciones:                Objeto social no encontrado en acta; se tomó actividad económica del CSF.
+
+  ──── 6. TENENCIA ACCIONARIA ──────────────────────────────────────────────────────────────────────
+
+  ┌──────┬──────────────────────────────────────┬────────────┬──────────┬──────────────┐
+  │ #    │ Nombre / Razón social                │ %          │ Tipo     │ Extranjero   │
+  ├──────┼──────────────────────────────────────┼────────────┼──────────┼──────────────┤
+  │ 1    │ ARTURO PONS AGUIRRE                  │   45.0%    │ P. Física │ NO           │
+  │ 2    │ ESTEBAN SANTIAGO VARELA VEGA         │   35.0%    │ P. Física │ NO           │
+  │ 3    │ ALEJANDRO PÉREZ ONTIVEROS            │   15.0%    │ P. Física │ NO           │
+  │ 4    │ RICARDO ELIAS FERNÁNDEZ              │    5.0%    │ P. Física │ NO           │
+  └──────┴──────────────────────────────────────┴────────────┴──────────┴──────────────┘
+
+  Accionistas extranjeros:    No
+
+  ──── 7. RÉGIMEN DE ADMINISTRACIÓN ────────────────────────────────────────────────────────────────
+
+  Tipo: No identificado
+  No se identificaron administradores/consejeros.
+
+  ──── 8. APODERADOS / REPRESENTANTES LEGALES ──────────────────────────────────────────────────────
+
+  ┌──────┬────────────────────────────────────────────────┬────────────────────┐
+  │ #    │ Nombre                                         │ Nacionalidad       │
+  ├──────┼────────────────────────────────────────────────┼────────────────────┤
+  │ 1    │ Arturo Pons Aguirre                            │ Mexicana           │
+  └──────┴────────────────────────────────────────────────┴────────────────────┘
+
+  Poder notarial (Apoderado 1):
+    Poderdante:      SOLUCIONES CAPITAL X, SOCIEDAD ANÓNIMA PROMOTORA DE INVERSIÓN DE CAPITAL VARIABLE
+    Tipo:            GENERAL JUDICIAL Y PARA PLEITOS Y COBRANZAS, GENERAL PARA ACTOS DE ADMINISTRACIÓN, PODER CAMBIARIO, PODER ESPECIAL PARA CONSTITUIR FIDEICOMISOS
+    Notario:         David Alfaro Ramirez — Notaría 26, Jalisco
+    Escritura:       33181
+    Fecha:           2025-08-14
+
+  Facultades (Apoderado 1):
+    Actos de Administración:       Sí
+    Actos de Dominio:              No
+    Títulos de Crédito:            Sí
+    Apertura de Cuentas Bancarias: Sí
+    Delegación / Sustitución:      No
+    Especiales:                    Constituir fideicomisos, Juicio de amparo, Pleitos y cobranzas
+    Palabras clave BPT detectadas:
+      ✓ admin: actos de administración
+      ✓ títulos: títulos de crédito
+      ✓ apertura: cuentas bancarias
+    Limitaciones:                  N/A
+    Régimen de Firmas:             Individual
+    Vigencia:                      N/A
+    ¿Cuenta con FM3?:              N/A
+    ¿Puede firmar contrato?:       Sí
+    ¿Puede designar web banking?:  Sí
+
+  ──── 9. CONFIABILIDAD DE CAMPOS OCR ──────────────────────────────────────────────────────────────
+
+  Score OCR Global:    88.5%  (84 campos evaluados)
+
+  ▸ Confiabilidad ≥ 90%:     68 / 84 campos
+  ▸ Confiabilidad 70-89%:     8 / 84 campos
+  ▸ Confiabilidad < 70%:      8 / 84 campos
+
+  Campos de baja confiabilidad (< 70%):
+    - acta_constitutiva._propietarios_reales: 0.0%
+    - csf.telefono: 0.0%
+    - csf.extranjeras: 0.0%
+    - fiel.extranjeras: 0.0%
+    - ine.Seccion: 0.0%
+    - ine.segundo_nombre: 0.0%
+    - poder.fecha_expedicion: 0.0%
+    - domicilio.fecha_emision: 50.0%
+
+  Reglas:              8/9 cumplidas (88.9%)
+  Score Global:        89.8%  (ALTA)
+  Fuente:              LLM (GPT-4o) + motor de reglas
+
+════════════════════════════════════════════════════════════════════════════════════════════════════
+  ──── 10. CONCLUSIONES JURÍDICAS ──────────────────────────────────────────────────────────────────
+
+  DICTAMEN:    ⚠️ FAVORABLE CON CONDICIONES
+  FUNDAMENTO:  El dictamen se emite como FAVORABLE_CON_CONDICIONES debido a que, aunque se cumplen la mayoría de los requisitos documentales y no se identificaron inconsistencias críticas, existen observaciones que deben ser subsanadas para asegurar la completa conformidad con las normativas aplicables. La falta de régimen de administración y la antigüedad de ciertos documentos son aspectos que requieren atención para garantizar la validez y actualidad de la información proporcionada, conforme a las 'Reglas para elaboración de dictamen — BPT'.
+
+  Validaciones que pasan (✅): 8
+  Hallazgos Críticos  (🔴):     0
+  Hallazgos Medios    (🟡):     1
+  Hallazgos Informativos (ℹ️):  0
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  DETALLE DE REGLAS JURÍDICAS
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+    R1 Denominación Social: ✅ CUMPLE
+      Denominación: 'SOLUCIONES CAPITAL X'.
+      Fuente: acta_constitutiva
+
+    R2 Datos de Constitución: ✅ CUMPLE
+      Datos de constitución completos.
+      Fuente: acta_constitutiva
+
+    R3 Folio Mercantil Electrónico: ✅ CUMPLE
+      FME: N-2019050847.
+      Fuente: acta_constitutiva
+
+    R4 Actividad / Giro: ✅ CUMPLE
+      Actividad: 'Servicios relacionados con la intermediación crediticia'.
+      Fuente: acta_constitutiva
+
+    R5 Tenencia Accionaria: ✅ CUMPLE
+      4 accionistas identificados, total 100.0%.
+      Fuente: acta_constitutiva
+
+    R6 Régimen de Administración: ❌ FALLA 🟡
+      No se identificó régimen de administración en la constitutiva.
+      Fuente: acta_constitutiva
+
+    R7 Representante Legal / Apoderado: ✅ CUMPLE
+      Apoderado: 'Arturo Pons Aguirre'. INE: 'ARTURO PONS AGUIRRE'.
+      Fuente: poder
+
+    R8 Facultades para Firma de Contrato: ✅ CUMPLE
+      Admin=True, Apertura=True, Delegación=False → Sí puede firmar. Palabras clave: administración, apertura_cuentas.
+      Fuente: poder
+
+    R9 Consistencia con Dictamen PLD: ✅ CUMPLE
+      PLD: RECHAZADO, Screening: limpio.
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  ALERTAS Y RIESGOS
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  🔴 CRÍTICOS (requieren acción inmediata):
+    Ninguno ✅
+
+  🟡 MEDIOS (requieren seguimiento):
+    1. [R6] Régimen de Administración — No se identificó régimen de administración en la constitutiva.
+
+  ℹ️ INFORMATIVOS (para registro):
+    Ninguno
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  OBSERVACIONES ADICIONALES
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+    1. No se identificó el régimen de administración en la escritura constitutiva, lo cual es un requisito esencial para determinar la estructura de gobierno de la sociedad.
+    2. El objeto social no se encontró en el acta constitutiva y se tomó de la Constancia de Situación Fiscal, lo cual puede no reflejar con precisión las actividades autorizadas por la sociedad.
+    3. El comprobante de domicilio, la Constancia de Situación Fiscal y el estado de cuenta tienen más de 3 meses de antigüedad, lo que afecta la vigencia de los documentos.
+    4. Falta la reforma de estatutos y el reverso del INE, lo cual es necesario para completar el expediente y verificar posibles cambios en la estructura societaria.
+    5. El capital social aparece como $0 con una confiabilidad del 70%, lo que sugiere una posible extracción fallida de datos.
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  RECOMENDACIONES
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+    1. Subsanar R6 (Régimen de Administración): No se identificó régimen de administración en la constitutiva.
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  SIGUIENTE PASO
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+    ⚠️ Dictamen favorable con condiciones.
+    Puntos a subsanar:
+      - R6: Régimen de Administración
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  ELABORÓ:
+    Nevada v1.1.0 — Agente IA Legal
+    Dictamen generado automáticamente por Agente Nevada — Dictamen Legal
+
+  Pipeline:  DJ-1-SCX190531824
+  Versión:   1.1.0
+  Fuentes:   Dakota
+  Fecha:     2026-03-19
+
+════════════════════════════════════════════════════════════════════════════════════════════════════
+                                      FIN DEL DICTAMEN LEGAL                                       
+════════════════════════════════════════════════════════════════════════════════════════════════════

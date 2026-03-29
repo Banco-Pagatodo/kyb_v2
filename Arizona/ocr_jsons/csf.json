@@ -1,0 +1,75 @@
+{
+  "rfc": {
+    "valor": "SCX190531824",
+    "pagina": 1,
+    "parrafo": "Página [1] de [3] CÉDULA DE IDENTIFICACIÓN FISCAL SCX190531824 Registro Federal de Contribuyentes SOLUCIONES CAPITAL X Nombre, denominación o",
+    "confiabilidad": 100.0
+  },
+  "telefono": {
+    "valor": "",
+    "pagina": null,
+    "parrafo": null,
+    "confiabilidad": 0.0
+  },
+  "extranjeras": {
+    "valor": false,
+    "pagina": null,
+    "parrafo": null,
+    "confiabilidad": 0.0
+  },
+  "razon_social": {
+    "valor": "SOLUCIONES CAPITAL X",
+    "pagina": 1,
+    "parrafo": "SOLUCIONES CAPITAL X",
+    "confiabilidad": 100.0
+  },
+  "codigo_postal": {
+    "valor": "45116",
+    "pagina": 1,
+    "parrafo": "bio de estado: 31 DE MAYO DE 2019 Datos del domicilio registrado Código Postal:45116 Tipo de Vialidad: AVENIDA (AV.) Nombre de Vialidad: PASEO ROYAL COUNTRY Número",
+    "confiabilidad": 100.0
+  },
+  "fecha_emision": {
+    "valor": "2025-09-25",
+    "pagina": 1,
+    "parrafo": "ZAPOPAN , JALISCO A 25 DE SEPTIEMBRE DE 2025",
+    "confiabilidad": 100.0
+  },
+  "estatus_padron": {
+    "valor": "ACTIVO",
+    "pagina": 1,
+    "parrafo": "CAPITAL X Fecha inicio de operaciones: 31 DE MAYO DE 2019 Estatus en el padrón: ACTIVO Fecha de último cambio de estado: 31 DE MAYO DE 2019 Datos del domicilio regist",
+    "confiabilidad": 100.0
+  },
+  "giro_mercantil": {
+    "valor": "Servicios relacionados con la intermediación crediticia",
+    "pagina": 2,
+    "parrafo": "Servicios relacionados con la intermediación crediticia",
+    "confiabilidad": 100.0
+  },
+  "domicilio_fiscal": {
+    "valor": "AVENIDA (AV.) PASEO ROYAL COUNTRY 4596, INT. 2B, COL. PUERTA DE HIERRO, ZAPOPAN, JALISCO",
+    "pagina": 1,
+    "parrafo": "Tipo de Vialidad: AVENIDA (AV.)",
+    "confiabilidad": 100.0
+  },
+  "nombre_comercial": {
+    "valor": "SOLUCIONES CAPITAL X",
+    "pagina": 1,
+    "parrafo": "SOLUCIONES CAPITAL X",
+    "confiabilidad": 100.0
+  },
+  "_nombres_parseados": {
+    "razon_social": {
+      "primer_nombre": "Soluciones",
+      "segundo_nombre": null,
+      "nombre_completo": "SOLUCIONES CAPITAL X",
+      "primer_apellido": "Capital",
+      "segundo_apellido": "X",
+      "confianza_parsing": 0.85
+    }
+  },
+  "campos_no_encontrados": [
+    "telefono"
+  ]
+}

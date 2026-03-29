@@ -1,0 +1,1722 @@
+=== PAGES 1-5 ===
+Sure, here is the extracted text from the document pages:
+
+---
+
+**Page 1:**
+
+Paga Todo
+
+BANCO PAGATODO, S.A.
+INSTITUCIÓN DE BANCA MÚLTIPLE
+
+Metodología de evaluación de riesgos (MER)
+EN MATERIA DE PREVENCIÓN DE LAVADO DE DINERO Y FINANCIAMIENTO AL TERRORISMO.
+
+Versión 7.0
+
+1
+
+---
+
+**Page 2:**
+
+Paga Todo
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE
+
+MODELO DE RIESGOS DE LOS CLIENTES
+En Materia de Prevención de Lavado de Dinero y Financiamiento al Terrorismo
+
+Versión 7.0
+
+Contenido
+
+1.1 Definiciones ___________________________________________________________ 5
+2. Marco Legal ____________________________________________________________ 6
+3. Contexto _______________________________________________________________ 6
+4. Metodología de evaluación de riesgos (MER). _____________________________ 7
+4.1 Diseño ________________________________________________________________ 9
+4.1.1 Identificación ______________________________________________________ 10
+4.1.1.1. Elementos de riesgo ____________________________________________ 10
+4.1.1.2. Indicadores de riesgo ___________________________________________ 11
+Productos y Servicios: ____________________________________________________ 11
+Tipo de Clientes _________________________________________________________ 16
+Tipo de Persona _________________________________________________________ 17
+Nacionalidad ____________________________________________________________ 17
+Lista Negra ______________________________________________________________ 17
+Lista Gris ________________________________________________________________ 18
+Edad ____________________________________________________________________ 19
+Años de Constitución ____________________________________________________ 20
+Actividad Económica ____________________________________________________ 21
+Ubicación Geográfica del domicilio ______________________________________ 23
+Índice de Paz ____________________________________________________________ 23
+Incidencia Delictiva _____________________________________________________ 25
+Sensación de Seguridad por Entidad Federativa __________________________ 27
+Percepción de Corrupción _______________________________________________ 28
+PONDERACIÓN __________________________________________________________ 1
+Personas Políticamente Expuestas _______________________________________ 1
+Personas Señaladas en Listas de Sanciones _______________________________ 2
+
+2
+
+---
+
+**Page 3:**
+
+Paga Todo
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE
+
+MODELO DE RIESGOS DE LOS CLIENTES
+En Materia de Prevención de Lavado de Dinero y Financiamiento al Terrorismo
+
+Versión 7.0
+
+Países y Áreas Geográficas ________________________________________________ 3
+Países con Regímenes Fiscales Preferentes _________________________________ 4
+Países con medidas deficientes en materia de PLD/FT ______________________ 5
+Incidencia Delictiva ______________________________________________________ 5
+Nivel de Marginación _____________________________________________________ 7
+Áreas identificadas como de mayor Riesgo ________________________________ 7
+Canales y Transacciones _________________________________________________ 8
+Canales de Envío ________________________________________________________ 8
+Transacciones ___________________________________________________________ 9
+4.1 Medición _____________________________________________________________ 10
+4.2 Método de medición de riesgos. ______________________________________ 11
+4.3 Método de medición de riesgos. ______________________________________ 11
+4.4 Mitigantes ____________________________________________________________ 21
+4.5 Mitigantes a nivel de Institución ______________________________________ 22
+4.6 Mitigantes a Nivel de Elemento _______________________________________ 23
+4.7 Mitigantes a Nivel de Indicador _______________________________________ 24
+4.8 Medición de la mitigación de los riesgos ______________________________ 1
+5.0 Implementación ______________________________________________________ 1
+6.0 Valoración. ___________________________________________________________ 3
+Identificación ____________________________________________________________ 3
+Metodología de Evaluación de Riesgos Banco PagaTodo ____________________ 5
+Anexo A. ________________________________________________________________ 5
+Anexo B. ________________________________________________________________ 5
+
+3
+
+---
+
+**Page 4:**
+
+Paga Todo
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE
+
+MODELO DE RIESGOS DE LOS CLIENTES
+En Materia de Prevención de Lavado de Dinero y Financiamiento al Terrorismo
+
+Versión 7.0
+
+Ciudad de México a 30 de noviembre de 2025
+
+Autorizó
+
+Presidente Comité de Comunicación y Control
+
+Alejandro Ramos Larios
+
+Elaboró
+
+Oficial de Cumplimiento
+
+Ricardo Rangel Morales
+
+4
+
+---
+
+**Page 5:**
+
+Paga Todo
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE
+
+MODELO DE RIESGOS DE LOS CLIENTES
+En Materia de Prevención de Lavado de Dinero y Financiamiento al Terrorismo
+
+Versión 7.0
+
+1.1 Definiciones
+
+Comité
+Al Comité de Comunicación y Control de Banco PagaTodo S.A., I.B.M.
+
+Disposiciones
+Disposiciones de Carácter General a que se refiere el artículo 115 de la Ley de Instituciones de Crédito.
+
+Evaluación Nacional de Riesgos (ENR)
+A Evaluación Nacional de Riesgos de Lavado de Dinero y Financiamiento al Terrorismo en México publicada en el año 2023, que es el ejercicio de autoevaluación que realiza el gobierno mexicano con la finalidad de orientar la política de prevención y combate de los riesgos que implican la comisión de los delitos de lavado de dinero, financiamiento al terrorismo, así como las conductas de financiamiento a la proliferación de armas de destrucción masiva, de manera que se asignen los recursos a la mitigación de los mayores riesgos identificados.
+
+Elementos de Riesgo
+Son los factores genéricos que se observan en el desarrollo de la actividad de Banco PagaTodo y que pudieran elevar en mayor o menor medida el Riesgo a que esté expuesto, considerando al menos los siguientes: Clientes; países y áreas geográficas; productos, servicios; transacciones y canales de envío vinculados con las Operaciones de la Institución con sus Clientes, así como la Evaluación Nacional de Riesgos y sus actualizaciones.
+
+MER
+Metodología de Evaluación de Riesgos.
+
+PLD/FT
+Prevención de Lavado de Dinero y Financiamiento al Terrorismo.
+
+UAIR
+Unidad de Administración Integral de Riesgos
+
+UPLD/FT
+Unidad de Prevención de Lavado de Dinero y Financiamiento al Terrorismo.
+
+5
+
+---
+
+=== PAGES 6-10 ===
+Sure, here is the extracted text from the document pages:
+
+---
+
+**BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE**
+
+MODELO DE RIESGOS DE LOS CLIENTES  
+En Materia de Prevención de Lavado de Dinero y Financiamiento al Terrorismo  
+Versión 7.0
+
+---
+
+**2. Marco Legal**
+
+- Ley Federal para la Prevención e Identificación de Operaciones con Recursos de Procedencia Ilícita.
+- Disposiciones de carácter general a que se refiere el artículo 115 de la Ley de Instituciones de Crédito del 20 de abril de 2009 y sus actualizaciones.
+- Guía para la elaboración de una metodología de evaluación de riesgos en materia de prevención de operaciones con recursos de procedencia ilícita y financiamiento al terrorismo, publicada el 6 de septiembre de 2019.
+- Evaluación Nacional de Riesgos en materia de Prevención de Operaciones con Recursos de Procedencia Ilícita y Financiamiento al Terrorismo, publicada en diciembre 2023.
+- “Guía para un enfoque basado en riesgo” emitida por el Grupo de Acción Financiera Internacional.
+
+---
+
+**3. Contexto**
+
+Banco PagaTodo, en cumplimiento a las Disposiciones de Carácter General a que se refiere el artículo 115 de la Ley de Instituciones de Crédito, ha desarrollado una Metodología para la Evaluación de Riesgos a los que se encuentra expuesto derivado de sus productos, servicios, prácticas y localidades en las que opera, basada en la “Guía para la elaboración de una Metodología de Evaluación de Riesgos en Materia de Prevención de Operaciones con Recursos de Procedencia Ilícita y Financiamiento al Terrorismo” publicada por la Secretaría de Hacienda y Crédito Público en el portal SITI PLD/FT de la Comisión Nacional Bancaria y de Valores y la “Evaluación Nacional de Riesgos de Lavado de Dinero y Financiamiento al Terrorismo en México, publicada en diciembre 2023” elaborada con la participación conjunta de la Secretaría de Gobernación, la Secretaría de Hacienda y Crédito Público, la Procuraduría General de la República, el Banco de México y el Poder Judicial de la Federación.
+
+Banco PagaTodo es un banco de nicho que inició operaciones el 1 de septiembre de 2014, especializado para ofrecer los servicios de adquirencia bancaria y la emisión de tarjetas bancarias. El Banco surge de la evolución de una empresa del mismo nombre dedicada a la prestación de servicios de pago en pequeños y medianos comercios, con el objetivo de ofrecer productos de pago que permitan a los clientes realizar transacciones fáciles, rápidas y seguras, y de esta forma contribuir así al inclusión financiera del país, principalmente en la base de la pirámide de la población mexicana.
+
+---
+
+**BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE**
+
+MODELO DE RIESGOS DE LOS CLIENTES  
+En Materia de Prevención de Lavado de Dinero y Financiamiento al Terrorismo  
+Versión 7.0
+
+---
+
+Banco PagaTodo cuenta con un corporativo en la Ciudad de México, no tiene sucursales bancarias ni ventanillas y concentra su operación en la zona metropolitana del Valle de México.
+
+Para la elaboración de la Metodología de Evaluación de Riesgos de Banco PagaTodo se consideraron las siguientes circunstancias de la Institución:
+
+- El Banco no forma parte de ningún Grupo Financiero.
+- Sólo opera en territorio nacional.
+- Sólo realiza operaciones en moneda nacional.
+- No realiza operaciones en usuarios.
+- No recibe ni dispensa efectivo.
+- No ofrece servicios fiduciarios.
+- No opera con activos virtuales.
+- No realiza operaciones con cheques de caja.
+- No tiene cuentas concentradoras en otras entidades financieras.
+- No opera a través de corresponsales bancarios.
+- No funge como ordenante de transferencias de fondos internacionales a solicitud de sus clientes.
+- No realiza transferencias de fondos nacionales en moneda extranjera.
+- No tiene cuentas corresponsales en entidades financieras domiciliadas en el extranjero.
+- No realiza operaciones con dólares de los Estados Unidos de América, con cheques de viajero, con metales, con monedas ni con cualquier otra divisa.
+- No mantiene inversiones con Instituciones Financieras del Exterior.
+- No ofrece el servicio de administración de valores, inversiones, créditos o microcréditos.
+
+---
+
+**4. Metodología de evaluación de riesgos (MER)**
+
+La presente metodología tiene como fin establecer los procesos para la identificación, medición y mitigación de los riesgos a los que se encuentra expuesto BPT, relacionados con la comisión de los delitos de Lavado de Dinero y Financiamiento al Terrorismo (LD/FT) derivados de los productos y servicios, tipos de clientes, países y áreas geográficas, transacciones y canales de envío o distribución con que opera.
+
+Para la elaboración de la MER se utilizó como referencia principal la “Guía para la elaboración de una metodología de evaluación de riesgos en materia de prevención de operaciones con recursos de procedencia ilícita y financiamiento al terrorismo” emitida por la Comisión Nacional Bancaria y de Valores en el año 2019.
+
+---
+
+**BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE**
+
+MODELO DE RIESGOS DE LOS CLIENTES  
+En Materia de Prevención de Lavado de Dinero y Financiamiento al Terrorismo  
+Versión 7.0
+
+---
+
+En el desarrollo de este documento Banco PagaTodo establecerá y describirá de manera detallada los procesos que llevará a cabo para la identificación, medición y mitigación de riesgos en su etapa de diseño para posteriormente proceder a su implementación y valoración.
+
+El proceso para la elaboración y aprobación de este documento se llevará a cabo de la siguiente manera:
+
+Identificación de Riesgos
+
+UPLD/FT  
+Define los elementos de riesgo de LD/FT
+
+Consejo de Administración  
+Aprueba MER
+
+Comité  
+Aprueba MER y presenta al Consejo de Administración
+
+UPLD/FT  
+Integra a la MER y presenta al Comité
+
+UAIR  
+Identifica los indicadores de los elementos de riesgo y solicita opinión de la UAIR
+
+UAIR  
+Emite opinión y entrega a la UPLD/FT
+
+Para la elaboración de esta metodología se tomó en consideración la información contenida en los recientes resultados publicados de la Evaluación Nacional de Riesgos 2023. En el desarrollo del documento se señala la información específica que fue utilizada.
+
+Asimismo, la Institución llevará a cabo una evaluación de riesgos a los que se encuentra expuesta, con antelación al lanzamiento o uso de nuevos productos, servicios, tipos de clientes, países o áreas geográficas, canales de envío o distribución, transacciones y canales de envío.
+
+---
+
+**BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE**
+
+MODELO DE RIESGOS DE LOS CLIENTES  
+En Materia de Prevención de Lavado de Dinero y Financiamiento al Terrorismo  
+Versión 7.0
+
+---
+
+**4.1 Diseño**
+
+El procedimiento general para el diseño de la MER consiste en:
+
+I. Identificar los elementos e indicadores que expliquen cómo y en qué medida la institución se encuentra expuesta al riesgo de LD/FT, considerando al menos:
+
+- Productos y servicios.
+- Tipos de Clientes.
+- Países o áreas geográficas.
+- Transacciones y canales de envío o distribución vinculados con las operaciones que la institución realiza con sus clientes.
+
+II. Utilizar un método para la medición de los riesgos, el cual establece una relación entre los indicadores y el elemento al que pertenecen, asignando un peso a cada uno de riesgos.
+
+III. Identificar mitigantes, considerando todas las políticas, criterios, medidas y procedimientos internos contenidos en el Manual de PLD/FT, así como su efectividad al momento de su aplicación, a fin de establecer el efecto que estos tendrán sobre los indicadores y elementos de riesgo identificados.
+
+En la realización de sus operaciones Banco PagaTodo se encuentra expuesto a riesgos de ser utilizado para el Lavado de Dinero y de Financiamiento al Terrorismo derivado de los productos, servicios, clientes, países o áreas geográficas, canales de envío o distribución, transacciones y canales de envío con los que opera y estos constituyen elementos de riesgo.
+
+Dichos elementos pueden afectar en mayor o menor medida el riesgo al que se encuentra expuesta la Institución, razón por la cual en el presente documento se ha diseñado y desarrollado una Metodología que permite conocer los elementos de riesgo que la hacen más vulnerable de ser utilizada para la realización de los delitos de Lavado de Dinero y de Financiamiento al Terrorismo con el fin de asignar eficientemente los recursos y aplicar procesos de gestión de riesgos adecuados con base en sus características operativas. El riesgo asociado a cada uno de los elementos de productos y servicios, clientes, países y áreas geográficas, transacciones y canales de envío o distribución, transacciones y canales de envío dependerá de las características de la operación, como son la frecuencia de las operaciones, el volumen de estas, el carácter de las relaciones comerciales, la forma de interactuar con el cliente, entre otras.
+
+A continuación se presenta el diseño de la Metodología de Evaluación de Riesgos en donde se establecen los procesos que se llevarán a cabo para la identificación, medición y mitigación de los riesgos, tomando en cuenta los Elementos de Riesgo, previamente identificados y sus respectivos indicadores, recurriendo a distintas fuentes de información (que se especifican en el diseño de la metodología), considerando la que es aplicable en el contexto de las operaciones de BPT contenida en la Evaluación Nacional de Riesgos y sus actualizaciones.
+
+Posterior al diseño de la Metodología esta se pondrá en funcionamiento, es decir, se implementarán los procesos descritos en ella con el fin de conocer el grado de exposición al riesgo de la Institución, con base en calificaciones y valoraciones dadas a cada uno de los Elementos e Indicadores; todo esto una vez considerados los efectos mitigantes existentes. Con base en los resultados obtenidos de la implementación de la Metodología se deberán realizar las modificaciones pertinentes al Manual de Cumplimiento para poder mitigar adecuadamente los riesgos identificados.
+
+---
+
+**4.1.1 Identificación**
+
+**4.1.1.1. Elementos de riesgo**
+
+Como primer paso para el desarrollo de esta Metodología se han definido los siguientes Elementos de riesgo, los cuales clasifican de manera general los riesgos a los que se encuentra expuesta la Institución, derivados de su operación:
+
+I. Productos y/o Servicios que ofrece la institución.  
+II. Tipo de Clientes.  
+III. Países y/o Áreas Geográficas en las que opera la institución.  
+IV. Transacciones y Canales.
+
+Por cada uno de estos elementos, se establecerán indicadores de riesgo, es decir, características que, por cada uno de estos rubros de la operación, generan un riesgo de Lavado de Dinero y/o de Financiamiento al Terrorismo (LD/FT).
+
+Para la asignación de un grado de riesgo de cada uno de los elementos identificados se realizó una consulta a los integrantes del Comité de Comunicación y Control, de la cual se obtuvieron los siguientes resultados:
+
+| Elemento de riesgo | Oficial de Cumplimiento Ricardo Rangel Ramos | Presidente Alejandro Ramos Larios | Secretario Anna Karen Valdés Vargas | Integrante Benjamín Morales Martínez | Integrante Andrés Trejo Rodríguez | Ponderación |
+|--------------------|---------------------------------------------|----------------------------------|------------------------------------|-------------------------------------|----------------------------------|-------------|
+| Productos y Servicios | 20% | 15% | 20% | 20% | 19% |
+| Tipos de Clientes | 20% | 20% | 15% | 15% | 18% |
+| Países y Áreas Geográficas | 15% | 15% | 15% | 10% | 15% | 14% |
+| Canales de Comercialización | 25% | 25% | 25% | 30% | 25% |
+| Transacciones | 20% | 25% | 30% | 20% | 23% |
+
+TOTAL | 100% | 100% | 100% | 100% | 100% | 100%
+
+---
+
+=== PAGES 11-15 ===
+Sure, here is the extracted text from pages 11-15:
+
+---
+
+**Page 11**
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE  
+BANCA MÚLTIPLE  
+MODELO DE RIESGOS DE LOS CLIENTES  
+En Materia de Prevención de Lavado de  
+Dinero y Financiamiento al Terrorismo  
+Versión 7.0
+
+**4.1.1.2. Indicadores de riesgo**
+
+La definición de los indicadores es el proceso mediante el cual se determinarán ciertos componentes para identificar un mayor o menor índice de riesgo de LD/FT dado el elemento de riesgo en cuestión, así como la forma en la que serán medidos. Los indicadores podrán ser de carácter cualitativo o cuantitativo y deberán reflejar los atributos que en su operación la Institución considere propios de sus elementos de riesgo.
+
+Con base en lo anterior, la Institución identifica los siguientes indicadores de riesgo en materia de LD/FT por cada uno de los elementos mencionados previamente.
+
+**Productos y Servicios:**
+
+En Banco PagaTodo, hemos identificado los elementos relacionados al riesgo en materia de PLD/FT de manera individual y en la totalidad de los Productos y Servicios que la entidad opera (Cuenta Ya Ganaste, Cuenta Útil, Cuenta Fundadores, Básica Nómina, Básica de Paga Todo, Cuenta Corporativa, Servicio de Adquirencia Terminal Punto de Venta – PagaTodo y Servicio de Adquirencia Terminal Punto de Venta – Ya Ganaste).
+
+Es así, que para este elemento de riesgo se han identificado los siguientes indicadores de riesgo tomando como referencia la guía proporcionada por la Comisión:
+
+- **Anonimato:** El Anonimato en la contratación de los productos o servicios es un riesgo al que está expuesta la entidad ya que ante errores u omisiones en una correcta identificación del prospecto de cliente, la entidad puede ser utilizada para la colocación de recursos de procedencia ilícita o el envío de recursos a organizaciones terroristas.
+
+- **Productos o Servicios de alto nivel de valor:** Este tipo de productos o servicios al tener una capacidad mayor o inclusive ilimitada en el almacenamiento de recursos, fondos o capitales son de especial riesgo para la entidad financiera ya que el valor almacenado pudiera provenir de actividades ilícitas o estar destinado para financiar organizaciones delictivas.
+
+- **Productos o Servicios que facilitan la transferencia de valor:** Este tipo de productos o servicios al ser característicos por tener una rápida captación y disposición de grandes flujos de recursos así como de una disponibilidad permanente para el envío y recepción de los mismos representan un mayor riesgo para la entidad ya que pudieran estar siendo utilizados por organizaciones delictivas para mover fácilmente sus recursos o hacerlos llegar a otras entidades para su almacenamiento y dificultar el rastreo de los fondos.
+
+Por lo que para la entidad es importante realizar la medición y ponderación de estos indicadores de riesgo ya sea para prevenir el lavado de dinero, para financiar el terrorismo o ambos, este ejercicio se ha considerado de la siguiente manera con base en la exposición de riesgo, así se considera:
+
+---
+
+**Page 12**
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE  
+BANCA MÚLTIPLE  
+MODELO DE RIESGOS DE LOS CLIENTES  
+En Materia de Prevención de Lavado de  
+Dinero y Financiamiento al Terrorismo  
+Versión 7.0
+
+**Lavado de Dinero**
+
+| ELEMENTOS          | PONDERACIÓN | INDICADORES DE RIESGO                                      | PONDERACIÓN DEL INDICADOR |
+|--------------------|-------------|------------------------------------------------------------|---------------------------|
+| Productos y Servicios | 19%         | Anonimato (Falta de Identificación del Cliente)            | 65%                       |
+|                    |             | Productos o servicios que facilitan la transferencia de valor | 35%                       |
+
+**Financiamiento al Terrorismo**
+
+| ELEMENTOS          | PONDERACIÓN | INDICADORES DE RIESGO                                      | PONDERACIÓN DEL INDICADOR |
+|--------------------|-------------|------------------------------------------------------------|---------------------------|
+| Productos y Servicios | 17%         | Anonimato (Falta de identificación del Cliente) Contratos con | 45%                       |
+|                    |             | Productos o Servicios de alto nivel de valor                | 15%                       |
+|                    |             | Productos o servicios que facilitan la transferencia de valor | 40%                       |
+
+Así mismo se han identificado los riesgos respecto a aquellos productos y servicios ofrecidos por la entidad
+
+**Cuentas (N2) Ya Ganaste**
+
+Las cuentas bancarias que se comercializan a través de la aplicación móvil del Banco, son cuentas nivel 2 que de acuerdo a la circular única de bancos 14/2011 están limitadas a 3000 UDIs en abonos por cliente en el transcurso de un mes calendario y cuyo proceso de identificación está en estricto apego a lo señalado en la fracción II. de la 14ª Bis. de las Disposiciones de Carácter General aplicables al artículo 115 de la ley de Instituciones de Crédito serán consideradas con un grado de riesgo menor debido a la limitación de ingreso de recursos, adicional a la estrategia de negocio del banco que solo considera como instrumento monetario para recibir recursos las transferencias a través del Sistema de Pagos Electrónicos Interbancarios y los traspasos entre cuentas del mismo banco.
+
+**Cuentas (N4) Útil**
+
+---
+
+**Page 13**
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE  
+BANCA MÚLTIPLE  
+MODELO DE RIESGOS DE LOS CLIENTES  
+En Materia de Prevención de Lavado de  
+Dinero y Financiamiento al Terrorismo  
+Versión 7.0
+
+Las cuentas bancarias que se comercializan a través de una identificación e integración del expediente completa para personas físicas de nacionalidad mexicana con base en la fracción I. de la 4ª de las Disposiciones de Carácter General aplicables al artículo 115 de la Ley de Instituciones de Crédito que son consideradas de nivel 4 cuya transaccionalidad no está restringida en abonos o cargos serán consideradas las de mayor riesgo para la entidad, mismas que siguen la misma estrategia comercial respecto a los instrumentos monetarios seleccionados por el banco para recibir recursos en dichas cuentas, serán consideradas con un riesgo mayor ya que, si bien existen limitantes respecto a los instrumentos monetarios, no hay un límite transaccional en este producto para la recepción y envío de recursos, lo que genera una mayor vulnerabilidad para las operaciones con recursos de procedencia ilícita o para el financiamiento al terrorismo.
+
+**Cuentas (N4) Fundadores**
+
+Las cuentas bancarias que se comercializan a través de una identificación e integración del expediente completa para personas físicas de nacionalidad mexicana con base en la fracción I. de la 4ª de las Disposiciones de Carácter General aplicables al artículo 115 de la Ley de Instituciones de Crédito que son consideradas de nivel 4 cuya transaccionalidad no está restringida en abonos o cargos serán consideradas las de un riesgo medio para la entidad, ya que si bien existen limitantes respecto de los instrumentos monetarios en estas cuentas y solo son entregadas a colaboradores de la misma institución y no al público en general, no tienen un límite transaccional lo que genera una mayor vulnerabilidad para las operaciones con recursos de procedencia ilícita o para el financiamiento al terrorismo.
+
+**Cuenta (N4) Corporativa**
+
+Las cuentas bancarias que se comercializan a través de una identificación e integración de su expediente para personas morales nacionalidad mexicana con base en la fracción II. de la 4ª de las Disposiciones de Carácter General aplicables al artículo 115 de la Ley de Instituciones de Crédito y que son consideradas de nivel 4 cuya transaccionalidad no está restringida en abonos o cargos serán consideradas las de un riesgo mayor para la entidad, ya que si bien existen limitantes respecto de los instrumentos monetarios en estas cuentas y solo son entregadas a colaboradores de la misma institución y no al público en general, no tienen un límite transaccional lo que genera una mayor vulnerabilidad para las operaciones con recursos de procedencia ilícita o para el financiamiento al terrorismo.
+
+---
+
+**Page 14**
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE  
+BANCA MÚLTIPLE  
+MODELO DE RIESGOS DE LOS CLIENTES  
+En Materia de Prevención de Lavado de  
+Dinero y Financiamiento al Terrorismo  
+Versión 7.0
+
+**Servicio de Adquirencia**
+
+El servicio de Adquirencia bancaria a comercios representa un riesgo moderado para la institución ya que los montos observados por transacción son menores y el tipo de instrumentos para realizar los movimientos son diferentes al efectivo
+
+**Básica de Nómina**
+
+Las cuentas bancarias destinadas a la recepción y administración del pago de los trabajadores ya sea del sector público o privado por su propia naturaleza no observarán algún otro tipo de ingresos y se tendrá identificado el origen de los recursos por lo que sí bien son de nivel 4 se considerarán de bajo riesgo.
+
+En ese sentido es que se han considerado dentro de los indicadores de riesgo para el lavado de dinero y el financiamiento al terrorismo los productos y servicios que en Banco PagaTodo se ofertan y así mismo se les ha asignado un factor de riesgo con base en la siguiente escala:
+
+| Nombre del Producto | Riesgo Asociado | Peso de Ponderación | Detalle del Indicador | Escala de Riesgo |
+|---------------------|-----------------|---------------------|-----------------------|-----------------|
+| Cuenta Ya Ganaste N2 | 1               |                     |                       |                 |
+| Cuenta Fundadores N4 | 2               |                     |                       |                 |
+| Cuenta Útil N4       | 3               |                     |                       |                 |
+| Cuenta Corporativa N4| 3               |                     |                       |                 |
+| Servicio de Adquirencia | 2             |                     |                       |                 |
+| Básica Nómina        | 1               |                     |                       |                 |
+
+---
+
+**Page 15**
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE  
+BANCA MÚLTIPLE  
+MODELO DE RIESGOS DE LOS CLIENTES  
+En Materia de Prevención de Lavado de  
+Dinero y Financiamiento al Terrorismo  
+Versión 7.0
+
+Otros indicadores a considerar para este elemento son:
+
+| Indicador               | Tipo                  | Descripción                                                                 |
+|-------------------------|-----------------------|------------------------------------------------------------------------------|
+| Liquidez                | Lavado de dinero      | El producto o servicio permite el movimiento rápido del dinero.              |
+| Anonimato               | Lavado de dinero      | El producto o servicio permite el anonimato de las operaciones.              |
+| Destino Recursos        | Financiamiento al terrorismo | El producto o servicio no permite conocer el uso o destino de los recursos.   |
+| Transferencias a terceros | Lavado de dinero    | El producto o servicio permite la realización de transferencias a personas distintas del titular de la cuenta. |
+| Alta transaccionalidad - Volumen | Lavado de dinero | El producto o servicio permite la realización de un alto número de operaciones. |
+| Alta transaccionalidad - Monto | Lavado de dinero | El producto permite la realización de operaciones por montos altos.           |
+| Alta transferencia de valor | Lavado de dinero  | El producto permite la realización de operaciones en altos montos y volumen en diversas zonas geográficas. |
+| Terceros Autorizados    | Lavado de dinero      | El producto puede tener terceros autorizados para su uso: cotitulares.       |
+| Proveedor de Recursos   | Lavado de dinero      | El producto puede tener proveedores de recursos.                             |
+| Uso remoto              | Lavado de dinero      | El producto permite su contratación y uso vía remota.                        |
+| Geolocalización         | Lavado de dinero      | El producto no permite el registro y monitoreo del domicilio.                |
+| Frontera o zona de riesgo | Financiamiento al terrorismo | El producto permite la realización de operaciones fuera de territorio nacional o en fronteras. |
+
+---
+
+=== PAGES 16-20 ===
+```plaintext
+Página 16
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE
+Modelo de Riesgos de los Clientes
+En Materia de Prevención de Lavado de Dinero y Financiamiento al Terrorismo
+Versión 7.0
+
+Tipo de Clientes
+
+De acuerdo con las características y clasificación que se realiza de los clientes de la Institución estos representan un mayor o menor riesgo de LD/FT.
+
+| Indicador                          | Tipo                        | Descripción                                                                                                                                                                                                 |
+|-----------------------------------|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Persona física, moral, fideicomiso o sindicato | Lavado de Dinero            | Una Persona Moral implica mayor riesgo que una Persona Física por la complejidad en su estructura y porque en primera instancia, en algunos casos, no permiten el conocimiento del propietario real.         |
+| Edad o fecha de constitución      | Lavado de Dinero            | Un cliente Persona Moral es más riesgoso entre menos tiempo de constitución tenga, debido a que aumentan la posibilidad de ser empresas fachada. Una persona de menor edad es más propensa a ser utilizada para actos de LD/FT además de que es más probable que tenga un proveedor de recursos. |
+| Nacionalidad                      | Lavado de Dinero            | Una persona extranjera aumenta las probabilidades de perder el rastro de los recursos.                                                                                                                     |
+| Domicilio                         | Financiamiento al terrorismo | Una persona ubicada en una zona geográfica de riesgo tiene una mayor probabilidad de realizar actos de LD/FT por las características de la zona, como son la delincuencia, si está en frontera, el grado de marginación, etc. |
+| Actividad económica               | Lavado de dinero            | Una actividad económica en la que se muevan grandes cantidades de efectivo facilita los delitos de LD/FT.                                                                                                   |
+| Persona políticamente expuesta    | Lavado de dinero            | Este tipo de personas están vinculadas a un mayor riesgo de actos de corrupción.                                                                                                                            |
+| Personas en listas de sanciones   | Lavado de dinero            | Las personas vinculadas a la realización de un delito tienen mayor riesgo de realizar actos de LD/FT.                                                                                                       |
+| Personas en listas de personas bloqueadas (por LD o FT) | Lavado de dinero / Financiamiento al terrorismo | La operación de la institución vinculada a un alto número de coincidencias en LPB indica que esta es un medio atractivo por parte estas personas para el uso de servicios financieros. |
+
+Página 17
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE
+Modelo de Riesgos de los Clientes
+En Materia de Prevención de Lavado de Dinero y Financiamiento al Terrorismo
+Versión 7.0
+
+Para cada uno de estos factores se han identificado fuentes oficiales con estadística para determinar el grado de riesgo como a continuación se describe
+
+Tipo de Persona
+
+Los recursos manejados por las personas físicas o físicas con actividad empresarial son diferentes en monto y número de operaciones, por lo que se espera un mayor flujo de recursos y esto representa un mayor riesgo para la institución.
+
+| Tipo de Persona                  | Factor de Riesgo |
+|---------------------------------|------------------|
+| Persona Física                  | 1                |
+| Persona Física con Actividad Empresarial | 2                |
+| Persona Moral                   | 3                |
+
+Nacionalidad
+
+La nacionalidad será uno de los factores que se consideran por banco PagaTodo para clasificar a los prospectos de clientes y clientes, esto debido a algunas jurisdicciones de acuerdo con el Grupo de Acción Financiera Internacional (GAFI) representan un mayor riesgo para el blanqueo de capitales y el financiamiento al terrorismo, es por ello que ha generado un par de listados para su clasificación.
+
+Lista Negra
+
+Los países señalados en esta lista presentan graves deficiencias estratégicas para combatir el lavado de dinero, el financiamiento al terrorismo y el financiamiento a la proliferación de armas de destrucción masiva, las jurisdicciones ahora señaladas son:
+
+- República Democrática de Corea.
+- Irán.
+- Myanmar.
+
+Página 18
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE
+Modelo de Riesgos de los Clientes
+En Materia de Prevención de Lavado de Dinero y Financiamiento al Terrorismo
+Versión 7.0
+
+Lista Gris
+
+Los Países señalados en esta lista colaboran activamente con el Grupo de Acción Financiera Internacional (GAFI) para abordar las deficiencias estratégicas en sus regímenes de lucha contra el blanqueo de capitales, el financiamiento del terrorismo y el financiamiento de la proliferación de armas de destrucción masiva. Cuando el GAFI somete a una jurisdicción a una vigilancia reforzada, significa que el país se ha comprometido a resolver con prontitud las deficiencias estratégicas identificadas dentro de los plazos acordados y está sujeto a una vigilancia reforzada, las jurisdicciones identificadas son:
+
+- Algeria
+- Angola
+- Bolivia
+- Bulgaria
+- Burkina Faso
+- Camerún
+- Cote d’Ivoire
+- República Democrática del Congo
+- Haití
+- Kenya
+- Laos
+- Líbano
+- Mónaco
+- Mozambique
+- Namibia
+- Nepal
+- Nigeria
+- Sudáfrica
+- Sudán
+- Syria
+- Venezuela
+- Vietnam
+- Islas Vírgenes
+- Yemen
+
+Página 19
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE
+Modelo de Riesgos de los Clientes
+En Materia de Prevención de Lavado de Dinero y Financiamiento al Terrorismo
+Versión 7.0
+
+Con base en el listado anterior es que se designan los siguientes grados de riesgo.
+
+| Nacionalidad                  | Factor de Riesgo |
+|------------------------------|------------------|
+| Lista Negra                  | 100              |
+| Lista Gris                   | 300              |
+| Países Miembros del GAFI     | 1                |
+
+Edad
+
+La edad en las Personas Físicas o Físicas con Actividad Empresarial está relacionada con la comisión de delitos como a continuación se muestra:
+
+Este libro forma parte del acervo de la Biblioteca Jurídica Virtual del Instituto de Investigaciones Jurídicas de la UNAM
+www.juridicas.unam.mx
+http://biblio.juridicas.unam.mx
+
+Personas privadas de la libertad en los centros penitenciarios estatales, según características sociodemográficas (edad, escolaridad, alfabetismo y nacionalidad)
+2016
+Porcentaje
+
+Fuente: INEGI. Estadísticas sobre el sistema penitenciario estatal en México. Datos censales de 2016 y estadísticas 2017
+
+Página 20
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE
+Modelo de Riesgos de los Clientes
+En Materia de Prevención de Lavado de Dinero y Financiamiento al Terrorismo
+Versión 7.0
+
+Con base en la estadística anterior es que la entidad ha realizado la siguiente segmentación y la clasificación por grado de riesgo
+
+| Rango de Edad | Grado de Riesgo |
+|---------------|-----------------|
+| Edad de 60 y más | 1               |
+| Edad entre 40 y 59 | 2               |
+| Edad entre 18 y 39 | 3               |
+
+Años de Constitución
+
+Uno de los factores a considerar por la entidad es los años de constituida de la empresa a contratar, ya que a criterio experto las empresas con menos años de constitución son más vulnerables a ser utilizadas como un vehículo para simular operaciones o ser utilizadas para encubrir operaciones con recursos de procedencia ilícita o financiar al terrorismo, es por ello que con base en el siguiente cuadro se ha asignado un grado de riesgo a las personas morales
+
+| Años de Constitución | Grado de Riesgo |
+|----------------------|-----------------|
+| 3.1 y más            | 1               |
+| 1.1 a 3              | 2               |
+| 1 o menos            | 3               |
+```
+
+=== PAGES 21-25 ===
+```plaintext
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE
+MODELO DE RIESGOS DE LOS CLIENTES
+En Materia de Prevención de Lavado de Dinero y Financiamiento al Terrorismo
+Versión 7.0
+
+Actividad Económica
+
+Con base en la Evaluación Nacional de Riesgo 2023 es que se han identificado algunas actividades económicas más vulnerables en materia de operaciones con recursos de procedencia ilícita y financiamiento al terrorismo que otras, por lo que la entidad ha incorporado esta información al modelo de clasificación de riesgo de los clientes con base en el siguiente listado:
+
+Riesgo de LD de la Actividades Vulnerables
+SECTOR 2020 2023
+OBRAS DE ARTE ALTO ALTO
+METALES PRECIOSOS, PIEDRAS PRECIOSAS, JOYAS Y ALTO ALTO
+ALEACIONES
+MONEDEROS Y CERTIFICADOS DE DEVOLUCIONES O MEDIO ALTO
+RECOMPENSAS
+TARJETAS PREPAGADAS, VALES O CUPONES MEDIO MEDIO
+VEHÍCULOS AÉREOS, MARÍTIMOS O TERRESTRES ALTO MEDIO
+SERVIDORES PÚBLICOS MEDIO MEDIO
+FE PÚBLICA MEDIO MEDIO
+MUTUO, PRÉSTAMOS O CRÉDITOS MEDIO MEDIO
+SERVICIOS DE BLINDAJE ALTO MEDIO-BAJO
+TARJETAS DE SERVICIOS O DE CRÉDITO MEDIO-BAJO MEDIO-BAJO
+JUEGOS CON APUESTA, CONCURSOS O SORTEOS MEDIO-BAJO MEDIO-BAJO
+TRANSMISIÓN DE DERECHOS SOBRE BIENES INMUEBLES MEDIO-BAJO MEDIO-BAJO
+RECEPCIÓN DE DONATIVOS MEDIO-BAJO MEDIO-BAJO
+DERECHOS PERSONALES DE USO O GOCE DE MEDIO MEDIO-BAJO
+INMUEBLES
+DESARROLLO INMOBILIARIO - MEDIO-BAJO
+ACTIVOS VIRTUALES MEDIO-BAJO MEDIO-BAJO
+SERVICIOS PROFESIONALES MEDIO-BAJO MEDIO-BAJO
+TRASLADO O CUSTODIA DE DINERO O VALORES MEDIO-BAJO MEDIO-BAJO
+
+Fuente: Evaluación Nacional de Riesgos de Lavado de Dinero y Financiamiento al Terrorismo 2023.
+Así mismo para complementar esta identificación también se han considerado los siguientes sectores financieros por grado de riesgo en materia de prevención lavado de dinero y Financiamiento al Terrorismo.
+
+21
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE
+MODELO DE RIESGOS DE LOS CLIENTES
+En Materia de Prevención de Lavado de Dinero y Financiamiento al Terrorismo
+Versión 7.0
+
+Riesgo de LD del Sistema Financiero
+SECTORES 2020 2023
+BANCA MÚLTIPLE- G7 ALTO ALTO
+BANCA MÚLTIPLE-CAMBIARIOS ALTO ALTO
+CASAS DE CAMBIO MEDIO MEDIO
+BANCA DE DESARROLLO MEDIO MEDIO
+BANCA MÚLTIPLE- CRÉDITO A LOS HOGARES MEDIO MEDIO
+SOCAPS MEDIO MEDIO
+SOFIPO MEDIO MEDIO
+BANCA MÚLTIPLE- INVERSIÓN MEDIO MEDIO
+TRANSMISORES DE DINERO MEDIO-BAJO MEDIO
+BANCA MÚLTIPLE- COMERCIAL MEDIO MEDIO
+SOFOMES REGULADAS MEDIO MEDIO
+CASAS DE BOLSA MEDIO-BAJO MEDIO
+ITF/FINTECH - MEDIO
+CENTROS CAMBIARIOS MEDIO MEDIO
+UNIONES DE CRÉDITO MEDIO MEDIO-BAJO
+SOFI MEDIO MEDIO-BAJO
+ALMACENES GENERALES DE DEPÓSITO MEDIO-BAJO MEDIO-BAJO
+SOFOMES NO REGULADAS MEDIO-BAJO MEDIO-BAJO
+SOCAPFI MEDIO-BAJO MEDIO-BAJO
+AFORES BAJO BAJO
+SEGUROS MEDIO-BAJO BAJO
+FIANZAS MEDIO-BAJO BAJO
+ASESORES DE INVERSIÓN MEDIO-BAJO BAJO
+
+Fuente: Evaluación Nacional de Riesgos de Lavado de Dinero y Financiamiento al Terrorismo 2023
+
+Por lo que en sintonía con esta evaluación es que se han clasificado las actividades económicas del catálogo de la Secretaría de Hacienda y crédito Público dividido en los siguientes grupos
+
+GRUPO DE ACTIVIDAD GRADO DE RIESGO
+ECONÓMICA
+GRUPO 1 1
+GRUPO 2 2
+GRUPO 3 3
+
+22
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE
+MODELO DE RIESGOS DE LOS CLIENTES
+En Materia de Prevención de Lavado de Dinero y Financiamiento al Terrorismo
+Versión 7.0
+
+El listado completo de Actividades Económicas se encuentra como un Anexo a este documento.
+
+Ubicación Geográfica del domicilio
+
+En Baco PagaTodo solo se tienen consideradas operaciones en territorio nacional, en ese sentido se han utilizado diferentes fuentes de información para la identificación a nivel estatal de las entidades federativas de la república, tales como:
+
+Índice de Paz
+
+Este índice es calculado de manera anual por el "Institute for Economics & Peace" que en su duodécima edición para México, identificó una mejora general del 0.7% para el cálculo en 2024 con lo cual suman 5 años de mejora.
+
+Este estudio considera los siguientes 5 indicadores:
+
+- Homicidios.
+- Delitos con armas de fuego
+- Delitos con violencia
+- Miedo a la violencia
+- Crímenes de la delincuencia organizada
+
+23
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE
+MODELO DE RIESGOS DE LOS CLIENTES
+En Materia de Prevención de Lavado de Dinero y Financiamiento al Terrorismo
+Versión 7.0
+
+Con base en ellos es que otorga una calificación a cada entidad federativa, misma que se considera para clasificar por grado de riesgo a los clientes, que para este periodo se considera lo siguiente:
+
+ÍNDICE DE PAZ MÉXICO 2025
+PANORAMA DEL NIVEL DE PAZ EN MÉXICO
+
+CALIFICACIÓN DEL IPA CLASIFICACIÓN ESTADO CALIFICACIÓN CLASIFICACIÓN ESTADO CALIFICACIÓN
+1 Yucatán 1.265 17 San Luis Potosí 2.887
+2 Tlaxcala 1.655 18 Zacatecas 2.921
+3 Durango 1.848 19 Michoacán 2.964
+4 Chiapas 1.958 20 Baja California Sur 3.150
+5 Nayarit 2.055 21 Tabasco 3.123
+6 Coahuila 2.113 22 Sinaloa 3.215
+7 Campeche 2.190 23 Sonora 3.297
+8 Hidalgo 2.210 24 Guerrero 3.307
+9 Tamaulipas 2.390 25 Estado de México 3.336
+10 Puebla 2.391 26 Nuevo León 3.538
+11 Veracruz 2.405 27 Chihuahua 3.564
+12 Aguascalientes 2.460 28 Quintana Roo 3.750
+13 Oaxaca 2.584 29 Baja California 4.154
+14 Jalisco 2.704 30 Morelos 4.302
+15 Querétaro 2.701 31 Guanajuato 4.303
+16 Ciudad de México 2.714 32 Colima 4.736
+
+24
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE
+MODELO DE RIESGOS DE LOS CLIENTES
+En Materia de Prevención de Lavado de Dinero y Financiamiento al Terrorismo
+Versión 7.0
+
+Incidencia Delictiva
+
+Otro de los indicadores utilizados para el cálculo del riesgo del cliente es la Tasa de Incidencia Delictiva por entidad federativa de ocurrencia por cada 100 mil habitantes, esta tasa es calculada por el Instituto Nacional de Estadística y Geografía (INEGI), misma que se calcula de manera anual, del cual el último ejercicio publicado es del 2024 con datos del 2023 que a continuación se muestra:
+
+Entidad Casos por cada 100 mil habitantes
+2020 2021 2022 2023
+Estados Unidos Mexicanos 30,601 30,786 28,701 33,267
+Aguascalientes 29,984 29,584 26,305 45,262
+Baja California 27,377 31,690 27,211 31,198
+Baja California Sur 22,739 21,756 22,704 25,661
+Campeche 25,390 18,610 27,727 31,793
+Coahuila de Zaragoza 26,383 24,418 29,560 24,661
+Colima 26,793 26,565 26,361 28,522
+Chiapas 15,689 16,386 14,111 16,038
+Chihuahua 25,690 26,432 23,726 29,090
+Ciudad de México 53,334 45,336 46,032 52,723
+Durango 22,970 17,387 22,685 18,230
+Guanajuato 29,106 29,936 23,011 26,620
+Guerrero 30,769 26,481 31,376 23,989
+Hidalgo 23,605 19,205 19,649 26,894
+Jalisco 33,248 31,944 28,926 31,731
+México 39,539 45,501 36,583 51,881
+Michoacán de Ocampo 21,521 18,102 19,484 19,688
+Morelos 35,794 32,059 32,333 36,278
+Nayarit 22,099 21,214 24,023 23,607
+Nuevo León 29,064 34,099 31,742 28,171
+Oaxaca 22,060 18,552 18,825 18,575
+
+25
+```
+
+=== PAGES 26-30 ===
+I'm unable to transcribe the text from the images you provided. If you have any questions or need further assistance, feel free to ask!
+
+=== PAGES 31-35 ===
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE  
+Metodología con un Enfoque Basado en Riesgos  
+Versión 7.0  
+
+Personas Señaladas en Listas de Sanciones  
+
+Las Personas Señaladas en listas de sanciones nacionales o internacionales también representan una amenaza a la institución ya que están siendo investigadas por operaciones con recursos de procedencia ilícita, blanqueo de capitales, financiamiento al terrorismo y otros delitos graves y transfronterizos, es por ello que se consideran las siguientes listas:  
+
+- Lista de Personas Bloqueadas publicada por la Secretaría de Hacienda y Crédito Público.  
+- Lista Publicada por la Oficina de Control de Activos Extranjeros, OFAC, por sus siglas en inglés publicada por el departamento del tesoro de los Estados Unidos.  
+- Otras Listas Nacionales e Internacionales.  
+
+Es así, que con base en la escala de riesgo definida se ha asociado un indicador de riesgo así como un valor asociado a al producto o servicio comercializado.  
+
+| Nombre del Indicador | Riesgo Asociado | Peso o Porcentaje | Detalle del Indicador | Valoración de Riesgo | Escala de Riesgo |
+|----------------------|-----------------|------------------|-----------------------|----------------------|------------------|
+| Personalidad Jurídica | LD/FT | 15% | Persona Física | 1 | |
+| | | | Persona Física con Actividad Empresarial | 2 | |
+| | | | Persona Moral | 3 | |
+| Edad / Fecha de Constitución | LD/FT | 5% | Edad (PF-PFAE) | | |
+| | | | 18-39 | 3 | |
+| | | | 40-59 | 2 | |
+| | | | 60 y más | 1 | |
+| | | | 0-1 año | 3 | |
+| | | | PM | | |
+| | | | 1.1-3 años | 2 | |
+| | | | 3.1-más | 1 | |
+| Nacionalidad | LD/FT | 20% | País Miembro del GAFI | 1 | |
+| | | | Lista Gris | 2 | |
+| | | | Lista Negra | 3 | |
+| Domicilio | LD/FT | 5% | Listado de Estados de la República (Incidencia Delictiva) | Bajo | 1 |
+| | | | | Medio | 2 |
+| | | | | Alto | 3 |
+| Actividad Económica | LD/FT | 15% | Actividades vulnerables | Si | 3 |
+| | | | | No | 0 |
+| | LD/FT | 10% | PEP Nacional | 2 | |
+
+---
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE  
+Metodología con un Enfoque Basado en Riesgos  
+Versión 7.0  
+
+| Persona Políticamente Expuesta | | Extranjero | 3 | |
+| Persona Sancionada | LD/FT | 10% | LPB / 69B / OFAC | 3 | |
+| | | | Listas Internacionales de Sanciones | 3 | |
+| | | | Sin coincidencia | 0 | |
+| Identificación del cliente (Suplantación o Robo de identidad) | LD | 15% | Identificación completa | Si | 0 |
+| | | | | No | 3 |
+| Contratación Voluntaria (Coacción) | LD | 5% | El cliente actúa a nombre propio | Si | 0 |
+| | | | | No | 3 |
+
+Países y Áreas Geográficas  
+
+Actualmente Banco PagaTodo realiza sus operaciones únicamente dentro de territorio nacional, por esta razón la descripción de este elemento de riesgo se enfoca a áreas geográficas nacionales y se excluye a otros países. Este elemento representará un riesgo de LD/FT para la institución si se realizan operaciones en zonas geográficas con las siguientes características:  
+
+| Indicador | Tipo | Descripción |
+|-----------|------|-------------|
+| Países con Regímenes Fiscales Preferentes | PLD/FT | Los países con regímenes fiscales no adheridos estrictamente a los estándares internacionales representan un riesgo latente para la entidad |
+| Países con medidas deficientes en materia de PLD/FT | PLD/FT | Los países con medidas deficientes en materia de prevención así calificados por el GAFI representan una amenaza a la institución bancaria. |
+| Países con un alto nivel de corrupción, economía informal y/o delincuencia | PLD/FT | El movimiento del dinero en estas zonas está asociado al movimiento a nivel internacional, lo cual implica una mayor dificultad en el conocimiento del destino de los recursos. |
+| Incidencia Delictiva | PLD/FT | La incidencia delictiva |
+| Nivel de Marginación | PLD/FT | |
+| Áreas Identificadas de mayor riesgo | PLD/FT | |
+
+---
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE  
+Metodología con un Enfoque Basado en Riesgos  
+Versión 7.0  
+
+Países con Regímenes Fiscales Preferentes  
+
+Los países con regímenes fiscales preferentes representan una amenaza para la entidad ya que al tener deficiencias considerables en sus medidas de prevención se incrementa la probabilidad de ingresar recursos de procedencia ilícita o para el financiamiento al terrorismo y ser canalizados a otras entidades financieras, es por ello que con el fin de identificar al menos el país de nacimiento o la nacionalidad de los prospectos de clientes, ya que no se tienen operaciones internacionales, se han identificado a estas jurisdicciones a través de las disposiciones transitorias aplicables a la ley de impuesto sobre en la renta que en la fracción XLII de su artículo noveno señalan las siguientes:  
+
+Anguila  
+Antigua y Barbuda  
+Antillas Neerlandesas  
+Archipiélago de Svalbard  
+Aruba  
+Ascensión  
+Barbados  
+Belice  
+Bermudas  
+Brunei Darussalam  
+Campione D'Italia  
+Commonwealth de Dominica  
+Commonwealth de las Bahamas  
+Emiratos Árabes Unidos  
+Estado de Bahrein  
+Estado de Kuwait  
+Estado de Qatar  
+Estado Independiente de Samoa Occidental  
+Estado Libre Asociado de Puerto Rico  
+Gibraltar  
+Granada  
+Groenlandia  
+Guam  
+Hong Kong  
+Isla Caimán  
+Isla de Christmas  
+Isla de Norfolk  
+Isla de San Pedro y Miquelón  
+Isla del Hombre  
+Isla Qeshm  
+Islas Azores  
+Islas Canarias  
+Islas Cook  
+Islas de Cocos o Keiling  
+Islas de Guernsey, Jersey, Alderney, Isla Great Sark, Herm, Little Sark, Brechou, Jethou  
+Islas Malvinas  
+Islas Pacífico  
+Islas Salomón  
+Islas Turcas y Caicos  
+Islas Vírgenes Británicas  
+Islas Vírgenes de Estados Unidos de América  
+Kiribati  
+Labuan  
+Macao  
+Madeira  
+Malta  
+Montserrat  
+Nevis  
+Niue  
+Palau  
+Pitcairn  
+Polinesia Francesa  
+Principado de Andorra  
+Principado de Liechtenstein  
+Principado de Mónaco  
+Reino de Swazilandia  
+Reino de Tonga  
+Reino Hachemita de Jordania  
+República de Albania  
+República de Angola  
+República de Cabo Verde  
+República de Costa Rica  
+República de Chipre  
+República de Djibouti  
+República de Guyana  
+República de Honduras  
+República de las Islas Marshall  
+República de Liberia  
+República de Maldivas  
+República de Mauricio  
+República de Nauru  
+República de Panamá  
+República de Seychelles  
+República de Trinidad y Tobago  
+República de Túnez  
+República de Vanuatu  
+República del Yemen  
+República Oriental del Uruguay  
+República Socialista Democrática de Sri Lanka  
+Samoa Americana  
+San Kitts  
+San Vicente y las Granadinas  
+Santa Elena  
+Santa Lucía  
+Serenísima República de San Marino  
+Sultanía de Omán  
+Tokelau  
+Trieste  
+Tristán da Cunha  
+Tuvalu  
+Zona Especial Canaria  
+Zona Libre Ostrava  
+
+---
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE  
+Metodología con un Enfoque Basado en Riesgos  
+Versión 7.0  
+
+Países con medidas deficientes en materia de PLD/FT  
+
+Los países con medidas deficientes en materia de prevención representan una amenaza para las entidades ya que al presentar algunas fallas considerables en sus medidas de prevención se incrementa la probabilidad de realizar operaciones relacionadas con delitos o con destino a financiar organizaciones terroristas, es por ello que se consideran las jurisdicciones correspondientes a la lista gris mencionada en el indicador de riesgo "Nacionalidad" asociado al elemento "Tipo de Cliente".  
+
+Incidencia Delictiva  
+
+Otro de los indicadores utilizados para el cálculo del riesgo del cliente es la Tasa de Incidencia Delictiva por entidad federativa de ocurrencia por cada 100 mil habitantes, esta tasa es calculada por el Instituto Nacional de Estadística y Geografía (INEGI), misma que se calcula de manera anual, del cual el último ejercicio publicado es del 2024 con datos del 2023 que a continuación se muestra:  
+
+| Entidad | 2020 | 2021 | 2022 | 2023 |
+|---------|------|------|------|------|
+| Estados Unidos Mexicanos | 30.601 | 30.786 | 28.701 | 33.267 |
+| Aguascalientes | 29.984 | 29.584 | 26.305 | 45.262 |
+| Baja California | 27.377 | 31.690 | 27.211 | 31.198 |
+| Baja California Sur | 22.739 | 21.756 | 22.704 | 25.661 |
+| Campeche | 25.390 | 18.610 | 27.727 | 31.793 |
+| Coahuila de Zaragoza | 26.383 | 24.418 | 29.560 | 24.661 |
+| Colima | 26.793 | 26.565 | 26.361 | 28.522 |
+| Chiapas | 15.689 | 16.386 | 14.111 | 16.038 |
+| Chihuahua | 25.690 | 26.432 | 23.726 | 29.090 |
+| Ciudad de México | 53.334 | 45.336 | 46.032 | 52.723 |
+| Durango | 22.970 | 17.387 | 22.685 | 18.230 |
+| Guanajuato | 29.106 | 29.936 | 23.011 | 26.620 |
+| Guerrero | 30.769 | 26.481 | 31.376 | 23.989 |
+| Hidalgo | 23.605 | 19.205 | 19.649 | 26.894 |
+| Jalisco | 33.248 | 31.944 | 28.926 | 31.731 |
+| México | 39.539 | 45.501 | 36.583 | 51.881 |
+
+---
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE  
+Metodología con un Enfoque Basado en Riesgos  
+Versión 7.0  
+
+| Michoacán de Ocampo | 21.521 | 18.102 | 19.484 | 19.688 |
+| Morelos | 35.794 | 32.059 | 32.333 | 36.278 |
+| Nayarit | 22.099 | 21.214 | 24.023 | 23.607 |
+| Nuevo León | 29.064 | 34.099 | 31.742 | 28.171 |
+| Oaxaca | 22.060 | 18.552 | 18.825 | 18.575 |
+| Puebla | 31.685 | 36.234 | 32.656 | 38.642 |
+| Querétaro | 31.664 | 31.817 | 35.823 | 40.755 |
+| Quintana Roo | 33.342 | 31.538 | 30.400 | 30.294 |
+| San Luis Potosí | 32.136 | 29.122 | 32.681 | 31.764 |
+| Sinaloa | 22.026 | 30.230 | 28.329 | 29.984 |
+| Sonora | 33.098 | 30.200 | 28.601 | 37.613 |
+| Tabasco | 35.677 | 35.448 | 30.798 | 38.004 |
+| Tamaulipas | 20.594 | 20.473 | 18.205 | 25.129 |
+| Tlaxcala | 27.130 | 28.718 | 31.304 | 28.576 |
+| Veracruz de Ignacio de la Llave | 18.778 | 19.545 | 17.129 | 20.272 |
+| Yucatán | 21.348 | 23.600 | 23.914 | 24.952 |
+| Zacatecas | 21.510 | 22.474 | 20.680 | 27.007 |
+
+Fuente: Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública (ENVIPE), INEGI.
+
+=== PAGES 36-40 ===
+Sure, here is the extracted text from the document pages:
+
+---
+
+**BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE**
+
+**Metodología con un Enfoque Basado en Riesgos**  
+**Versión 7.0**
+
+**Nivel de Marginación**
+
+El Nivel de marginación de las distintas entidades federativas del país también son consideradas en el desarrollo de la metodología ya que representan un mayor índice de delitos y recursos de procedencia ilícita, por lo que se ha considerado el más reciente publicado por el Instituto Nacional de Estadística Geografía e Informática INEGI:
+
+(Tabla con el nivel de marginación por entidad federativa en el año 2020)
+
+**Áreas identificadas como de mayor Riesgo**
+
+En el territorio nacional existen entidades federativas con un mayor riesgo que otras, es por ello que para este indicador también se apoyará en los datos relacionados a la incidencia delictiva por entidad Federativa como se muestra en el siguiente Mapa publicada por el INEGI.
+
+---
+
+**BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE**
+
+**Metodología con un Enfoque Basado en Riesgos**  
+**Versión 7.0**
+
+**Incidencia delictiva - Delitos más frecuentes**
+
+(El delito más frecuente por entidad federativa en 2023)
+
+**Canales y Transacciones**
+
+La Institución estará expuesta a mayores riesgos de LD/FT cuando en su operación se generen los siguientes escenarios:
+
+**Canales de Envío**
+
+Canales de envío no presenciales: Los canales no presenciales son un indicador de riesgo más a considerar por la entidad ya que estos facilitan la contratación de productos y servicios por personas que pudieran omitir información relevante para determinar el grado de riesgo y exponer a la institución a un riesgo mayor a ser un vehículo para el lavado de activos y el financiamiento al terrorismo.
+
+Canales de Acceso Inmediato a los recursos: Los canales de acceso inmediato contratados por los clientes también son un indicador de riesgo a considerar por la institución ya que son los que más fácilmente utilizables para mover los recursos de manera rápida y sin necesidad de trasladarse o presentarse físicamente.
+
+Canales que permitan operaciones por montos altos: Los productos con una capacidad elevada en montos de operación son también considerados como de mayor riesgo para la entidad ya que es más difícil determinar de manera rápida el origen de los recursos.
+
+Es así que se ha asignado y ponderado pesos y porcentajes de riesgo a este elemento y sus indicadores de riesgo.
+
+---
+
+**BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE**
+
+**Metodología con un Enfoque Basado en Riesgos**  
+**Versión 7.0**
+
+(Tabla de indicadores de riesgo)
+
+**Transacciones**
+
+Frecuencia y Monto de las Transacciones: La frecuencia y monto de las transacciones por encima de lo esperado y lo declarado también es un indicador de riesgo a considerar por la entidad, ya que el encubrimiento de las operaciones respecto a su origen y destino por parte de los clientes puede hacer vulnerable a la institución de operaciones inusuales.
+
+Instrumento Monetario, moneda o medios de pagos de riesgo: El instrumento monetario, ya sea efectivo, transferencia, cheque o cualquier otro implica un diferente grado de riesgo para la institución, siendo el efectivo de mayor riesgo debido a que es universalmente aceptado y del cual es más complejo determinar el origen de los recursos, es así que este instrumento está fuera del modelo de negocio de la entidad.
+
+---
+
+**BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE**
+
+**Metodología con un Enfoque Basado en Riesgos**  
+**Versión 7.0**
+
+(Tabla de indicadores de riesgo)
+
+**4.1 Medición**
+
+Para conocer la medida en que los indicadores previamente mencionados están presentes en las operaciones que realiza la Institución y por lo tanto generan la exposición al riesgo de LD/FT, se elige un "Método de medición" que permite establecer una relación entre los indicadores y la importancia relativa de cada uno de ellos de manera consistente en función de su importancia para describir el elemento de riesgo al que pertenece.
+
+Para la elección del método se tuvo la participación de la alta dirección, del área de cumplimiento, de las unidades de negocio, operativas y funcionales con el fin de fomentar un sistema integral de gestión de riesgos al interior de la Institución, coincidiendo en que el Método elegido se ajusta a las necesidades de la Institución.
+
+---
+
+**BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE**
+
+**Metodología con un Enfoque Basado en Riesgos**  
+**Versión 7.0**
+
+**4.2 Método de medición de riesgos**
+
+El método utilizado para la medición de los riesgos consiste en la asignación de rangos de valor del 1 al 3 a nivel de Indicadores, Elementos e Institución. Esto implica que cada indicador, elemento e institución serán valorados en esta escala en la medida en que permitan la materialización del riesgo de lavado de dinero y/o de financiamiento al terrorismo.
+
+Los indicadores se relacionarán con su elemento a través de pesos o porcentajes, que van del 1% al 100%, que indican el nivel de importancia con el que describen el riesgo del elemento al que pertenecen. Al multiplicar el valor del 1 al 3 por el peso del 1 al 100 se obtendrá un valor que indica la probabilidad de ocurrencia del indicador; dicho valor deberá ubicarse en una escala de rangos que le darán un valor de riesgo a cada indicador de: bajo:1, medio:2 y alto:3. A su vez, este valor de riesgo deberá multiplicarse por el impacto o concentración del negocio que estará definido en rangos del 1% al 100% y se obtendrá de la información estadística operativa de la Institución que obra en los sistemas automatizados.
+
+El promedio de los riesgos obtenidos a nivel indicador (del 1 al 3) deberá multiplicarse por el peso o porcentaje asignado a nivel de Elemento, el cual consiste en la importancia de este para describir el riesgo al que se encuentra expuesta la Institución. El valor obtenido deberá ubicarse en otra escala que dará el grado de riesgo de cada elemento: bajo:1, medio:2 y alto:3. Finalmente, para conocer el riesgo general de la institución se deberá obtener el promedio de los valores de riesgo obtenidos por cada uno de los elementos y ubicarlo en una escala que tiene los resultados de: bajo:1, medio:2 y alto:3. Conforme a lo anterior, la presente Metodología permite conocer el riesgo a nivel de indicadores, elementos e Institución.
+
+**4.3 Método de medición de riesgos**
+
+Conforme a la descripción del método realizada en el numeral anterior el primer paso para el cálculo de los riesgos consiste en la asignación de un valor del 1 al 3 a cada uno de los indicadores identificados en cada elemento, que es multiplicado por el peso o ponderación de cada indicador. Conforme a esto, a continuación, se presenta el procedimiento e información obtenida.
+
+Productos y Servicios. Los indicadores de riesgo de este elemento indican características que pueden facilitar los actos de Lavado de Dinero o de Financiamiento al Terrorismo y que son inherentes de los productos y servicios que se ofrecen en el sector financiero en general. Estas características de riesgo
+
+---
+
+=== PAGES 41-45 ===
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE  
+Metodología con un Enfoque Basado en Riesgos  
+Versión 7.0  
+
+pueden encontrarse en su totalidad en algún producto o servicio o solo parcialmente. Entre más características de riesgo tenga un producto o servicio será de mayor riesgo.  
+
+En este elemento, cada indicador constituye una característica de riesgo que podrá describir en mayor o menor medida algún producto o servicio. Entre más características de riesgo se tengan, mayor será el riesgo del producto o servicio y entre mayor sea el peso asignado para describir el riesgo del Elemento de productos y servicios este será mayor. Las características de riesgo o indicadores específicos que se utilizaron en esta metodología fueron los siguientes:  
+
+Para el Lavado de Dinero  
+
+| No. Indicador | Nombre del Indicador | Riesgo Asociado | Peso Porcentaje | Detalle del Indicador | Escala de Riesgo | Probabilidad de Ocurrencia | Riesgo Inherente |
+|---------------|----------------------|-----------------|-----------------|----------------------|-----------------|---------------------------|------------------|
+|               | Cuenta Ya Ganaste N2 |                 |                 |                      | 1               | 100%                       |                  |
+|               | Cuenta Fundadores N4 |                 |                 |                      | 2               | 100%                       |                  |
+|               | Cuenta Útil N4       |                 |                 |                      | 3               | 100%                       |                  |
+| 1.2           | Productos o servicios que facilitan la transferencia de valor | LD/FT | 35% | Cuenta Corporativa N4 | 3 | 100% | |
+|               | Servicio de Adquirencia |                 |                 |                      | 2               | 100%                       |                  |
+|               | Bóveda Nómina        |                 |                 |                      | 1               | 100%                       |                  |
+
+Para el Financiamiento al Terrorismo  
+
+---
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE  
+Metodología con un Enfoque Basado en Riesgos  
+Versión 7.0  
+
+| No. Indicador | Nombre del Indicador | Riesgo Asociado | Peso Porcentaje | Detalle del Indicador | Escala de Riesgo | Probabilidad de Ocurrencia | Riesgo Inherente |
+|---------------|----------------------|-----------------|-----------------|----------------------|-----------------|---------------------------|------------------|
+| 1.1           | Anonimato (Falta de Identificación del Cliente) | LD/FT | 45% | Cuentas anónimas | 3 | 100% | |
+|               | Cuentas a nombre de terceros |                 |                 |                      | 1               | 100%                       |                  |
+|               | Cuenta Ya Ganaste N2 |                 |                 |                      | 3               | 100%                       |                  |
+|               | Cuenta Fundadores N4 |                 |                 |                      | 3               | 100%                       |                  |
+|               | Cuenta Útil N4       |                 |                 |                      | 1               | 100%                       |                  |
+| 1.2           | Productos o servicios que facilitan la transferencia de valor | LD/FT | 15% | Cuenta Corporativa N4 | 3 | 100% | |
+|               | Servicio de Adquirencia |                 |                 |                      | 2               | 100%                       |                  |
+|               | Bóveda Nómina        |                 |                 |                      | 1               | 100%                       |                  |
+| 1.3           | Productos o Servicios de alto nivel de valor | LD/FT | 40% | Cuenta Corporativa N4 | 3 | 100% | |
+|               | Servicio de Adquirencia |                 |                 |                      | 2               | 100%                       |                  |
+
+Tipo de Clientes: los indicadores de riesgo de este elemento muestran las características de un cliente que lo hacen más susceptible de la realización de actos u operaciones de Lavado de Dinero o de Financiamiento al Terrorismo en la operación de la Sociedad. A diferencia de la asignación del grado de riesgo de los clientes (riesgo individual del cliente), en la MER se mide el riesgo que el total de los clientes representa para la Institución.  
+
+En este caso se tiene el siguiente listado de indicadores de riesgo, los cuales constituyen características que están presentes en la operación de la Institución por los clientes con los que opera. Estas características de riesgo se basan en la complejidad de identificación del cliente, en las actividades que realizan y en el perfil general de la clientela de la Institución.  
+
+Para el Lavado de Dinero  
+
+---
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE  
+Metodología con un Enfoque Basado en Riesgos  
+Versión 7.0  
+
+| No. Indicador | Nombre del Indicador | Riesgo Asociado | Peso Porcentaje | Detalle del Indicador | Escala de Riesgo | Probabilidad de Ocurrencia | Riesgo Inherente |
+|---------------|----------------------|-----------------|-----------------|----------------------|-----------------|---------------------------|------------------|
+| 2.1           | Personalidad Jurídica | LD/FT | 15% | Persona Física | 1 | 90% | |
+|               | Persona Física con Actividad Empresarial |                 |                 |                      | 2               | 3%                         |                  |
+|               | Persona Moral        |                 |                 |                      | 3               | 7%                         |                  |
+| 2.2           | Edad / Fecha de Constitución | LD/FT | 5% | < 18 años | 3 | 70% | |
+|               | Entre 18 y 65 años   |                 |                 |                      | 2               | 20%                        |                  |
+|               | > 65 años            |                 |                 |                      | 1               | 10%                        |                  |
+| 2.3           | Nacionalidad         | LD/FT | 20% | Mexicano | 1 | 98% | |
+|               | Lista Gris           |                 |                 |                      | 2               | 1%                         |                  |
+|               | Lista Negra          |                 |                 |                      | 3               | 1%                         |                  |
+| 2.4           | Domicilio            | LD/FT | 5% | Dentro de la República Mexicana | 1 | 98% | |
+|               | Extranjero           |                 |                 |                      | 2               | 1%                         |                  |
+|               | No                   |                 |                 |                      | 3               | 1%                         |                  |
+| 2.5           | Actividad Económica  | LD/FT | 15% | Actividades vulnerables | 3 | 1% | |
+|               | No                   |                 |                 |                      | 1               | 99%                        |                  |
+| 2.6           | Persona Políticamente Expuesta | LD/FT | 10% | PEP Nacional | 2 | 90% | |
+|               | Extranjero           |                 |                 |                      | 3               | 1%                         |                  |
+|               | No                   |                 |                 |                      | 1               | 9%                         |                  |
+| 2.7           | Persona Sancionada   | LD/FT | 10% | UIF / 695 / GAFI | 3 | 1% | |
+|               | Lista Internacional de Sanciones |                 |                 |                      | 2               | 1%                         |                  |
+|               | No                   |                 |                 |                      | 1               | 98%                        |                  |
+| 2.8           | Identificación del cliente (Suplantación o Robo de Identidad) | LD | 15% | Identificación completa | 0 | 99% | |
+|               | No                   |                 |                 |                      | 3               | 1%                         |                  |
+| 2.9           | Contratación Voluntaria (Coacción) | LD | 5% | El cliente actúa a nombre propio | 0 | 99% | |
+|               | No                   |                 |                 |                      | 3               | 1%                         |                  |
+
+Para el Financiamiento al Terrorismo  
+
+---
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE  
+Metodología con un Enfoque Basado en Riesgos  
+Versión 7.0  
+
+| No. Indicador | Nombre del Indicador | Riesgo Asociado | Peso Porcentaje | Detalle del Indicador | Escala de Riesgo | Probabilidad de Ocurrencia | Riesgo Inherente |
+|---------------|----------------------|-----------------|-----------------|----------------------|-----------------|---------------------------|------------------|
+| 2.1           | Personalidad Jurídica | LD/FT | 15% | Persona Física | 1 | 90% | |
+|               | Persona Física con Actividad Empresarial |                 |                 |                      | 2               | 3%                         |                  |
+|               | Persona Moral        |                 |                 |                      | 3               | 7%                         |                  |
+| 2.2           | Edad / Fecha de Constitución | LD/FT | 10% | < 18 años | 1 | 10% | |
+|               | Entre 18 y 65 años   |                 |                 |                      | 2               | 70%                        |                  |
+|               | > 65 años            |                 |                 |                      | 3               | 20%                        |                  |
+| 2.3           | Nacionalidad         | LD/FT | 20% | Mexicano | 1 | 98% | |
+|               | Lista Gris           |                 |                 |                      | 2               | 1%                         |                  |
+|               | Lista Negra          |                 |                 |                      | 3               | 1%                         |                  |
+| 2.4           | Domicilio            | LD/FT | 10% | Dentro de la República Mexicana | 1 | 98% | |
+|               | Extranjero           |                 |                 |                      | 2               | 1%                         |                  |
+|               | No                   |                 |                 |                      | 3               | 1%                         |                  |
+| 2.5           | Actividad Económica  | LD/FT | 15% | Actividades vulnerables | 3 | 1% | |
+|               | No                   |                 |                 |                      | 1               | 99%                        |                  |
+| 2.6           | Persona Políticamente Expuesta | LD/FT | 20% | PEP Nacional | 2 | 90% | |
+|               | Extranjero           |                 |                 |                      | 3               | 1%                         |                  |
+|               | No                   |                 |                 |                      | 1               | 9%                         |                  |
+| 2.7           | Persona Sancionada   | LD/FT | 10% | UIF / 695 / GAFI | 3 | 1% | |
+|               | Lista Internacional de Sanciones |                 |                 |                      | 2               | 1%                         |                  |
+|               | No                   |                 |                 |                      | 1               | 98%                        |                  |
+
+---
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE  
+Metodología con un Enfoque Basado en Riesgos  
+Versión 7.0  
+
+Países y Áreas Geográficas: los indicadores de este elemento permiten clasificar zonas geográficas conforme a la probabilidad de riesgo de Lavado de Dinero y de Financiamiento al Terrorismo que se relaciona con índices de delincuencia a nivel nacional, índices de corrupción, niveles de marginación y lugares de frontera o con puertos de entrada y salida internacionales y a nivel internacional con aquellos países o jurisdicciones en los que existen deficiencias en la implementación de medidas de PLD/CFT, de aquellos considerados como paraísos fiscales, con altos niveles de corrupción, economía informal y delincuencia.  
+
+Adicionalmente, de acuerdo con información de la Evaluación Nacional de Riesgos 2023, se señala que en México se tiene un riesgo importante dada su ubicación geográfica como puerta de entrada hacia los Estados Unidos, por lo que podría ser utilizado para la realización de actos terroristas. Aunado a lo anterior, en México se presentan altos volúmenes de movimientos de mercancías y personas, que facilitan el ocultamiento de recursos humanos y materiales que también podrían ser utilizados para fines terroristas.  
+
+De tal manera, las zonas fronterizas y los puertos de entrada y salida internacionales de mercancía y personas serán consideradas zonas de mayor riesgo.  
+
+Asimismo, se asignó un peso por cada indicador en función de su importancia para describir el riesgo del Elemento Países y Áreas Geográficas:  
+
+| No. Indicador | Nombre del Indicador | Riesgo Asociado | Peso Porcentaje | Detalle del Indicador | Escala de Riesgo | Probabilidad de Ocurrencia | Riesgo Inherente |
+|---------------|----------------------|-----------------|-----------------|----------------------|-----------------|---------------------------|------------------|
+| 3.1           | Operaciones desde y hacia Regiones con Regímenes Fiscales Preferentes | LD/FT | 25% | Régimen Fiscal Noente | Sí | 5% | |
+| 3.2           | Operaciones desde y hacia Países con Medidas Deficientes en materia de PLD/FT | LD/FT | 20% | Países Cooperantes | 1 | 15% | |
+|               | Países No Cooperantes |                 |                 |                      | 5               | 5%                         |                  |
+| 3.3           | Operaciones desde y hacia Países con un alto nivel de corrupción, economía informal y/o delincuencia | LD | 10% | Países con más de 35 puntos en índice de corrupción | 6 | 5% | |
+|               | Países con más de 70 puntos en índice de corrupción |                 |                 |                      | 2               | 25%                        |                  |
+|               | Países con más de 90 puntos en índice de corrupción |                 |                 |                      | 1               | 70%                        |                  |
+| 3.4           | Operaciones en Estados con Incidencia delictiva | LD | 15% | Estados con una baja incidencia delictiva | 1 | 5% | |
+|               | Estados con una media incidencia delictiva |                 |                 |                      | 3               | 35%                        |                  |
+|               | Estados con alta incidencia delictiva |                 |                 |                      | 5               | 35%                        |                  |
+| 3.5           | Operaciones en Estados con Nivel de Marginación | LD/FT | 10% | Estados con un medio Nivel de Marginación | 1 | 5% | |
+|               | Estados con un bajo Nivel de Marginación |                 |                 |                      | 5               | 35%                        |                  |
+|               | Estados con un alto Nivel de Marginación |                 |                 |                      | 3               | 35%                        |                  |
+| 3.6           | Operaciones en áreas Identificadas como de mayor riesgo | LD/FT/CN/P | 15% | Estados con un medio Índice de Paz | 1 | 5% | |
+|               | Estados con un alto Índice de Paz |                 |                 |                      | 3               | 35%                        |                  |
+
+=== PAGES 46-50 ===
+Sure, here is the extracted text from the document pages:
+
+---
+
+**BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE**
+
+**Metodología con un Enfoque Basado en Riesgos**  
+**Versión 7.0**
+
+Para el Financiamiento al Terrorismo
+
+| No. Indicador | Nombre del Indicador | Riesgo Asociado | Peso o Porcentaje | Detalle del Indicador | Valoración de Riesgo | Escala de Riesgo | Probabilidad de Ocurrencia |
+|---------------|----------------------|-----------------|-------------------|----------------------|---------------------|-----------------|----------------------------|
+| 3.1           | Canales de envío no presenciales y no presenciales (Banca Móvil, Web Banking) | PLD/FT | 55% | Pagos por TPV, Transferencias | 3 | 40% | 90% |
+| 3.2           | Operaciones a través de medios ópticos, electrónicos o de cualquier otra tecnología | PLD/FT | 35% | Pagos por TPV, Transferencias | 3 | 60% | 70% |
+| 3.3           | Operaciones mediante el uso de la banca electrónica (Web Banking) | PLD/FT | 10% | Pagos por TPV, Transferencias | 1 | 90% | 10% |
+
+**Transacciones y Canales de Envío:** Los indicadores a los que se refiere este elemento constituyen aquellos escenarios que representan un riesgo de Lavado de Dinero o de Financiamiento al Terrorismo dentro de las transacciones que pueda realizar la institución para llevar a cabo las operaciones con los clientes, así como los canales de envío que puedan ser utilizados.
+
+Conforme a la Evaluación Nacional de Riesgos 2023, el uso de efectivo es el principal medio para realizar transacciones en México y constituye un facilitador para el Lavado de Dinero, razón por la cual se considera a este como un indicador de riesgo dentro del Elemento de Transacciones y Canales de Envío. El riesgo se incrementa si las operaciones en efectivo se realizan con Divisas (es importante precisar que, aunque se visualiza este riesgo, la Institución no realiza operaciones con efectivo, razón por la cual no se tomará en cuenta dentro de esta metodología). Adicionalmente, se consideran como indicadores de riesgo dentro de este elemento aquellos escenarios que facilitan la movilidad y velocidad del dinero, el movimiento a través de fronteras, el uso de montos altos y el uso de medios ópticos, electrónicos o de cualquier tecnología.
+
+---
+
+**BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE**
+
+**Metodología con un Enfoque Basado en Riesgos**  
+**Versión 7.0**
+
+Para las transacciones se ha realizado la siguiente medición:
+
+| No. Indicador | Nombre del Indicador | Riesgo Asociado | Peso o Porcentaje | Detalle del Indicador | Valoración de Riesgo | Escala de Riesgo | Probabilidad de Ocurrencia |
+|---------------|----------------------|-----------------|-------------------|----------------------|---------------------|-----------------|----------------------------|
+| 5.1           | Frecuencia y Monto de las Transacciones | PLD/FT | 65% | No. De Transacciones | 1-4 | 1 | 90% |
+|               |                      |                 |                   |                      | 5-10 | 3 | 40% |
+|               |                      |                 |                   |                      | 11 y más | 5 | 10% |
+|               |                      |                 |                   | Monto por operaciones | 2-3 veces el depósito esperado | 1 | 70% |
+|               |                      |                 |                   |                      | 4-7 veces el depósito esperado | 3 | 30% |
+|               |                      |                 |                   |                      | 7 o más veces el depósito esperado | 5 | 5% |
+| 5.2           | Instrumento Monetario, moneda o medios de pago de riesgo | PLD/FT | 35% | Moneda | Nacional | 1 | 100% |
+|               |                      |                 |                   |                      | Extranjera | 5 | 5% |
+|               |                      |                 |                   | Instrumento | Transferencias | 1 | 10% |
+|               |                      |                 |                   |                      | SPEI | 3 | 40% |
+
+---
+
+**BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE**
+
+**Metodología con un Enfoque Basado en Riesgos**  
+**Versión 7.0**
+
+Para las Canales de Comercialización:
+
+| No. Indicador | Nombre del Indicador | Riesgo Asociado | Peso o Porcentaje | Detalle del Indicador | Valoración de Riesgo | Escala de Riesgo | Probabilidad de Ocurrencia |
+|---------------|----------------------|-----------------|-------------------|----------------------|---------------------|-----------------|----------------------------|
+| 4.1           | Canales de envío no presenciales | PLD/FT | 55% | Contratación no presencial | 3 | 40% |
+| 4.2           | Canales de acceso inmediata a los recursos | PLD/FT | 10% | Banca Móvil | 1 | 90% |
+| 4.3           | Canales que permitan operaciones por montos altos | PLD/FT | 35% | Banca Móvil Empresarial y TPV | 3 | 60% |
+|               |                      |                 |                   |                      | Pagos por TPV | 3 | 60% |
+
+El riesgo inherente para cada uno de los elementos e indicadores de riesgo se ha establecido en términos de porcentaje por lo que de manera general se considera lo siguiente:
+
+Algunos otros elementos a considerar son los siguientes:
+
+---
+
+**BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE**
+
+**Metodología con un Enfoque Basado en Riesgos**  
+**Versión 7.0**
+
+| Indicador | Tipo | Descripción |
+|-----------|------|-------------|
+| Alto número de clientes | Lavado de dinero | Este escenario de riesgo requiere tener mayor control de las operaciones realizadas con los clientes, ya que en conjunto generan un alto movimiento de recursos. |
+| Operaciones con alta frecuencia | Lavado de dinero | Permiten la movilización de un mayor monto de las operaciones en varios movimientos. |
+| Operaciones a través de medios ópticos, electrónicos o de cualquier otra tecnología | Lavado de dinero | Este tipo de medios implican la realización de operaciones de manera no presencial por lo que requieren mayores controles y más precisos para evitar los actos de LD/FT. |
+| Operaciones mediante el uso de la banca electrónica (Web Banking) | Lavado de dinero y financiamiento al terrorismo | Aquellas operaciones de los clientes personas físicas y/o morales que hagan sus transacciones mediante el uso propio de la Web Banking. Con el objetivo de mitigar las amenazas de comercio electrónico. |
+| Operaciones de aportaciones frecuentes por montos considerables a organizaciones sin fines de lucro | Financiamiento al terrorismo | Entendiendo que las OSFL tienen un mayor riesgo por LD y FT por su naturaleza jurídica: una persona o estructura jurídica u organización que principalmente se dedica a la recaudación o desembolsos de fondos con propósitos de carácter caritativos, religiosos, culturales, educativos, sociales o recreativos, entre otras. Por lo que operaciones frecuentes con motivo de "donaciones" con cantidades altas o fuera del perfil transaccional, destinadas a OSFL requieren un monitoreo especializado y un control específico para prevenir cualquier tipo de riesgo de LD y FT. |
+| Operaciones que presentan un aumento en su operatividad de un 50% en un periodo menor a 1 mes | Financiamiento al terrorismo | Para aquellas operaciones que se realizan a través de medios ópticos, electrónicos o de cualquier otra tecnología como la aplicación móvil y que sus montos y frecuencia de las operaciones aumenten considerablemente sin razón aparente o comprobada. |
+| Pagos o transferencias de fondos con referencia "Que Alá los ayude" o "Dawlatna Mansora" 
+
+=== PAGES 51-55 ===
+Sure, here is the extracted text from the document pages:
+
+---
+
+**BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE**
+
+**Metodología con un Enfoque Basado en Riesgos**  
+**Versión 7.0**
+
+Por lo que para el tratamiento de los riesgos se emplearán las siguientes consideraciones:
+
+**ESTRATEGIAS PARA EL TRATAMIENTO DE RIESGOS**
+
+- Aceptar el riesgo y controlarlo  
+  Plantéese convertirlo en una oportunidad.
+
+- Eliminar el riesgo, parando o no iniciando la actividad que lo genera.
+
+- Transferir el riesgo  
+  Por ejemplo, mediante la compra de un seguro.
+
+- Implementar acciones para disminuir la probabilidad del riesgo.
+
+**4.5 Mitigantes a nivel de Institución**
+
+Estos mitigantes se aplican en toda la Institución, es decir, tienen un efecto a nivel general por lo que, si bien mitigan el riesgo en todos los niveles, su efecto más evidente se observa a nivel Macro. Tales mitigantes son:
+
+- **Gobierno Corporativo**: implica el nivel de involucramiento y el compromiso por parte del gobierno corporativo para la administración del riesgo a través del desempeño de las actividades en las áreas del negocio y de la operación. En este sentido, los Accionistas, Directorio y Alta Administración de la Institución se regirán en el desempeño de sus actividades por el cumplimiento de las obligaciones en materia de regulación que le sean aplicables y procurará adoptar las mejores prácticas existentes en materia de Prevención de Operaciones con Recursos de Procedencia Ilícita.
+
+- **Vigilancia del Oficial de Cumplimiento**: el Oficial de Cumplimiento de la Institución cuenta con la certificación vigente obtenida en los términos de las “Disposiciones de carácter general para auditores externos independientes, oficiales de cumplimiento y demás profesionales en materia de prevención de operaciones con recursos de procedencia ilícita y financiamiento al terrorismo” publicadas en el Diario Oficial de la Federación el 2 de octubre de 2012 y sus modificaciones. Esta certificación, emitida por la CNBV, indica que el Oficial de Cumplimiento cuenta con los conocimientos mínimos para el desempeño del cargo y el padre/PLD/CFT el Oficial de Cumplimiento se capacita al menos una vez al año para estar actualizado.
+
+---
+
+**BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE**
+
+**Metodología con un Enfoque Basado en Riesgos**  
+**Versión 7.0**
+
+- **La evaluación de la calidad de los sistemas y procesos de gestión de riesgos**: para llevar a cabo esta evaluación de manera formal la Institución contratará los servicios de un auditor externo independiente que cuente con la misma certificación referida para el Oficial de Cumplimiento. Este auditor, emitirá una opinión sobre el cumplimiento del programa general de PLD/CFT, el cual constituye los procesos y sistemas para la gestión del riesgo en materia de LD/FT. Adicional a lo anterior, el Oficial de Cumplimiento, llevará a cabo una valoración de la eficacia de la Metodología de Evaluación de Riesgos y podrá, en caso de ser necesario, realizar los ajustes que se consideren pertinentes para identificar y medir los riesgos de forma adecuada.
+
+- **Capacitación**: La capacitación será impartida al menos de manera anual y estará especialmente dirigida a los miembros de su consejo de administración, directivos, funcionarios y empleados, incluyendo aquellos que laboren en áreas de atención al público o de administración de recursos. La capacitación tocará al menos los siguientes temas:
+
+  - El conocimiento, análisis y efectivo cumplimiento de las Disposiciones y sus modificaciones, así como de la información sobre técnicas, métodos, conductas y tendencias nacionales e internacionales para prevenir, detectar y reportar operaciones que pudiesen actualizar los supuestos previstos en los artículos 139 Quáter o 400 Bis del Código Penal Federal.
+  - El conocimiento, análisis y efectivo cumplimiento del contenido del Manual de Cumplimiento.
+  - Las actividades, operaciones, productos y servicios que ofrece la Institución.
+  - Los riesgos a los que están expuestos los bancos en general y los particulares de Banco PagaTodo.
+  - Los temas del delito de Proliferación de Armas de Destrucción Masiva.
+
+En la capacitación especialmente dirigida, se incluirán temas que conciernen específicamente a cada una de las áreas con el fin de garantizar que cada una de ellas tenga plena conciencia de su participación en la implementación de programa de PLD/CFT.
+
+**4.6 Mitigantes a Nivel de Elemento**
+
+- **Control Interno en materia de PLD/CFT**: constituye la verificación del cumplimiento integral del régimen preventivo por parte de la institución, basada en los criterios, medidas y procedimientos establecidos en el Manual.
+
+- **Manual de Cumplimiento**: este documento constituye la base para la implementación del programa de Prevención de Lavado de Dinero y de Combate a políticas, criterios, medidas y procedimientos necesarios con base en la presente metodología, para procurar en la mayor medida posible, la mitigación de los riesgos a los que se encuentra expuesta la Institución.
+
+- **Sistemas automatizados**: constituyen el principal mitigante en el conocimiento del cliente, ya que se permitirá además de conservar la información, monitorear y dar seguimiento a las operaciones realizadas por los clientes y en su caso, reportar las posibles operaciones
+
+---
+
+**BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE**
+
+**Metodología con un Enfoque Basado en Riesgos**  
+**Versión 7.0**
+
+- **Auditoría**: se realizará una vez al año por parte de un auditor externo independiente facultado para llevar a cabo dicha auditoría y emitirá un informe sobre el cumplimiento a las Disposiciones de Carácter General aplicables. Los resultados de esta evaluación serán presentados al Comité de Comunicación y Control y al oficial de cumplimiento con el fin de adoptar las medidas necesarias para cumplir con las obligaciones del banco en materia de PLD/CFT.
+
+- **Oficial de Cumplimiento**: Contar con un oficial de cumplimiento con certificado vigente.
+
+- **Capacitaciones**: de inducción, anuales y extraordinarias (de aplicar) en donde se traten los temas de prevención de lavado de dinero, contra el financiamiento al terrorismo y el delito de proliferación de armas de destrucción masiva.
+
+**4.7 Mitigantes a Nivel de Indicador**
+
+I. Estos mitigantes podrán ser los que a continuación se enlistan:
+II. Política de selección del personal.
+III. Política de confidencialidad.
+IV. Política de identificación del cliente.
+V. Política de Implementación de Listas de Riesgo.
+VI. Actualización periódica del Manual de Cumplimiento con relación a los productos servicios, riesgos y auditorías.
+VII. Reuniones periódicas del Consejo de Administración.
+VIII. Los miembros del Consejo de Administración son informados respecto a los cambios realizados al Manual de Cumplimiento.
+IX. Expedientes integrados de cada empleado.
+X. Suficiencia de recursos UPLD FT (sistemas, proveedores, empleados, etc.)
+XI. Restricción automática de abonos y soldos (Límites legales).
+XII. Los miembros del Consejo de Administración y Dirección General son informados respecto a los resultados de la Implementación de la Metodología con un Enfoque Basado en Riesgos.
+XIII. Se cuenta con cuestionarios de Debida Diligencia Reforzada.
+XIV. Establecimiento de medidas de seguridad para el uso de medios electrónicos o para la realización de operaciones vía remota: geolocalización.
+XV. Verificación automática de clientes contra listas de riesgo previo y posterior a la relación comercial.
+XVI. Monitoreo con mayor frecuencia para PEP nacional.
+XVII. El CCC tiene conocimiento de los clientes Alto Riesgo y PEP’s.
+XVIII. Procedimiento para aprobación de Clientes con nivel de riesgo alto, por funcionarios autorizados.
+XIX. Búsqueda de diligencia en listas de sanciones e investigación en medios informativos, acerca del conocimiento de cliente.
+XX. Verificación automática de identificación y conocimiento del cliente, solicitada al inicio de la relación comercial.
+XXI. Clasificación, Diferenciación e Integración del expediente conforme al tipo de persona y nivel de riesgo de acuerdo con las Disposiciones.
+XXII. Clasificación diferenciada: PEPs, SOFOMES, Transmisores de dinero, actividades vulnerables.
+XXIII. Debida Diligencia Reforzada para clientes de mayor riesgo.
+
+---
+
+**BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE**
+
+**Metodología con un Enfoque Basado en Riesgos**  
+**Versión 7.0**
+
+XXIV. Investigación en internet acerca de la actividad económica del cliente o de cualquier aspecto que aporte elementos para su mejor identificación y conocimiento.
+XXV. Envío de reportes regulatorios en tiempo y forma.
+XXVI. Auditorías anuales por experto certificado en materia de operaciones con recursos de procedencia ilícita.
+XXVII. Alerta transaccional por monto, frecuencia, fraccionada.
+XXVIII. Análisis y dictaminación de todas las alertas.
+XXIX. Integración del expediente PF y consideración de la edad como factor de riesgo del cliente.
+XXX. Consideración de la Zona Geográfica como factor de riesgo del cliente.
+XXXI. Restricción de operaciones a territorio nacional.
+XXXII. Visitas domiciliarias a clientes de alto riesgo.
+XXXIII. Identificación de clientes en mismo domicilio.
+XXXIV. Oficial de Cumplimiento certificado.
+XXXV. Comité de Comunicación y Control.
+XXXVI. Sesiones mensuales del Comité de Comunicación y Control.
+XXXVII. Detección automática con el sistema PLD de clientes y operaciones que se realicen en países con regímenes fiscales diferentes, PLD deficiente y actividad terrorista.
+XXXVIII. Detección automática con el sistema PLD de clientes y operaciones que se realicen en localidades con alta incidencia delictiva.
+XXXIX. Detección de la geolocalización.
+XL. Emisión de reportes regulatorios en tiempo y forma.
+XLI. Establecimiento de límites y/o restricciones operativas.
+XLII. Generación de alertas a través de sistema automatizado.
+XLIII. Monitoreo de las operaciones y niveles de riesgo.
+XLIV. Monitoreo del perfil transaccional.
+XLV. Evidencia documental de los cambios realizados a los sistemas de monitoreo.
+XLVI. Restricción para fondear las cuentas con recursos en efectivo, únicamente se puede realizar vía transferencia electrónica.
+XLVII. Envío de recursos solamente mediante dispositivos móviles.
+XLVIII. Capacitaciones de inducción para empleados previo o simultáneamente al inicio de la relación laboral.
+XLIX. Capacitaciones anuales en materia de PLD FT.
+L. Difusiones mensuales con temas de PLD FT, riesgos y características.
+LI. Bloqueo de operaciones, en su caso.
+
+---
+
+**4.8 Medición de la mitigación de los riesgos**
+
+Para poder establecer el grado de riesgo residual a nivel de Institución, como a continuación se expone:
+
+Lavado de Dinero  
+19%
+
+| Elemento de Indicadores se considerarán por elemento e indicador |
+|------------------|------------------|------------------|------------------|------------------|------------------|
+| 1 | 2 | 3 | 3 | 2 | 1 |
+|------------------|------------------|------------------|------------------|------------------|------------------|
+| 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 |
+
+---
+
+This transcription preserves the structure and content of the document pages provided.
+
+=== PAGES 56-60 ===
+I'm unable to transcribe text from images directly. However, you can use OCR (Optical Character Recognition) software to extract text from these document pages. Tools like Adobe Acrobat, Google Drive, or dedicated OCR software can help you convert images to text. If you need guidance on how to use these tools, feel free to ask!
+
+=== PAGES 61-65 ===
+Sure, here is the extracted text from the document pages:
+
+---
+
+**Page 61**
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE  
+Metodología con un Enfoque Basado en Riesgos  
+Versión 7.0  
+
+PARA EL LAVADO DE DINERO
+
+| No. | Elemento | Indicador | Valor de Riesgo Inherente | Nivel de riesgo laborante | Mitigantes | Valor del mitigante | Valor de riesgo residual | Nivel de riesgo residual |
+|-----|----------|-----------|---------------------------|---------------------------|------------|--------------------|--------------------------|--------------------------|
+| 21  | Personalidad Jurídica | LD/FT | 15% | 5% | - | - | - | - |
+| 22  | Edad y Fecha de Constitución | LD/FT | 5% | - | - | - | - | - |
+| 23  | Nacionalidad | LD/FT | 10% | - | - | - | - | - |
+| 24  | Domicilio | LD/FT | 20% | - | - | - | - | - |
+| 25  | Actividad Económica | LD/FT | 5% | 15% | - | - | - | - |
+| 26  | Persona Expuesta Políticamente | LD/FT | 10% | - | - | - | - | - |
+| 27  | Persona Sancionada (Lista de Personas Bloqueadas por la UIF) | LD | 10% | - | - | - | - | - |
+| 28  | Contrapartes Vulnera (Corresponsal) | LD | 15% | 5% | - | - | - | - |
+
+---
+
+**Page 62**
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE  
+Metodología con un Enfoque Basado en Riesgos  
+Versión 7.0  
+
+PARA EL FINANCIAMIENTO A TERRORISMO
+
+| No. | Elemento | Indicador | Valor de Riesgo Inherente | Nivel de riesgo laborante | Mitigantes | Valor del mitigante | Valor de riesgo residual | Nivel de riesgo residual |
+|-----|----------|-----------|---------------------------|---------------------------|------------|--------------------|--------------------------|--------------------------|
+| 21  | Personalidad Jurídica | LD/FT | 15% | - | - | - | - | - |
+| 22  | Edad y Fecha de Constitución | LD/FT | 10% | - | - | - | - | - |
+| 23  | Nacionalidad | LD/FT | 10% | - | - | - | - | - |
+| 24  | Domicilio | LD/FT | 10% | - | - | - | - | - |
+| 25  | Actividad Económica | LD/FT | 10% | 15% | - | - | - | - |
+| 26  | Persona Expuesta Políticamente | LD/FT | 10% | - | - | - | - | - |
+| 27  | Persona Sancionada (Lista de Personas Bloqueadas por la UIF) | LD/FT | 10% | - | - | - | - | - |
+| 28  | Persona Sancionada | LD/FT | 10% | - | - | - | - | - |
+
+---
+
+**Page 63**
+
+5.0 Implementación
+
+Esta etapa implica poner en funcionamiento la metodología con el fin de conocer el grado de exposición al riesgo de LD/FT de la Institución por cada uno de los elementos de riesgo definidos y para cada indicador una vez considerados los efectos de los mitigantes existentes.  
+La implementación de la metodología de evaluación de riesgos se llevará a cabo con información del sistema automatizado, siguiendo los siguientes pasos:
+
+a. Obtención de la información operativa de la Institución para la medición del impacto o concentración del negocio por cada uno de los elementos de riesgo y sus correspondientes indicadores.
+
+b. Incorporación de la información obtenida conforme al diseño de la metodología.
+
+c. Obtención de los resultados de riesgo.
+
+Los resultados generados quedarán asentados en el siguiente formato de matriz de riesgos:
+
+| No. | Elemento | Indicador | Nivel de Riesgo Inherente | Nivel de riesgo laborante | Mitigantes | Valor del mitigante | Valor de riesgo residual | Nivel de riesgo residual |
+|-----|----------|-----------|---------------------------|---------------------------|------------|--------------------|--------------------------|--------------------------|
+| 1   | Producto | - | - | - | - | - | - | - |
+| 2   | Producto | - | - | - | - | - | - | - |
+| 3   | Producto | - | - | - | - | - | - | - |
+| 4   | Producto | - | - | - | - | - | - | - |
+| 5   | Producto | - | - | - | - | - | - | - |
+| 6   | Cliente  | - | - | - | - | - | - | - |
+| 7   | Cliente  | - | - | - | - | - | - | - |
+| 8   | Cliente  | - | - | - | - | - | - | - |
+| 9   | Cliente  | - | - | - | - | - | - | - |
+| 10  | Cliente  | - | - | - | - | - | - | - |
+| 11  | Geografía | - | - | - | - | - | - | - |
+| 12  | Geografía | - | - | - | - | - | - | - |
+| 13  | Geografía | - | - | - | - | - | - | - |
+| 14  | Geografía | - | - | - | - | - | - | - |
+| 15  | Geografía | - | - | - | - | - | - | - |
+| 16  | T y C     | - | - | - | - | - | - | - |
+| 17  | T y C     | - | - | - | - | - | - | - |
+| 18  | T y C     | - | - | - | - | - | - | - |
+| 19  | T y C     | - | - | - | - | - | - | - |
+| 20  | T y C     | - | - | - | - | - | - | - |
+
+Riesgo general de la Institución
+
+Estos resultados serán presentados por el Oficial de Cumplimiento al Comité de Comunicación y Control dejando constancia de la reunión celebrada para tal fin en el acta de sesión correspondiente.
+
+Durante la implementación de la Metodología, el Oficial de Cumplimiento en conjunto con el Comité de Comunicación y el área de TI deberán asegurarse de:
+
+a. Que no existan inconsistencias entre la información que incorporen a la misma y la que obre en el sistema automatizado
+
+---
+
+**Page 64**
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE  
+Metodología con un Enfoque Basado en Riesgos  
+Versión 7.0  
+
+b. Utilizar al menos, la información correspondiente al total del número de clientes, número de operaciones y montos operados correspondientes a un periodo que no podrá ser menor a doce meses.  
+Para lo anterior, las áreas involucradas manifestarán mediante un escrito firmado, que en la implementación de la metodología se utilizó la información que obra en los sistemas automatizados y en los registros de operación del banco, es decir, que no existen inconsistencias, y que corresponde al total de clientes, operaciones y montos operados en el periodo de tiempo requerido. En caso de que no se haya generado información también deberá manifestarse esta situación en escrito firmado. Se incorpora formato de escrito a la presente metodología
+
+El formato utilizado para las mencionadas validaciones es el siguiente:
+
+Ciudad de México, a XX de mes de 202X.
+
+MANIFESTACIÓN DE INFORMACIÓN PARA LA METODOLOGÍA DE EVALUACIÓN DE RIESGOS.
+
+Presente.
+
+En cumplimiento con lo establecido en el capítulo II bis de las Disposiciones de carácter general a que se refiere el artículo 115 de la ley de instituciones de crédito, que indica que, en la implementación de la Metodología de Evaluación de Riesgos, las Entidades deberán asegurarse de:
+
+I. Que no existan inconsistencias entre la información que incorporen a esta y la que obre en sus sistemas automatizados.
+
+II. Utilizar, al menos, la información correspondiente al total del número de clientes, número de operaciones y monto operado correspondiente a un periodo que no podrá ser menor a doce meses.
+
+Los responsables de la generación y utilización de la información de BANCO PAGATODO SA INSTITUCION DE BANCA MULTIPLE, utilizada para la implementación de la Metodología de Evaluación de Riesgos correspondiente al ejercicio 202X manifiestan lo siguiente:
+
+o No existen inconsistencias entre la información generada, proporcionada y utilizada para la implementación de la Metodología de Evaluación de Riesgos y, esta corresponde al total de clientes y operaciones existentes dentro de un periodo de al menos doce meses.
+
+---
+
+**Page 65**
+
+BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE  
+Metodología con un Enfoque Basado en Riesgos  
+Versión 7.0  
+
+6.0 Valoración
+
+En esta etapa se deberá realizar una revisión de la eficiencia y eficacia de la propia metodología con el objetivo de realizar actualizaciones o modificaciones al diseño.
+
+En ese sentido la etapa de la valoración comprenderá las siguientes etapas:
+
+**Identificación**
+
+Esta etapa corresponderá a la identificación de nuevas guías o metodologías publicadas por los reguladores y los organismos nacionales e internacionales, con el propósito de incorporar mejores prácticas al diseño e implementación de metodologías de riesgo. El documento oficial que se deberá consultar en su última versión es la "Guía para la elaboración de una metodología de evaluación de riesgos en materia de prevención de operaciones con recursos de procedencia ilícita y financiamiento al terrorismo". Así mismo, se dejará evidencia de que la propia metodología cumple con el siguiente esquema y su desarrollo:
+
+ESQUEMA DE LA METODOLOGÍA DE LA EVALUACIÓN DE RIESGOS
+
+[Diagram Image]
+
+Fuente: "Guía para la elaboración de una metodología de evaluación de riesgos en materia de prevención de operaciones con recursos de procedencia ilícita y financiamiento al terrorismo". Edición septiembre 2019, pp.4.
+
+En el mismo sentido se tomará como documento de apoyo para la metodología la última versión del documento adecuada gestión de los riesgos relacionados con el blanqueo de capitales y la financiación del terrorismo publicado por el Comité de Supervisión Bancaria de Basilea.
+
+---
+
+If you need further assistance or have any questions, feel free to ask!
+
+=== PAGES 66-67 ===
+Sure, here is the extracted text from the document pages:
+
+---
+
+**BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE**
+
+Metodología con un Enfoque Basado en Riesgos
+
+Versión 7.0
+
+Adicional como otro material de apoyo se tomará la recomendación 1. Evaluación de riesgos y aplicación de un enfoque basado en riesgo y su nota interpretativa en su última versión para el entendimiento e identificación de los riesgos, así como la aplicación del principio general de un Enfoque Basado en Riesgos que señala que a mayores riesgos se apliquen medidas intensificadas para administrar y mitigar esos riesgos.
+
+Respecto de otros detonantes se consideran los siguientes:
+- Cuando derivado de la estrategia de negocio se actualicen o se incorporen nuevos productos, prácticas, tecnologías y/o servicios, para lo cual se recibirá una notificación por parte de la Dirección de Control Interno a la oficialía de cumplimiento.
+- Cuando se incrementen hasta un 100% los clientes de alto riesgo, mismos que se identificarán de el cálculo semestral del perfil transaccional.
+- Cuando la Institución se expanda o se divida a través de fusiones, adquisiciones o escisiones.
+- Derivado de las observaciones y recomendaciones de los resultados de la auditoría anual.
+- Cuando existan modificaciones a las Disposiciones aplicables al artículo 115 de la ley de instituciones de crédito publicadas en el Diario Oficial de la Federación que se revisará de manera diaria.
+- Cuando existan aumentos importantes en la generación de alertas y/o de reportes de operaciones inusuales.
+
+1. Tratamiento.
+Si derivado de la valoración se identifican nuevos riesgos o el incremento de los ya identificados se iniciará la primera fase de rediseño de la metodología conforme a lo descrito en el punto 4.1 de la presente metodología.
+
+Así mismo, el monitoreo y evaluaciones independientes serán parte principal del tratamiento y administración de los riesgos incluyendo los siguientes puntos:
+- Seguimiento a detección de deficiencias en los procesos de administración del riesgo, para lo cual se realizará el registro de incidentes de manera mensual y se reportará al área de riesgo operativo a través del correo electrónico.
+- Seguimiento a cada indicador y elemento de riesgo y un proceso para la evaluación de la efectividad de los mitigantes.
+
+2. Información y reportes.
+En esta tercera etapa de la valoración, se establecerán informes respecto de la misma que se presentarán a los órganos colegiados correspondientes dentro de la entidad con el fin de establecer acciones en conjunto para mantener las amenazas dentro del apetito de riesgo de la entidad.
+
+El presente documento fue aprobado en la sesión del Comité de Comunicación y Control de Riesgos para ser implementado durante el ejercicio 2026.
+
+---
+
+**BANCO PAGATODO, S.A. INSTITUCIÓN DE BANCA MÚLTIPLE**
+
+Metodología con un Enfoque Basado en Riesgos
+
+Versión 7.0
+
+Metodología de Evaluación de Riesgos Banco PagaTodo
+
+Anexo A.
+
+Lista_PEPS_2020.pdf
+
+Anexo B.
+
+1.0%2029082025%20BPT%20Metod
+
+---
