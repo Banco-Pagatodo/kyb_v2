@@ -176,11 +176,12 @@ async def dakota_upload_document(
         @_retry_decorator()
         async def _call():
             async with httpx.AsyncClient(timeout=DAKOTA_TIMEOUT) as client:
-                return await client.post(
+                resp = await client.post(
                     url,
                     headers=_dakota_headers(),
                     files={"file": (file_name, file_content, "application/octet-stream")},
                 )
+                return resp
 
         response = await _call()
 

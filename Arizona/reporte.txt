@@ -2,11 +2,11 @@
   REPORTE DE ANÁLISIS PLD / AML — ARIZONA
 ════════════════════════════════════════════════════════════
 
-  EMPRESA: SOLUCIONES CAPITAL X
-  RFC: SCX190531824
-  EMPRESA_ID: 36577f01-b05d-4139-9242-b916304fc4bc
-  FECHA DE ANÁLISIS: 2026-04-06 16:14
-  DOCUMENTOS EN EXPEDIENTE: acta_constitutiva, csf, domicilio, estado_cuenta, fiel, ine, poder
+  EMPRESA: AVANZA SOLIDO
+  RFC: AVS050601ABC
+  EMPRESA_ID: 72b2867f-f255-4af9-a46f-fc74c7e77875
+  FECHA DE ANÁLISIS: 2026-04-06 20:27
+  DOCUMENTOS EN EXPEDIENTE: acta_constitutiva, csf, domicilio, estado_cuenta, fiel, ine, ine_reverso, poder, reforma
 
   Base legal: Disposición 4ª de las DCG del artículo 115
   de la Ley de Instituciones de Crédito.
@@ -16,12 +16,11 @@
   DATOS CLAVE DE LA PERSONA MORAL
 ────────────────────────────────────────────────────────────
 
-  Razón Social: SOLUCIONES CAPITAL X
-  RFC:          SCX190531824
+  Razón Social: AVANZA SOLIDO
+  RFC:          AVS050601ABC
 
   ▸ REPRESENTANTE LEGAL
     Nombre:      ARTURO PONS AGUIRRE
-    CURP:        POAA950325HNLNGR02
     Fuente:      poder_notarial
 
   ▸ PODER PARA ABRIR CUENTAS BANCARIAS: ✅ SÍ
@@ -34,16 +33,22 @@
 
     #    Nombre                              Tipo                 %  Fuente
     ────────────────────────────────────────────────────────────────────────
-    1    ARTURO PONS AGUIRRE                 P. Física        45.0%  acta_constitutiva
-    2    ESTEBAN SANTIAGO VARELA VEGA        P. Física        35.0%  acta_constitutiva
-    3    ALEJANDRO PÉREZ ONTIVEROS           P. Física        15.0%  acta_constitutiva
-    4    RICARDO ELIAS FERNÁNDEZ             P. Física         5.0%  acta_constitutiva
+    1    OSCAR CRUZ TORRES                   P. Física        61.2%  reforma_estatutos
+    2    OSCAR OFELIO CRUZ DECELIS           P. Física        19.7%  reforma_estatutos
+    3    CÉSAR AUGUSTO CRUZ ESPINOSA         P. Física         8.3%  reforma_estatutos
+    4    IVÁN DE JESÚS DE LA CRUZ GÓMEZ      P. Física         5.3%  reforma_estatutos
+    5    MARISELA TORRES ENRÍQUEZ            P. Física         3.9%  reforma_estatutos
+    6    JORGE ALEJANDRO DE LA CRUZ GÓMEZ    P. Física         1.7%  reforma_estatutos
+    7    JUAN ÁNGEL CASTILLO BARBOSA         P. Física         0.0%  reforma_estatutos
+    8    OLGA LIDIA SARMIENTO LEÓN           P. Física         0.0%  reforma_estatutos
+    9    MARIANA PIÑA LÓPEZ                  P. Física         0.0%  reforma_estatutos
+    10   ALEJANDRA GUADALUPE RODRÍGUEZ MARTÍ P. Física         0.0%  reforma_estatutos
+    11   MIRIAM PAOLA ROMANO TORRES          P. Física         0.0%  reforma_estatutos
     ────────────────────────────────────────────────────────────────────────
     ✅ Suma de participación: 100.0%
 
   ▸ PROPIETARIOS REALES (participación ≥25%)
-    1. ARTURO PONS AGUIRRE — 45.0%
-    2. ESTEBAN SANTIAGO VARELA VEGA — 35.0%
+    1. OSCAR CRUZ TORRES — 61.2%
 
 ────────────────────────────────────────────────────────────
   RESUMEN EJECUTIVO
@@ -51,12 +56,12 @@
 
   DICTAMEN ARIZONA: ❌ RECHAZADO
 
-  Etapa 1 — Completitud documental:   ❌ INCOMPLETO (33/36)
-  Etapa 2 — Screening listas negras:  🔴 INCOMPLETO (6 personas)
+  Etapa 1 — Completitud documental:   ❌ INCOMPLETO (32/36)
+  Etapa 2 — Screening listas negras:  🔴 INCOMPLETO (19 personas)
   Etapa 3 — Verificación de datos:    ❌ RECHAZADO (Colorado)
-  Etapa 4 — Beneficiario controlador: 🔴 2 identificado(s) — NO VALIDADOS (screening incompleto)
+  Etapa 4 — Beneficiario controlador: 🔴 1 identificado(s) — NO VALIDADOS (screening incompleto)
   Estructura accionaria:              ✅ Suma: 100.0%
-  Etapa 5 — Matriz de riesgo MER:     🟡 MEDIO (150 pts)
+  Etapa 5 — Matriz de riesgo MER:     🟢 BAJO (135 pts)
 
   Validaciones que pasan (✅): 24
   Hallazgos Críticos  (🔴): 2
@@ -86,34 +91,34 @@
   BLOQUE 2: DATOS DE LA PERSONA MORAL
   ··················································
     [A2.1] Denominación / razón social: ✅ PASA
-      SOLUCIONES CAPITAL X
+      AVANZA SOLIDO
     [A2.2] RFC con homoclave: ✅ PASA
-      SCX190531824
+      ASO110413438
     [A2.3] e.firma (FIEL) — número de serie: ✅ PASA
-      00001000000600172442
+      00001000000710249082
     [A2.4] Objeto social / giro mercantil: ✅ PASA
-      Servicios relacionados con la intermediación crediticia
+      Sociedades financieras de objeto múltiple
     [A2.5] Fecha de constitución: ✅ PASA
-      2019-05-22
+      2011-04-13
     [A2.6] Giro mercantil / actividad económica: ✅ PASA
-      Servicios relacionados con la intermediación crediticia
+      Sociedades financieras de objeto múltiple
 
   → BLOQUE 2: ✅ PASA
 
   BLOQUE 3: DOMICILIO COMPLETO
   ··················································
     [A3.1] Domicilio — calle: ✅ PASA
-      AV PASEO ROYAL COUNTRY
+      AV EL OCOTE
     [A3.2] Domicilio — numero_exterior: ✅ PASA
-      4596
+      405
     [A3.3] Domicilio — colonia: ✅ PASA
-      PUERTA DE HIERRO
+      FRACC. LAS NUBES
     [A3.4] Domicilio — codigo_postal: ✅ PASA
-      45116
+      29087
     [A3.5] Domicilio — municipio_delegacion: ✅ PASA
-      ZAPOPAN
+      TUXTLA GUTIERREZ
     [A3.6] Domicilio — entidad_federativa: ✅ PASA
-      Jalisco
+      Chiapas
 
   → BLOQUE 3: ✅ PASA
 
@@ -122,9 +127,9 @@
     [A4.1] Apoderado / representante legal identificado: ✅ PASA
       2 persona(s)
     [A4.2] Accionistas / socios identificados: ✅ PASA
-      4 accionista(s)
+      13 accionista(s)
     [A4.3] Administradores / directores / consejeros identificados: ✅ PASA
-      1 persona(s)
+      5 persona(s)
     [A4.4] Nombre completo de apoderados/representantes legales (Nombre + 1er Apellido + 2do Apellido): ✅ PASA
       Todos los apoderados/representantes legales tienen nombre completo
     [A4.5] Nombre completo de accionistas (Nombre + 1er Apellido + 2do Apellido): ✅ PASA
@@ -138,10 +143,24 @@
       ▸ Representantes legales:
         • ARTURO PONS AGUIRRE (P. Física) [poder_notarial]
       ▸ Accionistas / Socios:
-        • ARTURO PONS AGUIRRE (P. Física — 45.0%) [acta_constitutiva]
-        • ESTEBAN SANTIAGO VARELA VEGA (P. Física — 35.0%) [acta_constitutiva]
-        • ALEJANDRO PÉREZ ONTIVEROS (P. Física — 15.0%) [acta_constitutiva]
-        • RICARDO ELIAS FERNÁNDEZ (P. Física — 5.0%) [acta_constitutiva]
+        • OSCAR CRUZ TORRES (P. Física — 61.2%) [reforma_estatutos]
+        • OSCAR OFELIO CRUZ DECELIS (P. Física — 19.7%) [reforma_estatutos]
+        • CÉSAR AUGUSTO CRUZ ESPINOSA (P. Física — 8.3%) [reforma_estatutos]
+        • IVÁN DE JESÚS DE LA CRUZ GÓMEZ (P. Física — 5.3%) [reforma_estatutos]
+        • MARISELA TORRES ENRÍQUEZ (P. Física — 3.9%) [reforma_estatutos]
+        • JORGE ALEJANDRO DE LA CRUZ GÓMEZ (P. Física — 1.7%) [reforma_estatutos]
+        • JUAN ÁNGEL CASTILLO BARBOSA (P. Física) [reforma_estatutos]
+        • OLGA LIDIA SARMIENTO LEÓN (P. Física) [reforma_estatutos]
+        • MARIANA PIÑA LÓPEZ (P. Física) [reforma_estatutos]
+        • ALEJANDRA GUADALUPE RODRÍGUEZ MARTÍNEZ (P. Física) [reforma_estatutos]
+        • MIRIAM PAOLA ROMANO TORRES (P. Física) [reforma_estatutos]
+        • MARTHA GONZÁLEZ GARCÍA (P. Física — 33.3%) [acta_constitutiva]
+        • ERIKA LILIANA GORDILLO SANTOS (P. Física — 33.3%) [acta_constitutiva]
+      ▸ Consejeros:
+        • OSCAR CRUZ TORRES (P. Física) [reforma_estatutos]
+        • OLGA LIDIA SARMIENTO LEÓN (P. Física) [reforma_estatutos]
+        • OSCAR OFELIO CRUZ DECELIS (P. Física) [reforma_estatutos]
+        • IVÁN DE JESÚS DE LA CRUZ GÓMEZ (P. Física) [reforma_estatutos]
 
   → BLOQUE 4: ✅ PASA
 
@@ -164,7 +183,7 @@
 
     🚨 SCREENING INCOMPLETO — No se puede descartar presencia en listas.
 
-    Total personas verificadas   : 6
+    Total personas verificadas   : 19
     Personas con coincidencias   : 0
     Coincidencias confirmadas    : 0
     Coincidencias probables      : 0
@@ -209,7 +228,7 @@
       ⛔ Screening incompleto — no se puede descartar presencia en listas.
 
   ────────────────────────────────────────────────────────────
-    [3] ARTURO PONS AGUIRRE
+    [3] OSCAR CRUZ TORRES
   ────────────────────────────────────────────────────────────
 
       CURP:  N/D
@@ -225,7 +244,7 @@
       ⛔ Screening incompleto — no se puede descartar presencia en listas.
 
   ────────────────────────────────────────────────────────────
-    [4] ESTEBAN SANTIAGO VARELA VEGA
+    [4] OSCAR OFELIO CRUZ DECELIS
   ────────────────────────────────────────────────────────────
 
       CURP:  N/D
@@ -241,7 +260,7 @@
       ⛔ Screening incompleto — no se puede descartar presencia en listas.
 
   ────────────────────────────────────────────────────────────
-    [5] ALEJANDRO PÉREZ ONTIVEROS
+    [5] CÉSAR AUGUSTO CRUZ ESPINOSA
   ────────────────────────────────────────────────────────────
 
       CURP:  N/D
@@ -257,13 +276,221 @@
       ⛔ Screening incompleto — no se puede descartar presencia en listas.
 
   ────────────────────────────────────────────────────────────
-    [6] RICARDO ELIAS FERNÁNDEZ
+    [6] IVÁN DE JESÚS DE LA CRUZ GÓMEZ
   ────────────────────────────────────────────────────────────
 
       CURP:  N/D
       RFC:   N/D
       Tipo:  fisica
       Rol:   accionista
+
+      🚨 Listas FALLIDAS (no se pudo consultar):
+         • CatPLD69BPerson (Lista 69-B SAT)
+         • CatPLDLockedPerson (Bloqueados UIF)
+         • TraPLDBlackListEntry (Lista Negra Consolidada)
+
+      ⛔ Screening incompleto — no se puede descartar presencia en listas.
+
+  ────────────────────────────────────────────────────────────
+    [7] MARISELA TORRES ENRÍQUEZ
+  ────────────────────────────────────────────────────────────
+
+      CURP:  N/D
+      RFC:   N/D
+      Tipo:  fisica
+      Rol:   accionista
+
+      🚨 Listas FALLIDAS (no se pudo consultar):
+         • CatPLD69BPerson (Lista 69-B SAT)
+         • CatPLDLockedPerson (Bloqueados UIF)
+         • TraPLDBlackListEntry (Lista Negra Consolidada)
+
+      ⛔ Screening incompleto — no se puede descartar presencia en listas.
+
+  ────────────────────────────────────────────────────────────
+    [8] JORGE ALEJANDRO DE LA CRUZ GÓMEZ
+  ────────────────────────────────────────────────────────────
+
+      CURP:  N/D
+      RFC:   N/D
+      Tipo:  fisica
+      Rol:   accionista
+
+      🚨 Listas FALLIDAS (no se pudo consultar):
+         • CatPLD69BPerson (Lista 69-B SAT)
+         • CatPLDLockedPerson (Bloqueados UIF)
+         • TraPLDBlackListEntry (Lista Negra Consolidada)
+
+      ⛔ Screening incompleto — no se puede descartar presencia en listas.
+
+  ────────────────────────────────────────────────────────────
+    [9] JUAN ÁNGEL CASTILLO BARBOSA
+  ────────────────────────────────────────────────────────────
+
+      CURP:  N/D
+      RFC:   N/D
+      Tipo:  fisica
+      Rol:   accionista
+
+      🚨 Listas FALLIDAS (no se pudo consultar):
+         • CatPLD69BPerson (Lista 69-B SAT)
+         • CatPLDLockedPerson (Bloqueados UIF)
+         • TraPLDBlackListEntry (Lista Negra Consolidada)
+
+      ⛔ Screening incompleto — no se puede descartar presencia en listas.
+
+  ────────────────────────────────────────────────────────────
+    [10] OLGA LIDIA SARMIENTO LEÓN
+  ────────────────────────────────────────────────────────────
+
+      CURP:  N/D
+      RFC:   N/D
+      Tipo:  fisica
+      Rol:   accionista
+
+      🚨 Listas FALLIDAS (no se pudo consultar):
+         • CatPLD69BPerson (Lista 69-B SAT)
+         • CatPLDLockedPerson (Bloqueados UIF)
+         • TraPLDBlackListEntry (Lista Negra Consolidada)
+
+      ⛔ Screening incompleto — no se puede descartar presencia en listas.
+
+  ────────────────────────────────────────────────────────────
+    [11] MARIANA PIÑA LÓPEZ
+  ────────────────────────────────────────────────────────────
+
+      CURP:  N/D
+      RFC:   N/D
+      Tipo:  fisica
+      Rol:   accionista
+
+      🚨 Listas FALLIDAS (no se pudo consultar):
+         • CatPLD69BPerson (Lista 69-B SAT)
+         • CatPLDLockedPerson (Bloqueados UIF)
+         • TraPLDBlackListEntry (Lista Negra Consolidada)
+
+      ⛔ Screening incompleto — no se puede descartar presencia en listas.
+
+  ────────────────────────────────────────────────────────────
+    [12] ALEJANDRA GUADALUPE RODRÍGUEZ MARTÍNEZ
+  ────────────────────────────────────────────────────────────
+
+      CURP:  N/D
+      RFC:   N/D
+      Tipo:  fisica
+      Rol:   accionista
+
+      🚨 Listas FALLIDAS (no se pudo consultar):
+         • CatPLD69BPerson (Lista 69-B SAT)
+         • CatPLDLockedPerson (Bloqueados UIF)
+         • TraPLDBlackListEntry (Lista Negra Consolidada)
+
+      ⛔ Screening incompleto — no se puede descartar presencia en listas.
+
+  ────────────────────────────────────────────────────────────
+    [13] MIRIAM PAOLA ROMANO TORRES
+  ────────────────────────────────────────────────────────────
+
+      CURP:  N/D
+      RFC:   N/D
+      Tipo:  fisica
+      Rol:   accionista
+
+      🚨 Listas FALLIDAS (no se pudo consultar):
+         • CatPLD69BPerson (Lista 69-B SAT)
+         • CatPLDLockedPerson (Bloqueados UIF)
+         • TraPLDBlackListEntry (Lista Negra Consolidada)
+
+      ⛔ Screening incompleto — no se puede descartar presencia en listas.
+
+  ────────────────────────────────────────────────────────────
+    [14] MARTHA GONZÁLEZ GARCÍA
+  ────────────────────────────────────────────────────────────
+
+      CURP:  N/D
+      RFC:   N/D
+      Tipo:  fisica
+      Rol:   accionista
+
+      🚨 Listas FALLIDAS (no se pudo consultar):
+         • CatPLD69BPerson (Lista 69-B SAT)
+         • CatPLDLockedPerson (Bloqueados UIF)
+         • TraPLDBlackListEntry (Lista Negra Consolidada)
+
+      ⛔ Screening incompleto — no se puede descartar presencia en listas.
+
+  ────────────────────────────────────────────────────────────
+    [15] ERIKA LILIANA GORDILLO SANTOS
+  ────────────────────────────────────────────────────────────
+
+      CURP:  N/D
+      RFC:   N/D
+      Tipo:  fisica
+      Rol:   accionista
+
+      🚨 Listas FALLIDAS (no se pudo consultar):
+         • CatPLD69BPerson (Lista 69-B SAT)
+         • CatPLDLockedPerson (Bloqueados UIF)
+         • TraPLDBlackListEntry (Lista Negra Consolidada)
+
+      ⛔ Screening incompleto — no se puede descartar presencia en listas.
+
+  ────────────────────────────────────────────────────────────
+    [16] OSCAR CRUZ TORRES
+  ────────────────────────────────────────────────────────────
+
+      CURP:  N/D
+      RFC:   N/D
+      Tipo:  fisica
+      Rol:   consejero
+
+      🚨 Listas FALLIDAS (no se pudo consultar):
+         • CatPLD69BPerson (Lista 69-B SAT)
+         • CatPLDLockedPerson (Bloqueados UIF)
+         • TraPLDBlackListEntry (Lista Negra Consolidada)
+
+      ⛔ Screening incompleto — no se puede descartar presencia en listas.
+
+  ────────────────────────────────────────────────────────────
+    [17] OLGA LIDIA SARMIENTO LEÓN
+  ────────────────────────────────────────────────────────────
+
+      CURP:  N/D
+      RFC:   N/D
+      Tipo:  fisica
+      Rol:   consejero
+
+      🚨 Listas FALLIDAS (no se pudo consultar):
+         • CatPLD69BPerson (Lista 69-B SAT)
+         • CatPLDLockedPerson (Bloqueados UIF)
+         • TraPLDBlackListEntry (Lista Negra Consolidada)
+
+      ⛔ Screening incompleto — no se puede descartar presencia en listas.
+
+  ────────────────────────────────────────────────────────────
+    [18] OSCAR OFELIO CRUZ DECELIS
+  ────────────────────────────────────────────────────────────
+
+      CURP:  N/D
+      RFC:   N/D
+      Tipo:  fisica
+      Rol:   consejero
+
+      🚨 Listas FALLIDAS (no se pudo consultar):
+         • CatPLD69BPerson (Lista 69-B SAT)
+         • CatPLDLockedPerson (Bloqueados UIF)
+         • TraPLDBlackListEntry (Lista Negra Consolidada)
+
+      ⛔ Screening incompleto — no se puede descartar presencia en listas.
+
+  ────────────────────────────────────────────────────────────
+    [19] IVÁN DE JESÚS DE LA CRUZ GÓMEZ
+  ────────────────────────────────────────────────────────────
+
+      CURP:  N/D
+      RFC:   N/D
+      Tipo:  fisica
+      Rol:   consejero
 
       🚨 Listas FALLIDAS (no se pudo consultar):
          • CatPLD69BPerson (Lista 69-B SAT)
@@ -292,41 +519,57 @@
   ··················································
 
   🔴 CRÍTICOS (requieren acción inmediata):
-    1. [V3.3] Comprobante de domicilio tiene 7 meses de antigüedad (máximo 3)
-    2. [V3.4] Constancia de Situación Fiscal tiene 7 meses de antigüedad (máximo 3)
-    3. [V4.5] Identificación INCOMPLETA: falta(n) INE reverso. Se requieren ambas caras de la INE para validar la identidad del apoderado.
+    1. [V1.1] DISCREPANCIA: Se encontraron 2 RFC distintos
+    2. [V1.2] DISCREPANCIA en razón social:
+       poder: SOLUCIONES CAPITAL X, S.A.P.I. DE C.V. → No coinciden (30%): 'AVANZA SOLIDO' vs 'SOLUCIONES CAPITAL X'
+    3. [V3.3] Comprobante de domicilio tiene 7 meses de antigüedad (máximo 3)
+    4. [V3.4] Constancia de Situación Fiscal tiene 6 meses de antigüedad (máximo 3)
+    5. [V3.5] Estado de cuenta tiene 7 meses de antigüedad (máximo 3)
+    6. [V4.1] DISCREPANCIA: INE 'OSCAR CRUZ TORRES' vs Poder 'ARTURO PONS AGUIRRE' (39%)
+    7. [V4.3] DISCREPANCIA: Poderdante 'SOLUCIONES CAPITAL X, S.A.P.I. DE C.V.' vs empresa 'AVANZA SOLIDO' — No coinciden (30%): 'SOLUCIONES CAPITAL X' vs 'AVANZA SOLIDO'
+    8. [V4.5] DISCREPANCIA entre INE anverso y reverso:
+       FirstName: frente='OSCAR' vs reverso='Rusell'
+       LastName: frente='CRUZ TORRES' vs reverso='Herrera Palomo'
+       DateOfBirth: frente='1984-06-28' vs reverso='1986-01-16'
 
   🟡 MEDIOS (requieren seguimiento):
-    1. [V2.2] Domicilios difieren parcialmente (77%)
-    2. [V5.3] Capital social $0 con confiabilidad 70.0% — probable extracción fallida
-    3. [V9.2] Documentos complementarios faltantes: Reforma de estatutos, INE reverso, INE del propietario real, Comprobante de domicilio (representante legal), Comprobante de domicilio (propietario real)
+    1. [V2.2] Domicilios difieren parcialmente (59%)
+    2. [V9.2] Documentos complementarios faltantes: INE del propietario real, Comprobante de domicilio (representante legal), Comprobante de domicilio (propietario real)
 
   ℹ️ INFORMATIVOS (para registro):
-    1. [V8.1] Campos con confiabilidad < 70%:
+    1. [V2.3] El domicilio constitutivo (reforma) difiere del fiscal (38%). Puede haberse cambiado legalmente.
+    2. [V8.1] Campos con confiabilidad < 70%:
        domicilio.fecha_emision: 50.0%
+       ine.Estado: 34.0%
+       ine.Vigencia: 2.0%
+       ine.Localidad: 61.8%
+       ine.primer_nombre: 66.9%
+       ine.primer_apellido: 66.9%
+       ine.segundo_apellido: 66.9%
+       ine_reverso.IdMex: 53.5%
 
   VALIDACIÓN EN PORTALES GUBERNAMENTALES
   ··················································
     V10.1 FIEL — Portal SAT: ⚪ N/A 🟡
       Portal FIEL: CAPTCHA NO RESUELTO — No se pudo resolver el CAPTCHA del portal SAT ⚠️ SE REQUIERE VERIFICACIÓN MANUAL EN EL PORTAL
         Módulo: FIEL
-        Identificador consultado: Serie:00001000000600172442
+        Identificador consultado: Serie:00001000000710249082
         Estado portal: CAPTCHA NO RESUELTO
-        Screenshot: C:\Users\aperez\AppData\Local\Temp\portal_screenshots_9uqdbbyv\FIEL_fiel_captcha_SCX190531824_20260406_095901.png
+        Screenshot: C:\Users\aperez\AppData\Local\Temp\portal_screenshots_o8co2moh\FIEL_fiel_captcha_AVS050601ABC_20260406_133648.png
 
-    V10.2 RFC — Portal SAT: ⚪ N/A 🟡
-      Portal RFC: CAPTCHA NO RESUELTO — No se pudo resolver el CAPTCHA del portal SAT RFC ⚠️ SE REQUIERE VERIFICACIÓN MANUAL EN EL PORTAL
+    V10.2 RFC — Portal SAT: ✅ PASA
+      Portal RFC: VÁLIDO — RFC AVS050601ABC es válido y registrado ante el SAT
         Módulo: RFC
-        Identificador consultado: SCX190531824
-        Estado portal: CAPTCHA NO RESUELTO
-        Screenshot: C:\Users\aperez\AppData\Local\Temp\portal_screenshots_9uqdbbyv\RFC_rfc_captcha_SCX190531824_20260406_095856.png
+        Identificador consultado: AVS050601ABC
+        Estado portal: VÁLIDO
+        Screenshot: C:\Users\aperez\AppData\Local\Temp\portal_screenshots_o8co2moh\RFC_rfc_resultado_AVS050601ABC_20260406_133649.png
 
     V10.3 INE — Lista Nominal: ⚪ N/A 🟡
       Portal INE: CAPTCHA NO RESUELTO — No se pudo resolver el reCAPTCHA del portal INE. Usa --visible para resolverlo manualmente. ⚠️ SE REQUIERE VERIFICACIÓN MANUAL EN EL PORTAL
         Módulo: INE
-        Identificador consultado: A-C | CE:PNAGAR95...
+        Identificador consultado: A-C | CE:CRTROS84...
         Estado portal: CAPTCHA NO RESUELTO
-        Screenshot: C:\Users\aperez\AppData\Local\Temp\portal_screenshots_9uqdbbyv\INE_ine_recaptcha_SCX190531824_20260406_100514.png
+        Screenshot: C:\Users\aperez\AppData\Local\Temp\portal_screenshots_o8co2moh\INE_ine_recaptcha_AVS050601ABC_20260406_134051.png
 
 
   → ETAPA 3: ❌ RECHAZADO — Resolver hallazgos críticos de Colorado antes de continuar
@@ -341,13 +584,11 @@
   Si ningún accionista alcanza ≥25%, se designa al administrador o consejo
   de administración como beneficiario controlador.
 
-  Total accionistas identificados: 4
+  Total accionistas identificados: 11
   Suma de participación: 100.0%
 
   BENEFICIARIOS CONTROLADORES IDENTIFICADOS (≥25%):
-    1. ARTURO PONS AGUIRRE — 45.0% del capital social
-       🚨 SCREENING BC: Incompleto — no se puede descartar presencia en listas
-    2. ESTEBAN SANTIAGO VARELA VEGA — 35.0% del capital social
+    1. OSCAR CRUZ TORRES — 61.2% del capital social
        🚨 SCREENING BC: Incompleto — no se puede descartar presencia en listas
 
   Cada beneficiario controlador fue sometido a screening independiente
@@ -366,16 +607,16 @@
   #    Factor                                        Val   Peso      Pts
   ································································
   1    Tipo de persona                                 3   0.10     30.0
-      └─ SOLUCIONES CAPITAL X
+      └─ AVANZA SOLIDO
   2    Nacionalidad                                    1   0.05      5.0
       └─ México
   3    Antigüedad (fecha de constitución)              1   0.05      5.0
-      └─ 6.9 años (constituida 2019-05-22)
-  4    Giro o actividad económica                      3   0.15     45.0
-      └─ Servicios relacionados con la intermediación crediticia
-         🤖 Actividad no encontrada en catálogo CNBV. Requiere clasificación por LLM. → LLM: Clasificado por keywords (fallback): contiene 'INTERMEDIACIÓN CREDITICIA' → Resuelto por LLM: valor 3
+      └─ 15.0 años (constituida 2011-04-13)
+  4    Giro o actividad económica                      2   0.15     30.0
+      └─ Sociedades financieras de objeto múltiple
+         🤖 Actividad no encontrada en catálogo CNBV. Requiere clasificación por LLM. → LLM: No clasificada → Grupo 2 por principio de prudencia (fallback) → Resuelto por LLM: valor 2
   5    Ubicación geográfica del domicilio              1   0.10     10.0
-      └─ Jalisco (zona riesgo 1)
+      └─ Chiapas (zona riesgo 1)
   6    Productos y servicios                           3   0.05     15.0
       └─ corporativa
   7    Volumen — monto recursos recibidos              1   0.05      5.0
@@ -403,9 +644,9 @@
   15   Persona Políticamente Expuesta (PEP)            0   0.10      0.0
       └─ No (verificado Etapa 2)
   ································································
-  PUNTAJE TOTAL                                            150.0
+  PUNTAJE TOTAL                                            135.0
 
-  🟡 GRADO DE RIESGO: MEDIO  (150.0 puntos)
+  🟢 GRADO DE RIESGO: BAJO  (135.0 puntos)
 
   ⚠️ DATOS PENDIENTES DE CONFIRMACIÓN
   ································································
@@ -421,7 +662,7 @@
   Alertas estructurales:
     • ⚠️ 6 de 15 factores evaluados con datos asumidos. Calificación provisional sujeta a recalificación con datos reales.
 
-  → ETAPA 5: 🟡 MEDIO — Puntaje 150
+  → ETAPA 5: 🟢 BAJO — Puntaje 135
 
 ────────────────────────────────────────────────────────────
   ALERTAS Y RIESGOS
@@ -444,8 +685,7 @@
   RECOMENDACIONES
 ────────────────────────────────────────────────────────────
 
-    1. Resolver hallazgos de Colorado antes de continuar proceso PLD: V3.3, V3.4, V4.5.
-    2. MER MEDIO: Verificar documentación soporte y monitorear operaciones.
+    1. Resolver hallazgos de Colorado antes de continuar proceso PLD: V1.1, V1.2, V3.3, V3.4, V3.5, V4.1, V4.3, V4.5.
 
 ────────────────────────────────────────────────────────────
   SIGUIENTE PASO
@@ -460,5 +700,5 @@
       2. Reprocesar expediente una vez resueltos los puntos anteriores.
 
 ════════════════════════════════════════════════════════════
-  Fin del reporte — SOLUCIONES CAPITAL X
+  Fin del reporte — AVANZA SOLIDO
 ════════════════════════════════════════════════════════════

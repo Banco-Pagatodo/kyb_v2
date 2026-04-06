@@ -187,8 +187,8 @@ def _es_persona_moral(accionista: dict) -> bool:
 
 def _extraer_estructura_accionaria(expediente: ExpedientePLD) -> list[dict]:
     """Extrae estructura accionaria del expediente."""
-    # Priorizar reforma sobre acta
-    reforma = expediente.documentos.get("reforma_estatutos", {})
+    # Priorizar reforma sobre acta (doc_type puede ser "reforma_estatutos" o "reforma")
+    reforma = expediente.documentos.get("reforma_estatutos", {}) or expediente.documentos.get("reforma", {})
     if reforma:
         estructura = reforma.get("estructura_accionaria", [])
         if estructura:
@@ -838,8 +838,8 @@ def extraer_estructura_para_reporte(expediente: ExpedientePLD) -> dict[str, Any]
     """
     resultado: dict[str, Any] = {}
     
-    # 1. Determinar fuente (reforma tiene prioridad)
-    reforma = expediente.documentos.get("reforma_estatutos", {})
+    # 1. Determinar fuente (reforma tiene prioridad; doc_type puede ser "reforma_estatutos" o "reforma")
+    reforma = expediente.documentos.get("reforma_estatutos", {}) or expediente.documentos.get("reforma", {})
     acta = expediente.documentos.get("acta_constitutiva", {})
     
     estructura = []

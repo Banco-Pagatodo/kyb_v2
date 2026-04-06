@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 
 # Cargar .env relativo a este archivo
 _env_path = Path(__file__).resolve().parent.parent / ".env"
-load_dotenv(dotenv_path=_env_path)
+load_dotenv(dotenv_path=_env_path, override=True)
 
 # ── URLs de los agentes ──────────────────────────────────────────────────
 DAKOTA_BASE_URL: str = os.getenv("DAKOTA_BASE_URL", "http://localhost:8010")

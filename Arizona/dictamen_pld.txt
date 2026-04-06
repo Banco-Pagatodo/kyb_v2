@@ -3,26 +3,26 @@
                                   DICTAMEN PLD/FT — PERSONA MORAL                                   
 ════════════════════════════════════════════════════════════════════════════════════════════════════
 
-  Dictamen ID:       DICT-PLD-SCX190531824-20260406-001
+  Dictamen ID:       DICT-PLD-AVS050601ABC-20260406-001
   Fecha elaboración: 06/04/2026
-  Tipo producto:     Cuenta de cheques empresarial
-  Grado riesgo:      MEDIO
+  Tipo producto:     Cuenta empresarial con CLABE
+  Grado riesgo:      BAJO
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────
 
   ──── 1. DATOS GENERALES DE LA PERSONA MORAL ─────────────────────────────────────────────────────
 
-  Razón social:           SOLUCIONES CAPITAL X S A P I DE CV
-  RFC:                    SCX190531824
-  Fecha constitución:     2019-05-22
-  Actividad económica:    Servicios relacionados con la intermediación crediticia
-  Domicilio:              AVENIDA PASEO ROYAL COUNTRY 4596 INT. 2B, COL. PUERTA DE HIERRO, ZAPOPAN, ZAPOPAN, JALISCO, CP 45116
-  Uso de cuenta:          OPERACIONES PROPIAS DEL GIRO
-  Folio mercantil:        N-2019050847
+  Razón social:           AVANZA SOLIDO SA DE CV SOFOM ENR
+  RFC:                    AVS050601ABC
+  Fecha constitución:     2011-04-13
+  Actividad económica:    Sociedades financieras de objeto múltiple
+  Domicilio:              AVENIDA (AV.) EL OCOTE 405 MANZANA 5 LOTE 3, SIN NUMERO, COLONIA LAS NUBES, TUXTLA GUTIERREZ, TUXTLA GUTIERREZ, CHIAPAS, C.P. 29087
+  Uso de cuenta:          OPERACIONES FINANCIERAS Y CREDITICIAS
+  Folio mercantil:        26728
   Cláusula extranjeros:   EXCLUSION DE EXTRANJEROS
-  Notario acta:           RICARDO LOPEZ CAMARENA — Notaría 49, JALISCO
-  Escritura N°:           2072
-  Fecha escritura acta:   2019-05-22
+  Notario acta:           EDGAR TRUJILLO CASAS — Notaría 21, CHIAPAS
+  Escritura N°:           15604
+  Fecha escritura acta:   2011-04-13
 
   ──── 2. SCREENING — PERSONA MORAL (RAZÓN SOCIAL) ────────────────────────────────────────────────
 
@@ -31,15 +31,14 @@
 
   ──── 3. ACTIVIDAD ECONÓMICA ─────────────────────────────────────────────────────────────────────
 
-  Actividad declarada:            Servicios relacionados con la intermediación crediticia
-  Congruencia con documentos:     SÍ
+  Actividad declarada:            Sociedades financieras de objeto múltiple
+  Congruencia con documentos:     NO
   Actividades no declaradas:      NO
-  Actividades de mayor riesgo:    SÍ
-  Detalle:                        Actividad clasificada como mayor riesgo: Servicios relacionados con la intermediación crediticia
+  Actividades de mayor riesgo:    NO
 
   ──── 4. DOMICILIO ───────────────────────────────────────────────────────────────────────────────
 
-  Domicilio registrado:           AVENIDA PASEO ROYAL COUNTRY 4596 INT. 2B, COL. PUERTA DE HIERRO, ZAPOPAN, ZAPOPAN, JALISCO, CP 45116
+  Domicilio registrado:           AVENIDA (AV.) EL OCOTE 405 MANZANA 5 LOTE 3, SIN NUMERO, COLONIA LAS NUBES, TUXTLA GUTIERREZ, TUXTLA GUTIERREZ, CHIAPAS, C.P. 29087
   Concuerda con documentos:       SÍ
   Concuerda con actividad:        SÍ
   Vínculo con otra PM:            NO
@@ -51,10 +50,17 @@
   ┌──────┬──────────────────────────────────────┬────────────┬────────────────────┬────────┬──────────────────────┐
   │ #    │ Nombre / Razón social                │ %          │ RFC / CURP         │ Tipo   │ Coincidencia listas  │
   ├──────┼──────────────────────────────────────┼────────────┼────────────────────┼────────┼──────────────────────┤
-  │ 1    │ ARTURO PONS AGUIRRE                  │ 45.0%      │ POAA950325HNLNGR02 │ PF     │ NO                   │
-  │ 2    │ ESTEBAN SANTIAGO VARELA VEGA         │ 35.0%      │ N/D                │ PF     │ NO                   │
-  │ 3    │ ALEJANDRO PÉREZ ONTIVEROS            │ 15.0%      │ N/D                │ PF     │ NO                   │
-  │ 4    │ RICARDO ELIAS FERNÁNDEZ              │ 5.0%       │ N/D                │ PF     │ NO                   │
+  │ 1    │ OSCAR CRUZ TORRES                    │ 61.2%      │ CUTO840628HCSRRS07 │ PF     │ NO                   │
+  │ 2    │ OSCAR OFELIO CRUZ DECELIS            │ 19.7%      │ N/D                │ PF     │ NO                   │
+  │ 3    │ CÉSAR AUGUSTO CRUZ ESPINOSA          │ 8.3%       │ N/D                │ PF     │ NO                   │
+  │ 4    │ IVÁN DE JESÚS DE LA CRUZ GÓMEZ       │ 5.3%       │ N/D                │ PF     │ NO                   │
+  │ 5    │ MARISELA TORRES ENRÍQUEZ             │ 3.9%       │ N/D                │ PF     │ NO                   │
+  │ 6    │ JORGE ALEJANDRO DE LA CRUZ GÓMEZ     │ 1.7%       │ N/D                │ PF     │ NO                   │
+  │ 7    │ JUAN ÁNGEL CASTILLO BARBOSA          │ 0.0%       │ N/D                │ PF     │ NO                   │
+  │ 8    │ OLGA LIDIA SARMIENTO LEÓN            │ 0.0%       │ N/D                │ PF     │ NO                   │
+  │ 9    │ MARIANA PIÑA LÓPEZ                   │ 0.0%       │ N/D                │ PF     │ NO                   │
+  │ 10   │ ALEJANDRA GUADALUPE RODRÍGUEZ MARTÍN │ 0.0%       │ N/D                │ PF     │ NO                   │
+  │ 11   │ MIRIAM PAOLA ROMANO TORRES           │ 0.0%       │ N/D                │ PF     │ NO                   │
   └──────┴──────────────────────────────────────┴────────────┴────────────────────┴────────┴──────────────────────┘
 
   Screening accionistas:
@@ -66,8 +72,7 @@
   ┌──────┬────────────────────────────────────┬────────────────────────┬────────────────────┬──────────────────────┐
   │ #    │ Nombre                             │ Tipo control           │ RFC / CURP         │ Coincidencia listas  │
   ├──────┼────────────────────────────────────┼────────────────────────┼────────────────────┼──────────────────────┤
-  │ 1    │ ARTURO PONS AGUIRRE                │ Tenencia Accionaria    │ POAA950325HNLNGR02 │ NO                   │
-  │ 2    │ ESTEBAN SANTIAGO VARELA VEGA       │ Tenencia Accionaria    │ N/D                │ NO                   │
+  │ 1    │ OSCAR CRUZ TORRES                  │ Tenencia Accionaria    │ CUTO840628HCSRRS07 │ NO                   │
   └──────┴────────────────────────────────────┴────────────────────────┴────────────────────┴──────────────────────┘
 
   Screening propietarios:
@@ -80,37 +85,36 @@
   ┌──────┬────────────────────────────────────────────────┬────────────────────┬────────────────────────────┐
   │ #    │ Nombre                                         │ RFC / CURP         │ Coincidencia listas        │
   ├──────┼────────────────────────────────────────────────┼────────────────────┼────────────────────────────┤
-  │ 1    │ ARTURO PONS AGUIRRE                            │ POAA950325HNLNGR02 │ NO                         │
+  │ 1    │ ARTURO PONS AGUIRRE                            │ N/D                │ NO                         │
   └──────┴────────────────────────────────────────────────┴────────────────────┴────────────────────────────┘
 
   Poder notarial:
-    Tipo:        PODER GENERAL JUDICIAL Y PARA PLEITOS Y COBRANZAS, PODER GENERAL PARA ACTOS DE ADMINISTRACIÓN, PODER CAMBIARIO, PODER ESPECIAL PARA CONSTITUIR FIDEICOMISOS
+    Tipo:        PODER GENERAL JUDICIAL Y PARA PLEITOS Y COBRANZAS; PODER GENERAL PARA ACTOS DE ADMINISTRACIÓN; PODER CAMBIARIO; PODER ESPECIAL PARA CONSTITUIR FIDEICOMISOS
     Notario:     DAVID ALFARO RAMIREZ — Notaría 26, Jalisco
     Escritura:   33181
     Fecha:       2025-08-14
     Facultades:  Representar a la sociedad con el poder más amplio judicial y para pleitos y
-                 cobranzas, con todas las facultades generales y especiales que requieran
-                 cláusula especial conforme a la ley, incluyendo: desistirse, transigir,
-                 comprometer en árbitros, absolver y articular posiciones, recusar, recibir
-                 pagos, promover el juicio de amparo y desistirse del mismo, asistir a la
-                 audiencia conciliatoria del artículo 282 Bis del Código de Procedimientos
-                 Civiles de Jalisco y celebrar el convenio respectivo. Poder general para
-                 actos de administración, para ejercer todas las facultades generales y
-                 especiales que requieren cláusula especial, representar a “LA MANDANTE” ante
-                 cualquier dependencia gubernamental y organismos públicos centralizados y
-                 descentralizados, empresas de participación estatal, y autoridades
-                 municipales, estatales o federales, hacer y recibir pagos y consentir toda
-                 clase de actos liberatorios o de carga. Poder cambiario para expedir,
-                 suscribir, otorgar, garantizar y negociar con títulos de crédito y obligar
-                 cambiariamente al poderdante, con la limitación de que títulos que
-                 representen crédito a cargo de SOLUCIONES CAPITAL X, S.A.P.I. DE C.V. por
-                 monto superior a $5,000,000.00 deberán ser suscritos conjuntamente con otro
-                 miembro del consejo o con ALDO ACEVES GONZÁLEZ, sin límite para operaciones
-                 de factoraje ni créditos donde la sociedad sea acreedora. Poder especial para
-                 constituir fideicomisos a nombre de “LA MANDANTE” como fideicomisario o
-                 fideicomitente, y para abrir y cancelar cuentas bancarias a nombre de la
-                 sociedad o de los fideicomisos, designando y autorizando personas que giren
-                 contra ellas.
+                 cobranzas, con todas las facultades generales y especiales de los artículos
+                 2207 y 2236 del Código Civil de Jalisco y 2554 y 2587 del Código Civil
+                 Federal, incluyendo desistirse, transigir, comprometer en árbitros, absolver
+                 y articular posiciones, recusar, recibir pagos, promover y desistirse del
+                 juicio de amparo y asistir a audiencias conciliatorias con facultad para
+                 celebrar convenios. Ejercer todas las facultades generales y especiales de
+                 administración sin limitación alguna, representando a la mandante ante
+                 cualquier dependencia gubernamental y organismos públicos, centralizados y
+                 descentralizados, empresas de participación estatal, y toda clase de
+                 autoridades municipales, estatales o federales, pudiendo hacer y recibir
+                 pagos y consentir actos liberatorios o de carga. Poder cambiario para
+                 expedir, suscribir, otorgar, garantizar y negociar títulos de crédito y
+                 obligar cambiariamente al poderdante conforme a la Ley General de Títulos y
+                 Operaciones de Crédito, con la limitación de que, cuando el acto implique
+                 crédito a cargo de la sociedad superior a $5,000,000.00, el título sea
+                 suscrito conjuntamente por otro miembro del Consejo de Administración o por
+                 Aldo Aceves González, sin límite para operaciones de factoraje ni créditos
+                 donde la sociedad sea acreedora. Poder especial para constituir fideicomisos
+                 a nombre de la mandante como fideicomisario o fideicomitente, y para abrir y
+                 cancelar cuentas bancarias a nombre de la sociedad o de los fideicomisos,
+                 pudiendo designar y autorizar personas que giren contra dichas cuentas.
 
   Screening representantes:
       Coincidencia en listas:   NO
@@ -118,7 +122,14 @@
 
   ──── 8. ADMINISTRACIÓN / CONSEJO ────────────────────────────────────────────────────────────────
 
-  No se identificaron administradores/consejeros.
+  ┌──────┬──────────────────────────────────────┬────────────────────────┬────────────────────┬────────────────┐
+  │ #    │ Nombre                               │ Puesto                 │ RFC / CURP         │ Coin. listas   │
+  ├──────┼──────────────────────────────────────┼────────────────────────┼────────────────────┼────────────────┤
+  │ 1    │ OSCAR CRUZ TORRES                    │ Consejero              │ N/D                │ NO             │
+  │ 2    │ OLGA LIDIA SARMIENTO LEÓN            │ Consejero              │ N/D                │ NO             │
+  │ 3    │ OSCAR OFELIO CRUZ DECELIS            │ Consejero              │ N/D                │ NO             │
+  │ 4    │ IVÁN DE JESÚS DE LA CRUZ GÓMEZ       │ Consejero              │ N/D                │ NO             │
+  └──────┴──────────────────────────────────────┴────────────────────────┴────────────────────┴────────────────┘
 
   Screening administración:
       Coincidencia en listas:   NO
@@ -127,51 +138,57 @@
 
   ──── 9. PERFIL TRANSACCIONAL ────────────────────────────────────────────────────────────────────
 
-  Uso de cuenta:                  OPERACIONES PROPIAS DEL GIRO
+  Uso de cuenta:                  OPERACIONES FINANCIERAS Y CREDITICIAS
   Congruencia perfil/actividad:   SÍ
   Observaciones:                  Sin observaciones
 
   Estado de cuenta:
-    Banco:            Scotiabank
-    Cuenta:           25605088275
-    CLABE:            044320256050882755
-    Período:          01-AGO-25/29-AGO-25
-    Saldo inicial:    $23,318,422.09
-    Saldo final:      $44,164,807.45
-    Total depósitos:  $119,060,314.74
-    Total retiros:    $98,213,437.54
+    Banco:            BANCO DEL BAJIO
+    Cuenta:           0105961460201
+    CLABE:            030100900001927877
+    Período:          01/09/2025 - 30/09/2025
 
   ──── 9-B. VIGENCIA DE DOCUMENTOS ────────────────────────────────────────────────────────────────
 
-  Constancia de Situación Fiscal           ✗ No vigente  — Fecha: 2025-09-25 (excede 3 meses)
-  Comprobante de domicilio                 ✗ No vigente  — Fecha: 2025-09-25 (excede 3 meses)
-  Estado de cuenta bancario                ? Sin verificar  — Fecha no parseable: 01-AGO-25/29-AGO-25
-  e.Firma (FIEL)                           ✓ Vigente  — Vigente hasta: 2027-05-15
+  Constancia de Situación Fiscal           ✗ No vigente  — Fecha: 2025-10-14 (excede 3 meses)
+  Comprobante de domicilio                 ✗ No vigente  — Fecha: 2025-09-11 (excede 3 meses)
+  Estado de cuenta bancario                ? Sin verificar  — Fecha no parseable: 01/09/2025 - 30/09/2025
+  e.Firma (FIEL)                           ✓ Vigente  — Vigente hasta: 2028-09-23
   INE del representante                    ? Sin verificar  — Sin fecha de emisión disponible
 
 ════════════════════════════════════════════════════════════════════════════════════════════════════
   ──── 10. CONCLUSIONES PLD/FT ────────────────────────────────────────────────────────────────────
 
   Señales de alerta:              NO
-  Grado riesgo confirmado:        MEDIO
-  Debida diligencia reforzada:    SÍ
-  Medidas EDD:                    Monitoreo reforzado por grado de riesgo elevado
+  Grado riesgo confirmado:        BAJO
+  Debida diligencia reforzada:    NO
   Presentar a CCC:               NO
-  Observaciones:                  Hallazgos Colorado: [V2.2] Domicilios difieren parcialmente (77%); [V3.3] Comprobante de domicilio tiene 7 meses de antigüedad (máximo 3); [V3.4] Constancia de Situación Fiscal tiene 7 meses de antigüedad (máximo 3); [V4.5] Identificación INCOMPLETA: falta(n) INE reverso. Se requieren ambas caras de la INE para validar la identidad del apoderado.; [V5.3] Capital social $0 con confiabilidad 70.0% — probable extracción fallida; [V8.1] Campos con confiabilidad < 70%:
-  domicilio.fecha_emision: 50.0%; [V9.2] Documentos complementarios faltantes: Reforma de estatutos, INE reverso, INE del propietario real, Comprobante de domicilio (representante legal), Comprobante de domicilio (propietario real)
+  Observaciones:                  Hallazgos Colorado: [V1.1] DISCREPANCIA: Se encontraron 2 RFC distintos; [V1.2] DISCREPANCIA en razón social:
+  poder: SOLUCIONES CAPITAL X, S.A.P.I. DE C.V. → No coinciden (30%): 'AVANZA SOLIDO' vs 'SOLUCIONES CAPITAL X'; [V2.2] Domicilios difieren parcialmente (59%); [V2.3] El domicilio constitutivo (reforma) difiere del fiscal (38%). Puede haberse cambiado legalmente.; [V3.3] Comprobante de domicilio tiene 7 meses de antigüedad (máximo 3); [V3.4] Constancia de Situación Fiscal tiene 6 meses de antigüedad (máximo 3); [V3.5] Estado de cuenta tiene 7 meses de antigüedad (máximo 3); [V4.1] DISCREPANCIA: INE 'OSCAR CRUZ TORRES' vs Poder 'ARTURO PONS AGUIRRE' (39%); [V4.3] DISCREPANCIA: Poderdante 'SOLUCIONES CAPITAL X, S.A.P.I. DE C.V.' vs empresa 'AVANZA SOLIDO' — No coinciden (30%): 'SOLUCIONES CAPITAL X' vs 'AVANZA SOLIDO'; [V4.5] DISCREPANCIA entre INE anverso y reverso:
+  FirstName: frente='OSCAR' vs reverso='Rusell'
+  LastName: frente='CRUZ TORRES' vs reverso='Herrera Palomo'
+  DateOfBirth: frente='1984-06-28' vs reverso='1986-01-16'; [V8.1] Campos con confiabilidad < 70%:
+  domicilio.fecha_emision: 50.0%
+  ine.Estado: 34.0%
+  ine.Vigencia: 2.0%
+  ine.Localidad: 61.8%
+  ine.primer_nombre: 66.9%
+  ine.primer_apellido: 66.9%
+  ine.segundo_apellido: 66.9%
+  ine_reverso.IdMex: 53.5%; [V9.2] Documentos complementarios faltantes: INE del propietario real, Comprobante de domicilio (representante legal), Comprobante de domicilio (propietario real)
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────
   ELABORÓ:
     Agente Arizona v2.3
     Dictamen generado automáticamente por Agente Arizona — Pipeline PLD/FT
 
-  Pipeline:  DICT-PLD-SCX190531824-20260406-001
+  Pipeline:  DICT-PLD-AVS050601ABC-20260406-001
   Versión:   2.3
   Fuentes:   Dakota, Colorado, Arizona
-  MER:       puntaje=150.0, grado=MEDIO
-  Personas screened: 6
+  MER:       puntaje=135.0, grado=BAJO
+  Personas screened: 19
   Coincidencias:     0
-  Tiempo:    366313 ms
+  Tiempo:    250 ms
 
 ════════════════════════════════════════════════════════════════════════════════════════════════════
                                       FIN DEL DICTAMEN PLD/FT                                       

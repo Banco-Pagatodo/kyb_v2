@@ -1,11 +1,12 @@
 """
 KYB Document Review — Demo UI (Streamlit)
 
-Panel ejecutivo para demostrar el pipeline completo de 3 servicios:
-  Archivo(s) + RFC  →  Orquestrador  →  Dakota (extracción)
+Panel ejecutivo para demostrar el pipeline completo de servicios:
+  Archivo(s) + RFC  →  Orquestrador  →  Dakota (extracción, interno)
                                       →  Colorado (validación cruzada)
                                       →  Arizona v2.3 (PLD/FT completo: completitud
                                            + screening + MER + dictamen)
+                                      →  Nevada (dictamen jurídico DJ-1)
 
 Ejecutar:
     streamlit run DemoUI/app.py
@@ -24,14 +25,11 @@ import streamlit as st
 #  CONFIGURACIÓN
 # ══════════════════════════════════════════════════════════════════════════════
 
-DAKOTA_URL = os.environ.get("DAKOTA_URL", "http://localhost:8010")
-DAKOTA_API_KEY = os.environ.get("DAKOTA_API_KEY", "dakota-kyb-dev-2026")
 COLORADO_URL = os.environ.get("COLORADO_URL", "http://localhost:8011")
 ARIZONA_URL = os.environ.get("ARIZONA_URL", "http://localhost:8012")
 NEVADA_URL = os.environ.get("NEVADA_URL", "http://localhost:8013")
 ORQUESTRATOR_URL = os.environ.get("ORQUESTRATOR_URL", "http://localhost:8002")
 
-DAKOTA_PREFIX = "/kyb/api/v1.0.0"
 COLORADO_PREFIX = "/api/v1/validacion"
 PLD_PREFIX = "/api/v1/pld"
 NEVADA_PREFIX = "/api/v1/legal"
@@ -45,15 +43,15 @@ DOC_TYPES: dict[str, str] = {
     "acta_constitutiva": "📜 Acta Constitutiva",
     "ine": "🪪 INE Frente",
     "ine_reverso": "🪪 INE Reverso",
-    "poder": "⚖️ Poder Notarial",
-    "comprobante_domicilio": "🏠 Comprobante de Domicilio",
+    "poder_notarial": "⚖️ Poder Notarial",
+    "domicilio": "🏠 Comprobante de Domicilio",
     "fiel": "🔐 FIEL",
     "estado_cuenta": "🏦 Estado de Cuenta",
-    "reforma": "📝 Reforma de Estatutos",
+    "reforma_estatutos": "📝 Reforma de Estatutos",
 }
 
-DOC_TYPES_REQUIRED = ["csf", "acta_constitutiva", "ine", "poder", "comprobante_domicilio"]
-DOC_TYPES_OPTIONAL = ["fiel", "estado_cuenta", "reforma", "ine_reverso"]
+DOC_TYPES_REQUIRED = ["csf", "acta_constitutiva", "ine", "poder_notarial", "domicilio"]
+DOC_TYPES_OPTIONAL = ["fiel", "estado_cuenta", "reforma_estatutos", "ine_reverso"]
 
 DICTAMEN_EMOJI = {
     "APROBADO": "✅",
@@ -103,7 +101,6 @@ def check_services() -> dict[str, bool]:
     # Fallback: verificar uno a uno
     status: dict[str, bool] = {}
     for name, url, path in [
-        ("Dakota", DAKOTA_URL, f"{DAKOTA_PREFIX}/health"),
         ("Colorado", COLORADO_URL, f"{COLORADO_PREFIX}/health"),
         ("Arizona", ARIZONA_URL, f"{PLD_PREFIX}/health"),
         ("Nevada", NEVADA_URL, f"{NEVADA_PREFIX}/health"),
@@ -117,44 +114,57 @@ def check_services() -> dict[str, bool]:
     return status
 
 
-def send_to_dakota(
+def send_to_pipeline(
     file_bytes: bytes,
     file_name: str,
     doc_type: str,
     rfc: str,
     content_type: str = "application/pdf",
 ) -> dict | None:
-    """Envía un documento a Dakota para extracción."""
-    endpoint = {
-        "csf": "/docs/csf",
-        "acta_constitutiva": "/docs/acta_constitutiva",
-        "ine": "/docs/ine",
-        "ine_reverso": "/docs/ine_reverso",
-        "poder": "/docs/poder_notarial",
-        "comprobante_domicilio": "/docs/domicilio",
-        "fiel": "/docs/fiel",
-        "estado_cuenta": "/docs/estado_cuenta",
-        "reforma": "/docs/reforma_estatutos",
-    }.get(doc_type)
-
-    if not endpoint:
-        return None
-
-    url = f"{DAKOTA_URL}{DAKOTA_PREFIX}{endpoint}"
-    headers = {"X-API-Key": DAKOTA_API_KEY} if DAKOTA_API_KEY else {}
+    """Envía un documento al Orquestrador para pipeline completo."""
+    url = f"{ORQUESTRATOR_URL}{PIPELINE_PREFIX}/process"
     try:
         with httpx.Client(timeout=TIMEOUT) as client:
             r = client.post(
                 url,
-                headers=headers,
                 files={"file": (file_name, file_bytes, content_type)},
-                params={"rfc": rfc},
+                data={"doc_type": doc_type, "rfc": rfc},
             )
         if r.status_code == 200:
             return r.json()
         return {"_error": f"HTTP {r.status_code}", "_body": r.text[:500]}
     except httpx.ConnectError:
-        return {"_error": "Dakota no disponible"}
+        return {"_error": "Orquestrador no disponible (puerto 8002)"}
+    except httpx.TimeoutException:
+        return {"_error": f"Timeout ({TIMEOUT}s)"}
+    except Exception as e:
+        return {"_error": str(e)}
+
+
+def send_expediente_to_pipeline(
+    rfc: str,
+    archivos: list[tuple[str, bytes, str, str]],
+) -> dict | None:
+    """Envía un expediente completo al Orquestrador.
+
+    Args:
+        rfc: RFC de la empresa.
+        archivos: Lista de (doc_type, file_bytes, file_name, content_type).
+    """
+    url = f"{ORQUESTRATOR_URL}{PIPELINE_PREFIX}/expediente"
+    files_list = []
+    data_list: list[tuple[str, str]] = [("rfc", rfc)]
+    for doc_type, file_bytes, file_name, content_type in archivos:
+        files_list.append(("files", (file_name, file_bytes, content_type)))
+        data_list.append(("doc_types", doc_type))
+    try:
+        with httpx.Client(timeout=TIMEOUT) as client:
+            r = client.post(url, files=files_list, data=data_list)
+        if r.status_code == 200:
+            return r.json()
+        return {"_error": f"HTTP {r.status_code}", "_body": r.text[:500]}
+    except httpx.ConnectError:
+        return {"_error": "Orquestrador no disponible (puerto 8002)"}
     except httpx.TimeoutException:
         return {"_error": f"Timeout ({TIMEOUT}s)"}
     except Exception as e:
@@ -391,8 +401,7 @@ def main() -> None:
     st.markdown('<div class="main-header">🏢 KYB Document Review</div>', unsafe_allow_html=True)
     st.markdown(
         '<div class="sub-header">'
-        'Sistema de Revisión Documental Know Your Business — Pipeline Completo '
-        '(Extracción → Validación → PLD/AML → Dictamen PLD/FT → Dictamen Jurídico)'
+                '(Extracción → Validación → PLD/AML → Dictamen PLD/FT → Dictamen Jurídico) — todo vía Orquestrador'
         '</div>',
         unsafe_allow_html=True,
     )
@@ -432,7 +441,7 @@ def main() -> None:
         """)
 
         st.divider()
-        st.caption("Versión: 2.4.0 · Marzo 2026")
+        st.caption("Versión: 3.0.0 · Abril 2026")
 
     # ── Pestañas principales ──────────────────────────────────────────────
     tab_expediente, tab_individual, tab_agentes, tab_consulta, tab_pipeline, tab_historial = st.tabs([
@@ -622,7 +631,7 @@ def main() -> None:
 
         agent_choice = st.radio(
             "Selecciona el agente a ejecutar:",
-            ["📤 Dakota — Extracción", "🔍 Colorado — Validación",
+            ["� Colorado — Validación",
              "🛡️ Arizona — Pipeline PLD/FT Completo", "⚖️ Nevada — Dictamen Jurídico"],
             horizontal=True,
             key="agent_radio",
@@ -631,69 +640,9 @@ def main() -> None:
         st.divider()
 
         # ────────────────────────────────────────────────────────────
-        # DAKOTA — Extracción documental
-        # ────────────────────────────────────────────────────────────
-        if "Dakota" in agent_choice:
-            st.markdown("### 📤 Dakota — Extracción Documental")
-            st.caption("Envía un documento a Dakota (puerto 8010) para extracción con Azure DI + LLM.")
-
-            col_d1, col_d2 = st.columns(2)
-            with col_d1:
-                rfc_dak = st.text_input(
-                    "RFC de la empresa",
-                    placeholder="Ej: ABC230223IA7",
-                    key="rfc_agent_dakota",
-                ).strip().upper()
-            with col_d2:
-                dtype_dak = st.selectbox(
-                    "Tipo de documento",
-                    options=list(DOC_TYPES.keys()),
-                    format_func=lambda x: DOC_TYPES[x],
-                    key="dtype_agent_dakota",
-                )
-
-            file_dak = st.file_uploader(
-                "Selecciona el archivo",
-                type=["pdf", "png", "jpg", "jpeg", "tiff", "cer"],
-                key="file_agent_dakota",
-            )
-
-            if st.button(
-                "▶️  Extraer documento con Dakota",
-                disabled=not (rfc_dak and file_dak),
-                type="primary",
-                use_container_width=True,
-                key="btn_agent_dakota",
-            ):
-                with st.spinner(f"Enviando {file_dak.name} a Dakota..."):
-                    t0 = time.time()
-                    result = send_to_dakota(
-                        file_bytes=file_dak.read(),
-                        file_name=file_dak.name,
-                        doc_type=dtype_dak,
-                        rfc=rfc_dak,
-                        content_type=file_dak.type or "application/pdf",
-                    )
-                    elapsed = time.time() - t0
-
-                if result and "_error" not in result:
-                    st.success(f"✅ Extracción completada en {elapsed:.1f}s")
-                    persist = result.get("_persistencia", {})
-                    if persist.get("guardado"):
-                        st.info(f"💾 Persistido en BD (empresa: `{persist.get('empresa_id')}`).")
-                    with st.expander("📋 Datos extraídos (JSON)", expanded=True):
-                        st.json({k: v for k, v in result.items() if not k.startswith("_")})
-                else:
-                    error_msg = result.get("_error", "Error desconocido") if result else "Sin respuesta de Dakota"
-                    st.error(f"❌ {error_msg}")
-                    if result and "_body" in result:
-                        with st.expander("Detalle del error"):
-                            st.code(result["_body"])
-
-        # ────────────────────────────────────────────────────────────
         # COLORADO — Validación cruzada
         # ────────────────────────────────────────────────────────────
-        elif "Colorado" in agent_choice:
+        if "Colorado" in agent_choice:
             st.markdown("### 🔍 Colorado — Validación Cruzada")
             st.caption(
                 "Ejecuta validación cruzada (puerto 8011): comparación entre documentos, "
@@ -721,7 +670,7 @@ def main() -> None:
                 ):
                     _run_validation_only(empresa_col)
             else:
-                st.warning("No hay empresas en la base de datos. Sube documentos primero con Dakota.")
+                st.warning("No hay empresas en la base de datos. Sube documentos primero en la pestaña Expediente Completo.")
 
         # ────────────────────────────────────────────────────────────
         # ARIZONA — Pipeline PLD/FT Completo
@@ -764,7 +713,7 @@ def main() -> None:
                     ):
                         _run_compliance_only(empresa_pld)
             else:
-                st.warning("No hay empresas en la base de datos. Sube documentos primero con Dakota.")
+                st.warning("No hay empresas en la base de datos. Sube documentos primero en la pestaña Expediente Completo.")
 
         # ────────────────────────────────────────────────────────────
         # NEVADA — Dictamen Jurídico
@@ -808,7 +757,7 @@ def main() -> None:
                     ):
                         _run_nevada_consultar(empresa_nev)
             else:
-                st.warning("No hay empresas en la base de datos. Sube documentos primero con Dakota.")
+                st.warning("No hay empresas en la base de datos. Sube documentos primero en la pestaña Expediente Completo.")
     with tab_historial:
         st.subheader("Historial de validaciones")
         _show_historial()
@@ -819,62 +768,55 @@ def main() -> None:
 # ══════════════════════════════════════════════════════════════════════════════
 
 def _run_expediente(rfc: str, required: dict, optional: dict) -> None:
-    """Procesa un expediente completo: docs → Dakota → Colorado → Arizona PLD/FT Completo."""
+    """Procesa un expediente completo vía Orquestrador (OCR → Colorado → Arizona → Nevada)."""
     all_docs = {**required, **optional}
     docs_to_process = {k: v for k, v in all_docs.items() if v is not None}
 
-    total_steps = len(docs_to_process) + 3  # +3 para Colorado, Arizona, Nevada
-    progress = st.progress(0, text="Iniciando procesamiento...")
-    status_container = st.container()
-    results: list[dict] = []
-    empresa_id = None
-    step = 0
-
-    # ── PASO 1: Dakota — Extracción de cada documento ──────────────────
-    st.markdown('<div class="step-header">📤 Paso 1 — Extracción documental (Dakota)</div>', unsafe_allow_html=True)
-
+    # Recoger archivos para enviar al Orquestrador
+    archivos: list[tuple[str, bytes, str, str]] = []
     for dtype, uploaded in docs_to_process.items():
-        step += 1
-        progress.progress(step / total_steps, text=f"📄 Extrayendo {DOC_TYPES[dtype]}...")
-        with status_container:
-            with st.spinner(f"Enviando {uploaded.name} a Dakota..."):
-                t0 = time.time()
-                result = send_to_dakota(
-                    file_bytes=uploaded.read(),
-                    file_name=uploaded.name,
-                    doc_type=dtype,
-                    rfc=rfc,
-                    content_type=uploaded.type or "application/pdf",
-                )
-                elapsed = time.time() - t0
+        archivos.append((dtype, uploaded.read(), uploaded.name, uploaded.type or "application/pdf"))
 
-                if result and "_error" not in result:
-                    persist = result.get("_persistencia", {})
-                    if not empresa_id:
-                        empresa_id = persist.get("empresa_id")
-                    results.append({
-                        "tipo": dtype,
-                        "archivo": uploaded.name,
-                        "status": "✅ OK",
-                        "tiempo": f"{elapsed:.1f}s",
-                        "empresa_id": persist.get("empresa_id"),
-                    })
-                    st.success(f"✅ {DOC_TYPES[dtype]} — extraído en {elapsed:.1f}s")
-                else:
-                    error_msg = result.get("_error", "Error desconocido") if result else "Sin respuesta"
-                    results.append({
-                        "tipo": dtype,
-                        "archivo": uploaded.name,
-                        "status": f"❌ {error_msg}",
-                        "tiempo": f"{elapsed:.1f}s",
-                    })
-                    st.error(f"❌ {DOC_TYPES[dtype]} — {error_msg}")
+    # ── PASO 1: Orquestrador — Pipeline completo ──────────────────────
+    progress = st.progress(0, text="Enviando expediente al Orquestrador...")
+    st.markdown(
+        '<div class="step-header">📤 Paso 1 — Pipeline completo (Orquestrador)</div>',
+        unsafe_allow_html=True,
+    )
 
-    # Tabla de resultados de extracción
-    if results:
+    with st.spinner(f"Procesando {len(archivos)} documentos (OCR + validación + PLD + dictamen)..."):
+        t0 = time.time()
+        result = send_expediente_to_pipeline(rfc, archivos)
+        elapsed_pipeline = time.time() - t0
+
+    if not result or "_error" in result:
+        progress.progress(1.0, text="❌ Error en el pipeline")
+        error_msg = result.get("_error", "Error desconocido") if result else "Sin respuesta del Orquestrador"
+        st.error(f"❌ {error_msg}")
+        if result and "_body" in result:
+            with st.expander("Detalle del error"):
+                st.code(result["_body"])
+        return
+
+    empresa_id = result.get("empresa_id")
+    st.success(f"✅ Pipeline completado en {elapsed_pipeline:.1f}s")
+    progress.progress(0.3, text="Extracción completada...")
+
+    # ── Resumen de extracción ─────────────────────────────────────────
+    docs = result.get("documentos", [])
+    if docs:
         st.markdown("**Resumen de extracción:**")
+        rows = []
+        for d in docs:
+            status = "✅ OK" if d.get("status") == "ok" else f"❌ {d.get('error', 'Error')}"
+            rows.append({
+                "tipo": d.get("tipo_documento", ""),
+                "archivo": d.get("archivo", ""),
+                "status": status,
+                "tiempo": f"{d.get('tiempo_ms', 0) / 1000:.1f}s",
+            })
         st.dataframe(
-            results,
+            rows,
             column_config={
                 "tipo": st.column_config.TextColumn("Tipo"),
                 "archivo": st.column_config.TextColumn("Archivo"),
@@ -886,29 +828,33 @@ def _run_expediente(rfc: str, required: dict, optional: dict) -> None:
         )
 
     if not empresa_id:
-        progress.progress(1.0, text="⚠️ No se pudo obtener empresa_id — pipeline detenido")
-        st.warning("No se obtuvo empresa_id de Dakota. El pipeline no puede continuar.")
+        progress.progress(1.0, text="⚠️ No se obtuvo empresa_id — pipeline incompleto")
+        st.warning("No se obtuvo empresa_id del Orquestrador.")
         return
 
-    # ── PASO 2: Colorado — Validación cruzada ──────────────────────────
-    step += 1
-    progress.progress(step / total_steps, text="🔍 Paso 2 — Validación cruzada (Colorado)...")
-    st.markdown('<div class="step-header">🔍 Paso 2 — Validación cruzada (Colorado)</div>', unsafe_allow_html=True)
+    # ── PASO 2: Resultado Colorado (ya ejecutado por Orquestrador) ────
+    progress.progress(0.5, text="Obteniendo reporte Colorado...")
+    st.markdown(
+        '<div class="step-header">🔍 Paso 2 — Validación cruzada (Colorado)</div>',
+        unsafe_allow_html=True,
+    )
 
-    with st.spinner("Colorado está analizando los documentos..."):
-        t0 = time.time()
-        validacion = run_colorado(empresa_id)
+    val_cruzada = result.get("validacion_cruzada")
+    if result.get("pipeline_detenido"):
+        st.error(f"⛔ Pipeline detenido: {result.get('motivo_detencion', 'Colorado RECHAZÓ')}")
+
+    if val_cruzada:
         reporte_colorado = get_colorado_report(empresa_id)
-        elapsed_val = time.time() - t0
-
-    if validacion:
-        _render_validacion(validacion, reporte_colorado, elapsed_val)
+        _render_validacion(val_cruzada, reporte_colorado, elapsed_pipeline)
     else:
-        st.warning("⚠️ Colorado no retornó resultado. Verifica que el servicio esté corriendo.")
+        st.warning("⚠️ Colorado no retornó resultado.")
 
-    # ── PASO 3: Arizona PLD Completo ─────────────────────────────
-    step += 1
-    progress.progress(step / total_steps, text="🛡️ Paso 3 — Pipeline PLD/FT Completo (Arizona)...")
+    if result.get("pipeline_detenido"):
+        progress.progress(1.0, text="⛔ Pipeline detenido por Colorado")
+        return
+
+    # ── PASO 3: Arizona PLD Completo ──────────────────────────────────
+    progress.progress(0.7, text="Ejecutando pipeline PLD/FT completo (Arizona)...")
     st.markdown(
         '<div class="step-header">🛡️ Paso 3 — Pipeline PLD/FT Completo (Arizona v2.3)</div>',
         unsafe_allow_html=True,
@@ -928,28 +874,23 @@ def _run_expediente(rfc: str, required: dict, optional: dict) -> None:
     else:
         st.warning("⚠️ Arizona PLD no retornó resultado.")
 
-    # ── PASO 4: Nevada — Dictamen Jurídico ───────────────────────
-    step += 1
-    progress.progress(step / total_steps, text="⚖️ Paso 4 — Dictamen Jurídico (Nevada)...")
+    # ── PASO 4: Nevada — Dictamen Jurídico (ya ejecutado) ─────────────
+    progress.progress(0.9, text="Obteniendo dictamen jurídico (Nevada)...")
     st.markdown(
         '<div class="step-header">⚖️ Paso 4 — Dictamen Jurídico DJ-1 (Nevada)</div>',
         unsafe_allow_html=True,
     )
 
-    legal_result = None
-    with st.spinner("Nevada generando dictamen jurídico DJ-1 (reglas + LLM)..."):
-        t0 = time.time()
-        legal_result = run_nevada_dictamen(empresa_id)
-        elapsed_legal = time.time() - t0
-
+    legal_result = get_nevada_dictamen(empresa_id)
     if legal_result:
-        _render_nevada_resultado(legal_result, elapsed_legal)
+        _render_nevada_resultado(legal_result, elapsed_pipeline)
     else:
-        st.warning("⚠️ Nevada no retornó resultado. Verifica que el servicio esté corriendo.")
+        st.warning("⚠️ Nevada no generó dictamen. Verifica que el servicio esté corriendo.")
 
     progress.progress(1.0, text="✅ Pipeline completo — 4 pasos finalizados")
 
     # ── Resumen final ─────────────────────────────────────────────────
+    validacion = val_cruzada
     st.markdown("---")
     st.markdown("### 🏁 Resumen del Pipeline")
     col1, col2, col3, col4, col5 = st.columns(5)
@@ -985,10 +926,10 @@ def _run_expediente(rfc: str, required: dict, optional: dict) -> None:
 
 
 def _run_individual(rfc: str, doc_type: str, uploaded: st.runtime.uploaded_file_manager.UploadedFile) -> None:
-    """Procesa un solo documento."""
-    with st.spinner(f"Enviando {uploaded.name} a Dakota..."):
+    """Procesa un solo documento vía Orquestrador (OCR + pipeline completo)."""
+    with st.spinner(f"Enviando {uploaded.name} al Orquestrador (pipeline completo)..."):
         t0 = time.time()
-        result = send_to_dakota(
+        result = send_to_pipeline(
             file_bytes=uploaded.read(),
             file_name=uploaded.name,
             doc_type=doc_type,
@@ -998,18 +939,41 @@ def _run_individual(rfc: str, doc_type: str, uploaded: st.runtime.uploaded_file_
         elapsed = time.time() - t0
 
     if result and "_error" not in result:
-        st.success(f"✅ Extracción completada en {elapsed:.1f}s")
+        st.success(f"✅ Pipeline completado en {elapsed:.1f}s")
 
-        with st.expander("📋 Datos extraídos (JSON)", expanded=False):
-            display_data = {k: v for k, v in result.items() if not k.startswith("_")}
-            st.json(display_data)
+        # Mostrar resumen de extracción
+        extraccion = result.get("extraccion")
+        if extraccion:
+            with st.expander("📋 Datos extraídos (JSON)", expanded=False):
+                st.json(extraccion)
 
-        persist = result.get("_persistencia", {})
-        empresa_id = persist.get("empresa_id")
+        empresa_id = result.get("empresa_id") or (result.get("persistencia") or {}).get("empresa_id")
 
-        if persist.get("guardado"):
-            st.info(f"💾 Persistido en BD (empresa: `{empresa_id}`)")
+        # Mostrar resumen de validación cruzada
+        val = result.get("validacion_cruzada")
+        if val and not val.get("error"):
+            dictamen = val.get("dictamen", "—")
+            emoji = DICTAMEN_EMOJI.get(dictamen, "❓")
+            st.info(f"🔍 Colorado: {emoji} {dictamen.replace('_', ' ')} — "
+                    f"{val.get('total_hallazgos', 0)} hallazgos, {val.get('criticos', 0)} críticos")
 
+        if result.get("pipeline_detenido"):
+            st.warning(f"⛔ {result.get('motivo_detencion', 'Pipeline detenido')}")
+
+        # Tiempos
+        tiempos = result.get("tiempos", {})
+        if tiempos:
+            parts = []
+            if tiempos.get("dakota_ocr_ms"):
+                parts.append(f"OCR: {tiempos['dakota_ocr_ms']/1000:.1f}s")
+            if tiempos.get("validacion_cruzada_ms"):
+                parts.append(f"Colorado: {tiempos['validacion_cruzada_ms']/1000:.1f}s")
+            if tiempos.get("total_ms"):
+                parts.append(f"Total: {tiempos['total_ms']/1000:.1f}s")
+            if parts:
+                st.caption(" · ".join(parts))
+
+        if empresa_id:
             st.markdown("**Ejecutar pasos adicionales:**")
             col_a, col_b, col_c, col_d = st.columns(4)
             with col_a:
@@ -1024,10 +988,8 @@ def _run_individual(rfc: str, doc_type: str, uploaded: st.runtime.uploaded_file_
             with col_d:
                 if st.button("⚖️ Dictamen Jurídico", key="btn_legal_ind"):
                     _run_nevada_generate(empresa_id)
-        else:
-            st.warning("⚠️ Documento extraído pero no persistido en BD.")
     else:
-        error_msg = result.get("_error", "Error desconocido") if result else "Sin respuesta de Dakota"
+        error_msg = result.get("_error", "Error desconocido") if result else "Sin respuesta del Orquestrador"
         st.error(f"❌ {error_msg}")
         if result and "_body" in result:
             with st.expander("Detalle del error"):
