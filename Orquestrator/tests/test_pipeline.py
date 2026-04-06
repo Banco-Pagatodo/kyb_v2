@@ -2,7 +2,7 @@
 Tests unitarios para Orquestrator/app/pipeline.py.
 Mockea los clients — no requiere servicios reales.
 
-Flujo: PagaTodo (prospect_data + OCR) → Dakota import → Colorado → Arizona → Compliance → Nevada.
+Flujo Dakota: archivos → Dakota OCR → Colorado → Arizona → Compliance → Nevada.
 """
 from __future__ import annotations
 
@@ -10,11 +10,10 @@ import pytest
 from unittest.mock import AsyncMock, patch
 
 from app.pipeline import procesar_documento, procesar_expediente
-from app.clients import transformar_datos_prospecto
 
 
 # ═══════════════════════════════════════════════════════════════════
-#  procesar_documento (PagaTodo → Dakota import → pipeline)
+#  procesar_documento (archivo → Dakota OCR → pipeline)
 # ═══════════════════════════════════════════════════════════════════
 
 
@@ -23,92 +22,81 @@ class TestProcesarDocumento:
     @patch("app.pipeline.nevada_dictamen_legal", new_callable=AsyncMock)
     @patch("app.pipeline.compliance_dictamen", new_callable=AsyncMock)
     @patch("app.pipeline.arizona_pld_analyze", new_callable=AsyncMock)
-    @patch("app.pipeline.dakota_empresa_progress", new_callable=AsyncMock)
     @patch("app.pipeline.colorado_validate", new_callable=AsyncMock)
-    @patch("app.pipeline.dakota_import", new_callable=AsyncMock)
-    @patch("app.pipeline.pagatodo_ocr_result", new_callable=AsyncMock)
-    @patch("app.pipeline.pagatodo_prospect_data", new_callable=AsyncMock)
+    @patch("app.pipeline.dakota_get_empresa", new_callable=AsyncMock)
+    @patch("app.pipeline.dakota_upload_document", new_callable=AsyncMock)
     async def test_flujo_completo_exitoso(
-        self, mock_prospect, mock_ocr, mock_import, mock_colorado, mock_progress,
+        self, mock_upload, mock_get_empresa, mock_colorado,
         mock_arizona, mock_compliance, mock_nevada,
     ):
-        mock_prospect.return_value = {
-            "personaMoral": {"razonSocial": "TEST SA", "rfc": "TST000101AA0"},
-            "domicilioFiscal": {"calle": "Reforma", "cp": "06600"},
-        }
-        mock_ocr.return_value = ({"rfc": "TST000101AA0", "razon_social": "TEST SA"}, "csf")
-        mock_import.return_value = {
+        mock_upload.return_value = {
             "doc_type": "csf",
-            "_persistencia": {"guardado": True, "empresa_id": "emp-1"},
-            "razon_social": "TEST SA",
+            "archivo_procesado": "test.pdf",
+            "persistencia": {"guardado": True, "empresa_id": "emp-1"},
+            "datos_extraidos": {"razon_social": {"valor": "TEST SA"}},
         }
+        mock_get_empresa.return_value = None  # No necesario si upload devuelve empresa_id
         mock_colorado.return_value = {
             "dictamen": "APROBADO",
             "hallazgos": [],
             "criticos": 0,
             "pasan": 10,
         }
-        mock_progress.return_value = {"total_docs": 1, "doc_types": ["csf"]}
-        mock_arizona.return_value = {"riesgo": "bajo"}
-        mock_compliance.return_value = {"dictamen": "APROBADO"}
-        mock_nevada.return_value = {"dictamen_legal": "FAVORABLE"}
+        mock_arizona.return_value = {"riesgo": "bajo", "resultado": "COMPLETO", "porcentaje_completitud": 95}
+        mock_compliance.return_value = {"dictamen": "APROBADO", "score": {"riesgo_residual": 0.2, "nivel_residual": "BAJO"}}
+        mock_nevada.return_value = {"dictamen": "FAVORABLE", "fundamento_legal": "Art. 25 LFPIORPI"}
 
         result = await procesar_documento(
-            prospect_id="abc-123",
-            document_type="Csf",
+            doc_type="csf",
+            file_content=b"fake-pdf",
+            file_name="test.pdf",
             rfc="TST000101AA0",
         )
 
         assert result["rfc"] == "TST000101AA0"
-        assert result["datos_prospecto"] is not None
-        assert result["datos_prospecto"]["persona_moral"]["rfc"] == "TST000101AA0"
+        assert result["extraccion"] is not None
+        assert result["persistencia"]["guardado"] is True
         assert "tiempos" in result
-        mock_prospect.assert_called_once_with("abc-123")
-        mock_ocr.assert_called_once()
-        mock_import.assert_called_once()
+        mock_upload.assert_called_once()
 
     @pytest.mark.asyncio
-    @patch("app.pipeline.pagatodo_prospect_data", new_callable=AsyncMock)
-    @patch("app.pipeline.pagatodo_ocr_result", new_callable=AsyncMock)
-    async def test_pagatodo_ocr_falla(self, mock_ocr, mock_prospect):
-        mock_prospect.return_value = {
-            "personaMoral": {"razonSocial": "TEST SA", "rfc": "TST000101AA0"},
-        }
-        mock_ocr.return_value = (None, None)
+    @patch("app.pipeline.dakota_upload_document", new_callable=AsyncMock)
+    async def test_dakota_no_responde(self, mock_upload):
+        mock_upload.return_value = None
 
         result = await procesar_documento(
-            prospect_id="abc-123",
-            document_type="Csf",
+            doc_type="csf",
+            file_content=b"fake-pdf",
+            file_name="test.pdf",
             rfc="TST000101AA0",
         )
 
         assert result["extraccion"]["error"] is not None
         assert result["persistencia"] is None
-        # Datos de prospecto sí deben estar aunque OCR falle
-        assert result["datos_prospecto"] is not None
 
     @pytest.mark.asyncio
-    @patch("app.pipeline.pagatodo_prospect_data", new_callable=AsyncMock)
-    @patch("app.pipeline.dakota_import", new_callable=AsyncMock)
-    @patch("app.pipeline.pagatodo_ocr_result", new_callable=AsyncMock)
-    async def test_dakota_import_falla(self, mock_ocr, mock_import, mock_prospect):
-        mock_prospect.return_value = None  # sin datos de registro manual
-        mock_ocr.return_value = ({"rfc": "TST000101AA0"}, "csf")
-        mock_import.return_value = None
+    @patch("app.pipeline.dakota_get_empresa", new_callable=AsyncMock)
+    @patch("app.pipeline.dakota_upload_document", new_callable=AsyncMock)
+    async def test_sin_empresa_id(self, mock_upload, mock_get_empresa):
+        mock_upload.return_value = {
+            "doc_type": "csf",
+            "datos_extraidos": {},
+        }
+        mock_get_empresa.return_value = None  # Tampoco se encuentra por RFC
 
         result = await procesar_documento(
-            prospect_id="abc-123",
-            document_type="Csf",
+            doc_type="csf",
+            file_content=b"fake-pdf",
+            file_name="test.pdf",
             rfc="TST000101AA0",
         )
 
-        assert result["extraccion"]["error"] is not None
+        assert result["persistencia"]["guardado"] is False
         assert result["validacion_cruzada"] is None
-        assert result["datos_prospecto"] is None  # prospect_data no disponible
 
 
 # ═══════════════════════════════════════════════════════════════════
-#  procesar_expediente (multi-documento PagaTodo)
+#  procesar_expediente (multi-documento Dakota)
 # ═══════════════════════════════════════════════════════════════════
 
 
@@ -117,171 +105,74 @@ class TestProcesarExpediente:
     @patch("app.pipeline.nevada_dictamen_legal", new_callable=AsyncMock)
     @patch("app.pipeline.compliance_dictamen", new_callable=AsyncMock)
     @patch("app.pipeline.arizona_pld_analyze", new_callable=AsyncMock)
-    @patch("app.pipeline.dakota_empresa_progress", new_callable=AsyncMock)
     @patch("app.pipeline.colorado_validate", new_callable=AsyncMock)
-    @patch("app.pipeline.dakota_import", new_callable=AsyncMock)
-    @patch("app.pipeline.pagatodo_ocr_result", new_callable=AsyncMock)
-    @patch("app.pipeline.pagatodo_prospect_data", new_callable=AsyncMock)
+    @patch("app.pipeline.dakota_get_empresa", new_callable=AsyncMock)
+    @patch("app.pipeline.dakota_upload_document", new_callable=AsyncMock)
     async def test_expediente_multidoc(
-        self, mock_prospect, mock_ocr, mock_import, mock_colorado, mock_progress,
+        self, mock_upload, mock_get_empresa, mock_colorado,
         mock_arizona, mock_compliance, mock_nevada,
     ):
-        mock_prospect.return_value = {
-            "personaMoral": {"razonSocial": "TEST SA", "rfc": "TST000101AA0"},
-            "domicilioFiscal": {"calle": "Reforma", "cp": "06600"},
-        }
-        mock_ocr.return_value = ({"rfc": "TST000101AA0", "razon_social": "TEST SA"}, "csf")
-        mock_import.return_value = {
+        mock_upload.return_value = {
             "doc_type": "csf",
-            "_persistencia": {"guardado": True, "empresa_id": "emp-1"},
+            "persistencia": {"guardado": True, "empresa_id": "emp-1"},
+            "datos_extraidos": {"razon_social": {"valor": "TEST SA"}},
         }
+        mock_get_empresa.return_value = None
         mock_colorado.return_value = {
-            "dictamen": "RECHAZADO",
-            "hallazgos": [{"codigo": "V1.1"}],
-            "criticos": 1,
+            "dictamen": "APROBADO",
+            "hallazgos": [],
+            "criticos": 0,
             "pasan": 5,
+            "portales_ejecutados": False,
         }
-        mock_progress.return_value = {"total_docs": 2}
-        mock_arizona.return_value = {"riesgo": "medio"}
-        mock_compliance.return_value = {"dictamen": "CONDICIONADO"}
-        mock_nevada.return_value = {"dictamen_legal": "CON_OBSERVACIONES"}
+        mock_arizona.return_value = {"resultado": "COMPLETO", "porcentaje_completitud": 90}
+        mock_compliance.return_value = {"dictamen": "APROBADO", "score": {"riesgo_residual": 0.1, "nivel_residual": "BAJO"}}
+        mock_nevada.return_value = {"dictamen": "FAVORABLE"}
 
         result = await procesar_expediente(
-            prospect_id="abc-123",
             rfc="TST000101AA0",
-            document_types=["Csf", "IneFrente"],
+            archivos=[
+                {"doc_type": "csf", "file_content": b"pdf1", "file_name": "csf.pdf"},
+                {"doc_type": "ine", "file_content": b"pdf2", "file_name": "ine.pdf"},
+            ],
         )
 
         assert result["rfc"] == "TST000101AA0"
         assert result["documentos_procesados"] == 2
         assert result["documentos_exitosos"] == 2
-        assert result["datos_prospecto"] is not None
-        assert result["datos_prospecto"]["persona_moral"]["rfc"] == "TST000101AA0"
-        mock_prospect.assert_called_once_with("abc-123")
+        assert mock_upload.call_count == 2
 
     @pytest.mark.asyncio
     @patch("app.pipeline.nevada_dictamen_legal", new_callable=AsyncMock)
     @patch("app.pipeline.compliance_dictamen", new_callable=AsyncMock)
     @patch("app.pipeline.arizona_pld_analyze", new_callable=AsyncMock)
-    @patch("app.pipeline.dakota_empresa_progress", new_callable=AsyncMock)
     @patch("app.pipeline.colorado_validate", new_callable=AsyncMock)
-    @patch("app.pipeline.dakota_import", new_callable=AsyncMock)
-    @patch("app.pipeline.pagatodo_ocr_result", new_callable=AsyncMock)
-    @patch("app.pipeline.pagatodo_prospect_data", new_callable=AsyncMock)
+    @patch("app.pipeline.dakota_get_empresa", new_callable=AsyncMock)
+    @patch("app.pipeline.dakota_upload_document", new_callable=AsyncMock)
     async def test_un_doc_falla(
-        self, mock_prospect, mock_ocr, mock_import, mock_colorado, mock_progress,
+        self, mock_upload, mock_get_empresa, mock_colorado,
         mock_arizona, mock_compliance, mock_nevada,
     ):
-        mock_prospect.return_value = None  # Prospect data no disponible
-        # Primer doc OK, segundo falla en OCR
-        mock_ocr.side_effect = [
-            ({"rfc": "TST000101AA0"}, "csf"),
-            (None, None),
+        # Primer doc OK, segundo falla
+        mock_upload.side_effect = [
+            {
+                "doc_type": "csf",
+                "persistencia": {"guardado": True, "empresa_id": "emp-1"},
+            },
+            None,
         ]
-        mock_import.return_value = {
-            "doc_type": "csf",
-            "_persistencia": {"guardado": True, "empresa_id": "emp-1"},
-        }
+        mock_get_empresa.return_value = None
         mock_colorado.return_value = {"dictamen": "APROBADO", "hallazgos": [], "criticos": 0, "pasan": 5}
-        mock_progress.return_value = {}
-        mock_arizona.return_value = {"riesgo": "bajo"}
-        mock_compliance.return_value = {"dictamen": "APROBADO"}
-        mock_nevada.return_value = {"dictamen_legal": "FAVORABLE"}
+        mock_arizona.return_value = {"resultado": "COMPLETO", "porcentaje_completitud": 90}
+        mock_compliance.return_value = {"dictamen": "APROBADO", "score": {}}
+        mock_nevada.return_value = {"dictamen": "FAVORABLE"}
 
         result = await procesar_expediente(
-            prospect_id="abc-123",
             rfc="TST000101AA0",
-            document_types=["Csf", "IneFrente"],
+            archivos=[
+                {"doc_type": "csf", "file_content": b"pdf1", "file_name": "csf.pdf"},
+                {"doc_type": "ine", "file_content": b"pdf2", "file_name": "ine.pdf"},
+            ],
         )
         assert result["documentos_procesados"] == 2
         assert result["documentos_exitosos"] == 1
-        assert result["datos_prospecto"] is None  # prospect_data no disponible
-
-
-# ═══════════════════════════════════════════════════════════════════
-#  transformar_datos_prospecto (normalización PagaTodo → interno)
-# ═══════════════════════════════════════════════════════════════════
-
-
-class TestTransformarDatosProspecto:
-    def test_transformacion_completa(self):
-        raw = {
-            "personaMoral": {
-                "razonSocial": "Stellar Solutions SA de CV",
-                "rfc": "LIO970711TND",
-                "nacionalidad": "México",
-                "nombreComercial": "Quantum Tech",
-                "giroMercantil": "Compra y venta",
-                "numeroEmpleados": 1233,
-                "paginaWeb": "example.com",
-                "serieFEA": None,
-                "telefono": "5571223123",
-                "correo": "test@test.com",
-            },
-            "domicilioFiscal": {
-                "calle": "Oriente 168",
-                "noExterior": "35",
-                "noInterior": None,
-                "cp": "23019",
-                "colonia": "La Paz",
-                "municipio": "La Paz",
-                "ciudad": "La Paz",
-                "estado": "Baja California Sur",
-            },
-            "actaConstitutiva": {
-                "instrumentoPublico": "324423423",
-                "fechaConstitucion": "2025-12-09",
-                "numeroNotaria": "2341234",
-                "folioMercantil": "LKDSFKQWE23",
-                "nombreNotario": "Juan Fuentes Flores",
-            },
-            "representanteLegal": {
-                "nombres": "Jose",
-                "primerApellido": "Licona",
-                "segundoApellido": "Orduña",
-                "rfc": "LIOI970711TN8",
-                "domicilio": {
-                    "calle": "Manantial",
-                    "noExterior": "234",
-                    "cp": "23019",
-                },
-            },
-            "perfilTransaccional": {
-                "entradas": [{"monto": "1.00 - 4000000.00)", "frecuencia": "Quincenal"}],
-                "salidas": [],
-            },
-        }
-
-        result = transformar_datos_prospecto(raw)
-
-        assert result["persona_moral"]["razon_social"] == "Stellar Solutions SA de CV"
-        assert result["persona_moral"]["rfc"] == "LIO970711TND"
-        assert result["persona_moral"]["numero_empleados"] == 1233
-        assert result["domicilio_fiscal"]["calle"] == "Oriente 168"
-        assert result["domicilio_fiscal"]["codigo_postal"] == "23019"
-        assert result["acta_constitutiva"]["folio_mercantil"] == "LKDSFKQWE23"
-        assert result["representante_legal"]["nombre_completo"] == "Jose Licona Orduña"
-        assert result["representante_legal"]["rfc"] == "LIOI970711TN8"
-        assert result["representante_legal"]["domicilio"]["calle"] == "Manantial"
-        assert len(result["perfil_transaccional"]["entradas"]) == 1
-        assert result["perfil_transaccional"]["salidas"] == []
-
-    def test_respuesta_vacia(self):
-        result = transformar_datos_prospecto({})
-
-        assert result["persona_moral"]["rfc"] == ""
-        assert result["domicilio_fiscal"]["calle"] == ""
-        assert result["representante_legal"]["nombre_completo"] == ""
-        assert result["perfil_transaccional"]["entradas"] == []
-        assert result["declaraciones_regulatorias"] is None
-
-    def test_nombre_completo_parcial(self):
-        raw = {
-            "representanteLegal": {
-                "nombres": "Maria",
-                "primerApellido": "Lopez",
-                "segundoApellido": "",
-            },
-        }
-        result = transformar_datos_prospecto(raw)
-        assert result["representante_legal"]["nombre_completo"] == "Maria Lopez"

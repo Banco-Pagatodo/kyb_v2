@@ -39,14 +39,14 @@ async def lifespan(app: FastAPI):
 
 # ── FastAPI App ──────────────────────────────────────────────────────────
 app = FastAPI(
-    title="Orquestrator — Agente Orquestador KYB",
+    title="Orquestrator Dakota — Agente Orquestador KYB",
     description=(
-        "Coordina los agentes Dakota (validación/persistencia), Colorado (validación cruzada), "
+        "Coordina los agentes Dakota (OCR/persistencia), Colorado (validación cruzada), "
         "Arizona (PLD/AML + dictamen PLD/FT) y Nevada (dictamen jurídico) en un flujo "
-        "automatizado end-to-end. Recibe prospect_id + DocumentType de PagaTodo Hub y "
-        "orquesta todo el pipeline KYB."
+        "automatizado end-to-end. Recibe archivos PDF/imagen + RFC y orquesta todo el "
+        "pipeline KYB enviando documentos a Dakota para extracción y persistencia."
     ),
-    version="1.9.0",
+    version="2.0.0",
     lifespan=lifespan,
     docs_url="/docs",
     redoc_url="/redoc",
@@ -69,12 +69,13 @@ app.include_router(router)
 async def root():
     """Info básica del servicio."""
     return {
-        "service": "Orquestrator — Agente Orquestador KYB",
-        "version": "1.0.0",
+        "service": "Orquestrator Dakota — Agente Orquestador KYB",
+        "version": "2.0.0",
+        "flujo": "Archivos → Dakota (OCR + persistencia) → Colorado → Arizona → Nevada",
         "docs": "/docs",
         "endpoints": {
-            "process": "POST /api/v1/pipeline/process",
-            "expediente": "POST /api/v1/pipeline/expediente",
+            "process": "POST /api/v1/pipeline/process (archivo + doc_type + rfc)",
+            "expediente": "POST /api/v1/pipeline/expediente (archivos + doc_types + rfc)",
             "status": "GET /api/v1/pipeline/status/{rfc}",
             "health": "GET /api/v1/pipeline/health",
         },

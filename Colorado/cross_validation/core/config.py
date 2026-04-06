@@ -6,19 +6,20 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
-# Buscar .env en varias ubicaciones posibles
+# Cargar .env de varias ubicaciones posibles (override=False para que
+# las primeras tengan prioridad; las siguientes solo rellenan lo que falte).
 _service_root = Path(__file__).resolve().parent.parent          # Colorado/cross_validation/
-_project_root = _service_root.parent.parent                     # Agents/
+_project_root = _service_root.parent.parent                     # kyb_v2/
+_first = True
 for env_path in [
     _service_root / ".env",                                     # Colorado/cross_validation/.env  (propio)
-    _project_root / ".env",                                     # Agents/.env  (raíz compartida)
-    _project_root / "Dakota" / "kyb_review" / ".env",
-    _project_root / "Dakota" / "kyb_review" / "api" / "service" / ".env",
+    _project_root / ".env",                                     # kyb_v2/.env  (raíz compartida)
+    _project_root / "Dakota" / "kyb_review" / "api" / "service" / ".env",  # Azure keys
     Path.cwd() / ".env",
 ]:
     if env_path.exists():
-        load_dotenv(env_path)
-        break
+        load_dotenv(env_path, override=_first)
+        _first = False
 
 # ── Base de datos ────────────────────────────────────────────────
 DB_HOST = os.getenv("DB_HOST", "localhost")

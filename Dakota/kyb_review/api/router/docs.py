@@ -496,14 +496,14 @@ async def validate_ine_reverso(
 
 
 # ---------------------------------------------------------------------------
-# Import de OCR externo (PagaTodo Hub)
+# Import de OCR externo (datos pre-extraídos)
 # ---------------------------------------------------------------------------
 
 class ImportPayload(BaseModel):
-    """Payload para importar datos OCR pre-extraídos (ej. desde PagaTodo Hub)."""
+    """Payload para importar datos OCR pre-extraídos."""
     datos_extraidos: dict[str, Any]
     texto_ocr: str = ""
-    archivo_procesado: str = "pagatodo_import"
+    archivo_procesado: str = "external_import"
 
 # Tipos de documento válidos para importación
 _IMPORT_DOC_TYPES: set[str] = {
@@ -525,8 +525,8 @@ async def import_document(
     Importa datos OCR pre-extraídos sin ejecutar OCR propio.
 
     Ejecuta validación de campos + persistencia sobre el JSON recibido.
-    Pensado para el flujo **PagaTodo Hub → Dakota** donde el OCR ya fue
-    realizado externamente y solo se necesita validar y guardar.
+    Pensado para flujos donde el OCR ya fue realizado externamente
+    y solo se necesita validar y guardar.
     """
     doc_type = doc_type.strip().lower()
     if doc_type not in _IMPORT_DOC_TYPES:

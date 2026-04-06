@@ -1,32 +1,33 @@
 """
-Router Pipeline — Endpoints del orquestador KYB.
+Router Pipeline — Endpoints del orquestador KYB (flujo Dakota).
 
 Endpoints:
-  POST /api/v1/pipeline/process             → Un doc (PagaTodo OCR) → BD → Colorado → …
-  POST /api/v1/pipeline/expediente          → Multi-doc (PagaTodo OCR) → BD → Colorado → …
+  POST /api/v1/pipeline/process             → Un doc (archivo) → Dakota → Colorado → …
+  POST /api/v1/pipeline/expediente          → Multi-doc (archivos) → Dakota → Colorado → …
   GET  /api/v1/pipeline/status/{rfc}        → Progreso del expediente
   GET  /api/v1/pipeline/health              → Health check integrado (servicios)
 
-Flujo único (PagaTodo Hub):
-  1. Cliente envía prospect_id + DocumentType
-  2. Orquestrador obtiene OCR pre-extraído de PagaTodo Hub
-  3. Persiste directamente en PostgreSQL (empresas + documentos)
+Flujo Dakota:
+  1. Cliente envía archivo(s) + RFC + tipo de documento
+  2. Orquestrador envía cada archivo a Dakota para OCR + persistencia
+  3. Dakota extrae datos y persiste en PostgreSQL
   4. Colorado → Arizona PLD → Compliance → Nevada
 """
 
 from __future__ import annotations
 
 import logging
+from typing import Annotated
 
-from fastapi import APIRouter, HTTPException
-from pydantic import BaseModel, Field
+from fastapi import APIRouter, File, Form, HTTPException, UploadFile
 
 from .clients import (
     arizona_health,
     colorado_health,
     compliance_health,
+    dakota_health,
 )
-from .config import PAGATODO_DOCTYPE_MAP
+from .config import DAKOTA_DOC_TYPES
 from .persistence import obtener_estado_por_rfc
 from .pipeline import (
     procesar_documento,
@@ -35,7 +36,9 @@ from .pipeline import (
 
 logger = logging.getLogger("orquestrator.router")
 
-router = APIRouter(prefix="/api/v1/pipeline", tags=["Pipeline — Orquestador KYB"])
+router = APIRouter(prefix="/api/v1/pipeline", tags=["Pipeline — Orquestador KYB (Dakota)"])
+
+_DOC_TYPES_DESC = ", ".join(f"`{t}`" for t in sorted(DAKOTA_DOC_TYPES))
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -48,11 +51,7 @@ router = APIRouter(prefix="/api/v1/pipeline", tags=["Pipeline — Orquestador KY
     description="Retorna el estado end-to-end del pipeline y progreso de documentos.",
 )
 async def get_status(rfc: str):
-    """
-    Consulta el estado de un expediente por RFC.
-    Busca en pipeline_resultados (estado unificado).
-    """
-    # 1. Consultar pipeline_resultados
+    """Consulta el estado de un expediente por RFC."""
     estado_pipeline = None
     try:
         estado_pipeline = await obtener_estado_por_rfc(rfc.strip().upper())
@@ -62,132 +61,137 @@ async def get_status(rfc: str):
     if not estado_pipeline:
         raise HTTPException(status_code=404, detail=f"No se encontró empresa con RFC: {rfc}")
 
-    # 2. Formatear resultado
-    result: dict = {}
-    if estado_pipeline:
-        # Serializar tipos no-JSON (datetime, UUID, Decimal)
-        pipeline_dict = {}
-        for k, v in estado_pipeline.items():
-            if hasattr(v, "isoformat"):
-                pipeline_dict[k] = v.isoformat()
-            elif hasattr(v, "hex"):  # UUID
-                pipeline_dict[k] = str(v)
-            elif isinstance(v, (int, float, str, bool, list, dict)) or v is None:
-                pipeline_dict[k] = v
-            else:
-                pipeline_dict[k] = str(v)
-        result["pipeline"] = pipeline_dict
-    return result
+    pipeline_dict = {}
+    for k, v in estado_pipeline.items():
+        if hasattr(v, "isoformat"):
+            pipeline_dict[k] = v.isoformat()
+        elif hasattr(v, "hex"):  # UUID
+            pipeline_dict[k] = str(v)
+        elif isinstance(v, (int, float, str, bool, list, dict)) or v is None:
+            pipeline_dict[k] = v
+        else:
+            pipeline_dict[k] = str(v)
+
+    return {"pipeline": pipeline_dict}
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-#  POST /process — Documento individual (PagaTodo Hub)
+#  POST /process — Documento individual (archivo → Dakota)
 # ═══════════════════════════════════════════════════════════════════════════════
-
-_DOC_TYPES_DESC = ", ".join(f"`{k}`" for k in PAGATODO_DOCTYPE_MAP)
-
-
-class PagatodoDocRequest(BaseModel):
-    """Solicitud para procesar un documento vía PagaTodo Hub."""
-    prospect_id: str = Field(..., description="UUID del prospecto en PagaTodo Hub")
-    document_type: str = Field(
-        ...,
-        description=f"Tipo de documento externo PagaTodo ({_DOC_TYPES_DESC})",
-    )
-    rfc: str = Field(..., description="RFC de la empresa (obligatorio)")
-
-
-class PagatodoExpedienteRequest(BaseModel):
-    """Solicitud para procesar un expediente completo vía PagaTodo Hub."""
-    prospect_id: str = Field(..., description="UUID del prospecto en PagaTodo Hub")
-    rfc: str = Field(..., description="RFC de la empresa (obligatorio)")
-    document_types: list[str] = Field(
-        ...,
-        description=f"Lista de tipos de documento externos a procesar ({_DOC_TYPES_DESC})",
-    )
-
 
 @router.post(
     "/process",
-    summary="Procesar un documento KYB (flujo completo)",
+    summary="Procesar un documento KYB (flujo completo vía Dakota)",
     description=f"""
-**Flujo automático con OCR externo (PagaTodo Hub):**
+**Flujo automático con Dakota:**
 
-1. El Orquestrador obtiene el OCR pre-extraído desde PagaTodo Hub.
-2. Persiste directamente en **PostgreSQL** (empresas + documentos).
+1. El Orquestrador envía el archivo a **Dakota** para OCR + persistencia.
+2. Dakota extrae datos del documento y los guarda en PostgreSQL.
 3. Llama a **Colorado** para validación cruzada.
 4. Llama a **Arizona** para análisis PLD/AML.
 5. Llama a **Compliance** para dictamen PLD/FT.
 6. Llama a **Nevada** para dictamen jurídico.
 
-**Tipos de documento soportados (PagaTodo):**
+**Tipos de documento soportados:**
 {_DOC_TYPES_DESC}
 """,
 )
-async def process_document(body: PagatodoDocRequest):
-    """Procesa un documento KYB: PagaTodo OCR → validación → BD → pipeline."""
-    if body.document_type not in PAGATODO_DOCTYPE_MAP:
+async def process_document(
+    file: Annotated[UploadFile, File(description="Archivo PDF o imagen del documento")],
+    doc_type: Annotated[str, Form(description=f"Tipo de documento: {_DOC_TYPES_DESC}")],
+    rfc: Annotated[str, Form(description="RFC de la empresa")],
+):
+    """Procesa un documento KYB: archivo → Dakota → validación → pipeline."""
+    doc_type = doc_type.strip().lower()
+    if doc_type not in DAKOTA_DOC_TYPES:
         raise HTTPException(
             status_code=422,
-            detail=f"DocumentType '{body.document_type}' no reconocido. Valores válidos: {list(PAGATODO_DOCTYPE_MAP.keys())}",
+            detail=f"doc_type '{doc_type}' no reconocido. Valores válidos: {sorted(DAKOTA_DOC_TYPES)}",
         )
-    if not body.rfc or not body.rfc.strip():
+    if not rfc or not rfc.strip():
         raise HTTPException(status_code=422, detail="El campo 'rfc' es obligatorio.")
 
     try:
+        file_content = await file.read()
         resultado = await procesar_documento(
-            prospect_id=body.prospect_id,
-            document_type=body.document_type,
-            rfc=body.rfc,
+            doc_type=doc_type,
+            file_content=file_content,
+            file_name=file.filename or "documento",
+            rfc=rfc,
         )
         return resultado
     except Exception as e:
-        logger.error("[PIPELINE-PT] Error: %s", e, exc_info=True)
+        logger.error("[PIPELINE-DK] Error: %s", e, exc_info=True)
         raise HTTPException(status_code=500, detail=f"Error interno: {str(e)}")
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-#  POST /expediente — Multi-documento (PagaTodo Hub)
+#  POST /expediente — Multi-documento (archivos → Dakota)
 # ═══════════════════════════════════════════════════════════════════════════════
 
 @router.post(
     "/expediente",
-    summary="Procesar expediente KYB completo",
+    summary="Procesar expediente KYB completo (múltiples archivos vía Dakota)",
     description=f"""
-Procesa múltiples documentos de un prospecto PagaTodo.
+Procesa múltiples documentos de una empresa enviándolos a Dakota.
 
 El Orquestrador:
-1. Obtiene el OCR de cada documento desde PagaTodo Hub.
-2. Persiste cada resultado directamente en **PostgreSQL**.
-3. Llama a **Colorado** una sola vez al final.
-4. Ejecuta **Arizona PLD** → **Compliance** → **Nevada**.
+1. Envía cada archivo a **Dakota** para OCR + persistencia.
+2. Llama a **Colorado** una sola vez al final.
+3. Ejecuta **Arizona PLD** → **Compliance** → **Nevada**.
+
+Enviar los archivos como multipart/form-data:
+- `files`: Lista de archivos PDF o imagen.
+- `doc_types`: Lista de tipos de documento (mismo orden que los archivos).
+- `rfc`: RFC de la empresa.
 
 **Tipos de documento soportados:**
 {_DOC_TYPES_DESC}
 """,
 )
-async def process_expediente(body: PagatodoExpedienteRequest):
-    """Procesa expediente KYB completo."""
-    if not body.rfc or not body.rfc.strip():
+async def process_expediente(
+    files: Annotated[list[UploadFile], File(description="Archivos PDF o imagen de los documentos")],
+    doc_types: Annotated[list[str], Form(description="Tipos de documento (mismo orden que los archivos)")],
+    rfc: Annotated[str, Form(description="RFC de la empresa")],
+):
+    """Procesa expediente KYB completo: archivos → Dakota → pipeline."""
+    if not rfc or not rfc.strip():
         raise HTTPException(status_code=422, detail="El campo 'rfc' es obligatorio.")
 
-    # Validar todos los document_types
-    invalid = [dt for dt in body.document_types if dt not in PAGATODO_DOCTYPE_MAP]
+    if len(files) != len(doc_types):
+        raise HTTPException(
+            status_code=422,
+            detail=f"Cantidad de archivos ({len(files)}) no coincide con tipos ({len(doc_types)})",
+        )
+
+    # Validar tipos de documento
+    invalid = [dt for dt in doc_types if dt.strip().lower() not in DAKOTA_DOC_TYPES]
     if invalid:
         raise HTTPException(
             status_code=422,
-            detail=f"DocumentType(s) no reconocido(s): {invalid}. Valores válidos: {list(PAGATODO_DOCTYPE_MAP.keys())}",
+            detail=f"doc_type(s) no reconocido(s): {invalid}. Valores válidos: {sorted(DAKOTA_DOC_TYPES)}",
         )
 
     try:
+        # Leer contenido de los archivos
+        archivos = []
+        for f, dt in zip(files, doc_types):
+            content = await f.read()
+            archivos.append({
+                "doc_type": dt.strip().lower(),
+                "file_content": content,
+                "file_name": f.filename or "documento",
+            })
+
         resultado = await procesar_expediente(
-            prospect_id=body.prospect_id,
-            rfc=body.rfc,
-            document_types=body.document_types,
+            rfc=rfc,
+            archivos=archivos,
         )
         return resultado
+    except HTTPException:
+        raise
     except Exception as e:
-        logger.error("[PIPELINE-PT] Error expediente: %s", e, exc_info=True)
+        logger.error("[PIPELINE-DK] Error expediente: %s", e, exc_info=True)
         raise HTTPException(status_code=500, detail=f"Error interno: {str(e)}")
 
 
@@ -197,20 +201,22 @@ async def process_expediente(body: PagatodoExpedienteRequest):
 
 @router.get(
     "/health",
-    summary="Health check del pipeline (Orquestrador + Colorado + Arizona)",
+    summary="Health check del pipeline (Orquestrador + Dakota + Colorado + Arizona)",
 )
 async def pipeline_health():
     """Verifica que los servicios downstream estén disponibles."""
+    d_ok = await dakota_health()
     c_ok = await colorado_health()
     a_ok = await arizona_health()
     comp_ok = await compliance_health()
 
-    all_ok = c_ok and a_ok and comp_ok
+    all_ok = d_ok and c_ok and a_ok and comp_ok
     status = "healthy" if all_ok else "degraded"
 
     return {
         "status": status,
         "orquestrator": {"status": "running"},
+        "dakota": {"reachable": d_ok, "url": "http://localhost:8010"},
         "colorado": {"reachable": c_ok, "url": "http://localhost:8011"},
         "arizona_pld": {"reachable": a_ok, "url": "http://localhost:8012"},
         "arizona_compliance": {"reachable": comp_ok, "url": "http://localhost:8012"},

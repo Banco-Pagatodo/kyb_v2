@@ -1,7 +1,7 @@
 # Colorado — Agente de Validación Cruzada KYB
 
-> **Versión**: 1.2.1  
-> **Última actualización**: 27 de marzo de 2026  
+> **Versión**: 1.3.0  
+> **Última actualización**: 6 de abril de 2026  
 > **Puerto**: 8011 | **API Prefix**: `/api/v1/validacion`
 
 Colorado es un agente que **valida automáticamente los documentos corporativos de empresas mexicanas** (proceso KYB — _Know Your Business_). Recibe un expediente digital ya extraído por **Dakota** (el agente de extracción) y cruza la información entre documentos para detectar inconsistencias, documentos faltantes o vencidos, y validar datos contra portales gubernamentales en tiempo real.
@@ -81,7 +81,7 @@ Colorado/
 │           ├── __init__.py            ← Lazy import del orquestador
 │           ├── base.py                ← Clase base: retry, delays, screenshots, stealth
 │           ├── captcha.py             ← Resolución de CAPTCHAs (Azure CV, GPT-4o, Tesseract)
-│           ├── engine.py              ← Orquestador: ejecuta los 3 módulos en secuencia
+│           ├── engine.py              ← Orquestador: ejecuta los 3 módulos con browser compartido
 │           ├── report.py              ← Genera reportes Excel/CSV de portales
 │           ├── fiel_validator.py      ← Portal SAT: vigencia de e.firma (FIEL)
 │           ├── rfc_validator.py       ← Portal SAT: validación de RFC
@@ -119,11 +119,12 @@ Cuando ejecutas `python -m cross_validation validar-rfc SCX190531824 --portales`
     │   ├── bloque8 → ¿Extracción confiable?
     │   └── bloque9 → ¿Expediente completo?
     │
-    ├── Si --portales: ejecuta bloque 10
+    ├── Si --portales: ejecuta bloque 10 (browser compartido)
     │   └── bloque10_portales.py
-    │       ├── FIELValidator → abre navegador → portal SAT → CAPTCHA → resultado
-    │       ├── RFCValidator  → abre navegador → portal SAT → CAPTCHA → resultado
-    │       └── INEValidator  → abre navegador → lista nominal INE → reCAPTCHA → resultado
+    │       ├── Lanza 1 instancia de Chromium (compartida)
+    │       ├── FIELValidator → portal SAT → CAPTCHA → resultado
+    │       ├── RFCValidator  → portal SAT → CAPTCHA → resultado
+    │       └── INEValidator  → lista nominal INE → reCAPTCHA → resultado
     │
     ├── Calcula dictamen (APROBADO / RECHAZADO)
     ├── Genera recomendaciones

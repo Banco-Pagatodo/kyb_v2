@@ -2,7 +2,6 @@
 Clientes HTTP para Dakota, Colorado, Arizona y Nevada.
 
 Flujo Dakota: envía archivos directamente a Dakota para OCR + persistencia.
-Sin dependencia de PagaTodo Hub.
 
 Todas las funciones son async y manejan errores de forma segura:
 - Si un agente no responde → retorna None + log warning

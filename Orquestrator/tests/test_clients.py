@@ -1,6 +1,8 @@
 """
 Tests unitarios para Orquestrator/app/clients.py.
 Todos los tests mockean httpx — no requieren servicios corriendo.
+
+Flujo Dakota: archivos → Dakota OCR → Colorado → Arizona → Nevada.
 """
 from __future__ import annotations
 
@@ -9,15 +11,14 @@ from unittest.mock import AsyncMock, patch, MagicMock
 import httpx
 
 from app.clients import (
+    dakota_upload_document,
+    dakota_get_empresa,
     dakota_health,
-    dakota_empresa_by_rfc,
-    dakota_empresa_progress,
-    dakota_import,
     colorado_validate,
     colorado_health,
     colorado_last_validation,
-    SUPPORTED_IMPORT_DOC_TYPES,
 )
+from app.config import DAKOTA_DOC_TYPES
 
 
 # ═══════════════════════════════════════════════════════════════════
@@ -33,14 +34,18 @@ def _mock_response(status: int = 200, json_data: dict | None = None, text: str =
 
 
 # ═══════════════════════════════════════════════════════════════════
-#  dakota_import
+#  dakota_upload_document
 # ═══════════════════════════════════════════════════════════════════
 
 
-class TestDakotaImport:
+class TestDakotaUploadDocument:
     @pytest.mark.asyncio
-    async def test_import_exitoso(self):
-        mock_resp = _mock_response(200, {"doc_type": "csf", "_persistencia": {"guardado": True, "empresa_id": "abc"}})
+    async def test_upload_exitoso(self):
+        mock_resp = _mock_response(200, {
+            "doc_type": "csf",
+            "archivo_procesado": "test.pdf",
+            "persistencia": {"guardado": True, "empresa_id": "abc"},
+        })
         with patch("app.clients.httpx.AsyncClient") as MockClient:
             instance = AsyncMock()
             instance.post.return_value = mock_resp
@@ -48,16 +53,17 @@ class TestDakotaImport:
             instance.__aexit__ = AsyncMock(return_value=False)
             MockClient.return_value = instance
 
-            result = await dakota_import(
+            result = await dakota_upload_document(
                 doc_type="csf",
-                ocr_json={"rfc": "TST000101AA0", "razon_social": "TEST"},
+                file_content=b"fake-pdf-content",
+                file_name="test.pdf",
                 rfc="TST000101AA0",
             )
         assert result is not None
         assert result["doc_type"] == "csf"
 
     @pytest.mark.asyncio
-    async def test_import_error_conexion(self):
+    async def test_upload_error_conexion(self):
         with patch("app.clients.httpx.AsyncClient") as MockClient:
             instance = AsyncMock()
             instance.post.side_effect = httpx.ConnectError("No server")
@@ -65,15 +71,16 @@ class TestDakotaImport:
             instance.__aexit__ = AsyncMock(return_value=False)
             MockClient.return_value = instance
 
-            result = await dakota_import(
+            result = await dakota_upload_document(
                 doc_type="csf",
-                ocr_json={"rfc": "TST000101AA0"},
+                file_content=b"fake-pdf-content",
+                file_name="test.pdf",
                 rfc="TST000101AA0",
             )
         assert result is None
 
     @pytest.mark.asyncio
-    async def test_import_http_500(self):
+    async def test_upload_http_500(self):
         mock_resp = _mock_response(500, text="Internal error")
         with patch("app.clients.httpx.AsyncClient") as MockClient:
             instance = AsyncMock()
@@ -82,9 +89,10 @@ class TestDakotaImport:
             instance.__aexit__ = AsyncMock(return_value=False)
             MockClient.return_value = instance
 
-            result = await dakota_import(
+            result = await dakota_upload_document(
                 doc_type="csf",
-                ocr_json={"rfc": "TST000101AA0"},
+                file_content=b"fake-pdf-content",
+                file_name="test.pdf",
                 rfc="TST000101AA0",
             )
         assert result is None
@@ -171,14 +179,14 @@ class TestColoradoValidate:
 
 
 # ═══════════════════════════════════════════════════════════════════
-#  SUPPORTED_IMPORT_DOC_TYPES
+#  DAKOTA_DOC_TYPES
 # ═══════════════════════════════════════════════════════════════════
 
 
-class TestSupportedImportDocTypes:
+class TestDakotaDocTypes:
     def test_contiene_tipos_base(self):
-        for dt in ["csf", "acta_constitutiva", "ine", "poder", "fiel"]:
-            assert dt in SUPPORTED_IMPORT_DOC_TYPES
+        for dt in ["csf", "acta_constitutiva", "ine", "fiel"]:
+            assert dt in DAKOTA_DOC_TYPES
 
     def test_no_vacio(self):
-        assert len(SUPPORTED_IMPORT_DOC_TYPES) >= 7
+        assert len(DAKOTA_DOC_TYPES) >= 7

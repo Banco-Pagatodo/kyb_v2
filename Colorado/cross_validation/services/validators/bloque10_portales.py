@@ -236,18 +236,23 @@ async def _ejecutar_portal(
     exp: ExpedienteEmpresa,
     headless: bool,
     sin_datos_motivo: str | None = None,
+    *,
+    browser=None,
 ) -> Hallazgo:
     """Helper genérico para ejecutar un portal y devolver un Hallazgo.
 
+    Si ``browser`` se provee, el validador reutiliza ese browser en vez
+    de lanzar uno propio (ahorra ~6-8s por portal).
     Si ``datos`` es ``None`` genera un hallazgo SIN_DATOS con ``sin_datos_motivo``.
-    De lo contrario ejecuta ``validator.validar_con_reintentos`` dentro de
-    ``iniciar_navegador`` / ``cerrar_navegador``.
     """
     if datos is None:
         return _sin_datos_hallazgo(codigo, nombre, sin_datos_motivo or "Sin datos")
 
     try:
-        await validator.iniciar_navegador(headless=headless)
+        if browser is not None:
+            await validator.usar_navegador_compartido(browser)
+        else:
+            await validator.iniciar_navegador(headless=headless)
         resultado = await validator.validar_con_reintentos(
             datos=datos,
             empresa=exp.razon_social,
@@ -278,7 +283,13 @@ async def _validar_portales_impl(
     modulos: set[str] | None = None,
     headless: bool = True,
 ) -> list[Hallazgo]:
-    """Implementación real de la validación de portales."""
+    """Implementación real de la validación de portales.
+
+    Lanza UN solo browser Chromium y lo comparte entre los 3 portales
+    (cada uno crea su propio BrowserContext) para ahorrar ~12-16s.
+    """
+    from playwright.async_api import async_playwright
+
     mods = modulos or {"fiel", "rfc", "ine"}
     hallazgos: list[Hallazgo] = []
 
@@ -287,33 +298,51 @@ async def _validar_portales_impl(
         f"({exp.rfc}) — Módulos: {', '.join(sorted(mods))}"
     )
 
-    # ── Lanzar portales en paralelo con asyncio.gather ──
-    tareas: list[asyncio.Task] = []
+    _headless = headless
+    pw = await async_playwright().start()
+    browser = await pw.chromium.launch(
+        headless=_headless,
+        args=[
+            "--disable-blink-features=AutomationControlled",
+            "--no-sandbox",
+        ],
+    )
 
-    if "fiel" in mods:
-        datos_fiel = _preparar_datos_fiel(exp)
-        tareas.append(asyncio.ensure_future(_ejecutar_portal(
-            FIELValidator(), datos_fiel, "V10.1", "FIEL — Portal SAT",
-            exp, headless,
-            sin_datos_motivo="No se encontró documento FIEL en el expediente",
-        )))
+    try:
+        # ── Lanzar portales en paralelo con asyncio.gather ──
+        tareas: list[asyncio.Task] = []
 
-    if "rfc" in mods:
-        datos_rfc = _preparar_datos_rfc(exp)
-        tareas.append(asyncio.ensure_future(_ejecutar_portal(
-            RFCValidator(), datos_rfc, "V10.2", "RFC — Portal SAT",
-            exp, headless,
-        )))
+        if "fiel" in mods:
+            datos_fiel = _preparar_datos_fiel(exp)
+            tareas.append(asyncio.ensure_future(_ejecutar_portal(
+                FIELValidator(), datos_fiel, "V10.1", "FIEL — Portal SAT",
+                exp, _headless,
+                sin_datos_motivo="No se encontró documento FIEL en el expediente",
+                browser=browser,
+            )))
 
-    if "ine" in mods:
-        datos_ine = _preparar_datos_ine(exp)
-        tareas.append(asyncio.ensure_future(_ejecutar_portal(
-            INEValidator(), datos_ine, "V10.3", "INE — Lista Nominal",
-            exp, headless,
-            sin_datos_motivo="No se encontró documento INE en el expediente",
-        )))
+        if "rfc" in mods:
+            datos_rfc = _preparar_datos_rfc(exp)
+            tareas.append(asyncio.ensure_future(_ejecutar_portal(
+                RFCValidator(), datos_rfc, "V10.2", "RFC — Portal SAT",
+                exp, _headless,
+                browser=browser,
+            )))
 
-    hallazgos = list(await asyncio.gather(*tareas))
+        if "ine" in mods:
+            datos_ine = _preparar_datos_ine(exp)
+            tareas.append(asyncio.ensure_future(_ejecutar_portal(
+                INEValidator(), datos_ine, "V10.3", "INE — Lista Nominal",
+                exp, _headless,
+                sin_datos_motivo="No se encontró documento INE en el expediente",
+                browser=browser,
+            )))
+
+        hallazgos = list(await asyncio.gather(*tareas))
+
+    finally:
+        await browser.close()
+        await pw.stop()
 
     logger.info(
         f"Bloque 10 completado — {len(hallazgos)} hallazgos: "

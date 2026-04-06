@@ -1,7 +1,7 @@
 """
 Bloque 11 — Comparación de datos: Formulario Manual vs OCR.
 
-Compara los datos capturados manualmente en el formulario de PagaTodo Hub
+Compara los datos capturados manualmente en el formulario de registro
 contra los datos extraídos por OCR de los documentos digitalizados.
 
 Este bloque es CONDICIONAL: solo se ejecuta si existe el documento
@@ -49,7 +49,7 @@ _BLOQUE_NOMBRE = "COMPARACIÓN MANUAL VS OCR"
 # ── Helpers para extraer campos del formulario manual (camelCase) ──────────
 
 def _get_manual(raw: dict, *keys: str) -> str:
-    """Navega el dict camelCase del formulario manual tipo PagaTodo."""
+    """Navega el dict camelCase del formulario manual."""
     current: Any = raw
     for key in keys:
         if not isinstance(current, dict):

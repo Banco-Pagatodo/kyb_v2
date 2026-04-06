@@ -41,12 +41,12 @@ DOCS_OBLIGATORIOS_PLD: list[str] = [
 ]
 
 # estado_cuenta también puede funcionar como comprobante de domicilio;
-# domicilio_rl y domicilio_propietario_real vienen del flujo PagaTodo Hub
+# domicilio_rl y domicilio_propietario_real son variantes de comprobante de domicilio
 DOCS_DOMICILIO_ALTERNATIVOS: list[str] = [
     "domicilio", "domicilio_rl", "domicilio_propietario_real", "estado_cuenta",
 ]
 
-# INE alternativas: flujo PagaTodo distingue INE de propietario real
+# INE alternativas: distingue INE del RL vs propietario real
 DOCS_INE_ALTERNATIVOS: list[str] = ["ine", "ine_propietario_real"]
 
 # Documentos extra requeridos para clientes de alto riesgo

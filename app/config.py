@@ -2,7 +2,6 @@
 Configuración del Orquestrador (flujo Dakota).
 
 Lee variables de entorno desde .env y expone constantes.
-Sin dependencia de PagaTodo Hub.
 """
 
 import os

@@ -126,11 +126,11 @@ class ResultadoPortal:
 
 # ── Configuración ─────────────────────────────────────────────────
 
-MAX_REINTENTOS = int(os.getenv("PORTAL_MAX_RETRIES", "3"))
-DELAY_MIN = float(os.getenv("PORTAL_DELAY_MIN", "1"))
-DELAY_MAX = float(os.getenv("PORTAL_DELAY_MAX", "3"))
+MAX_REINTENTOS = int(os.getenv("PORTAL_MAX_RETRIES", "2"))
+DELAY_MIN = float(os.getenv("PORTAL_DELAY_MIN", "0.5"))
+DELAY_MAX = float(os.getenv("PORTAL_DELAY_MAX", "1.5"))
 HEADLESS = os.getenv("PORTAL_HEADLESS", "true").lower() in ("true", "1", "yes")
-NAVEGACION_TIMEOUT = int(os.getenv("PORTAL_NAV_TIMEOUT", "20000"))  # ms
+NAVEGACION_TIMEOUT = int(os.getenv("PORTAL_NAV_TIMEOUT", "15000"))  # ms
 CAPTCHA_STRATEGY = os.getenv("PORTAL_CAPTCHA_STRATEGY", "cascada")  # manual | ocr | azure_ocr | gpt4_vision | cascada
 
 
@@ -146,6 +146,8 @@ class PortalValidatorBase(ABC):
         self._browser = None
         self._context = None
         self._page = None
+        self._owns_browser = True  # True si este validador creó el browser
+        self._pw = None
         self.logger = logging.getLogger(f"portal_validator.{self.portal_nombre}")
 
     # ── Ciclo de vida del navegador ───────────────────────────────
@@ -172,6 +174,7 @@ class PortalValidatorBase(ABC):
                 "--no-sandbox",
             ],
         )
+        self._owns_browser = True
         self._context = await self._browser.new_context(
             viewport={"width": 1280, "height": 900},
             user_agent=(
@@ -189,17 +192,47 @@ class PortalValidatorBase(ABC):
             stealth = Stealth()
             await stealth.apply_stealth_async(self._page)
 
+    async def usar_navegador_compartido(self, browser) -> None:
+        """Crea un context + page a partir de un browser externo (no lo cierra)."""
+        try:
+            from playwright_stealth import Stealth
+            _has_stealth = True
+        except ModuleNotFoundError:
+            _has_stealth = False
+
+        self._browser = browser
+        self._owns_browser = False
+        self._context = await browser.new_context(
+            viewport={"width": 1280, "height": 900},
+            user_agent=(
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/122.0.0.0 Safari/537.36"
+            ),
+            locale="es-MX",
+        )
+        self._page = await self._context.new_page()
+        self._page.set_default_timeout(NAVEGACION_TIMEOUT)
+        if _has_stealth:
+            stealth = Stealth()
+            await stealth.apply_stealth_async(self._page)
+        self.logger.info("Usando navegador compartido (context propio)")
+
     async def cerrar_navegador(self) -> None:
-        """Cierra el navegador, limpia screenshots temporales y libera recursos."""
-        if self._browser:
+        """Cierra context/page. Solo cierra el browser si lo creó este validador."""
+        if self._context:
+            await self._context.close()
+        if self._owns_browser and self._browser:
             self.logger.info("Cerrando navegador")
             await self._browser.close()
-        if hasattr(self, "_pw") and self._pw:
+        if self._owns_browser and self._pw:
             await self._pw.stop()
-        self._browser = None
         self._context = None
         self._page = None
-        self._limpiar_screenshots()
+        if self._owns_browser:
+            self._browser = None
+            self._pw = None
+            self._limpiar_screenshots()
 
     @staticmethod
     def _limpiar_screenshots() -> None:

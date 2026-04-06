@@ -51,11 +51,9 @@ Dakota forma parte de un sistema de **5 servicios independientes**:
 | FIEL | `POST /docs/fiel` | Firma electrónica avanzada |
 | Estado de Cuenta | `POST /docs/estado_cuenta` | Datos bancarios, CLABE |
 | Comprobante de Domicilio | `POST /docs/domicilio` | Dirección verificable |
-| INE Propietario Real | `POST /docs/ine_propietario_real` | INE del propietario real (PagaTodo) |
-| Domicilio Rep. Legal | `POST /docs/domicilio_rl` | Comprobante de domicilio del representante legal (PagaTodo) |
-| Domicilio Prop. Real | `POST /docs/domicilio_propietario_real` | Comprobante de domicilio del propietario real (PagaTodo) |
-
-> Los 3 últimos tipos provienen del flujo **PagaTodo Hub** y se importan como JSON pre-extraído vía `POST /docs/import/{doc_type}` (sin OCR).
+| INE Propietario Real | `POST /docs/ine_propietario_real` | INE del propietario real |
+| Domicilio Rep. Legal | `POST /docs/domicilio_rl` | Comprobante de domicilio del representante legal |
+| Domicilio Prop. Real | `POST /docs/domicilio_propietario_real` | Comprobante de domicilio del propietario real |
 
 ## Endpoints
 
@@ -76,22 +74,6 @@ Cuando se envía `?rfc=ABC123456XX0`, Dakota automáticamente:
 1. Crea o recupera la empresa en tabla `empresas`
 2. Guarda el documento extraído en tabla `documentos`
 3. Dispara la validación cruzada vía Colorado (fire-and-forget)
-
-### Importación de OCR pre-extraído (PagaTodo Hub)
-
-```
-POST /kyb/api/v1.0.0/docs/import/{doc_type}
-  Body: application/json
-    {
-      "datos_extraidos": { ... },
-      "texto_ocr": "texto completo del documento",
-      "archivo_procesado": "nombre_archivo.pdf"
-    }
-  Query params (obligatorios):
-    - rfc: RFC de la empresa
-```
-
-Recibe datos OCR ya extraídos por un sistema externo (PagaTodo Hub). Ejecuta validación de campos y persistencia **sin invocar Azure DI ni OpenAI**. Soporta los 12 doc_types listados arriba.
 
 ### Onboarding (expediente completo)
 

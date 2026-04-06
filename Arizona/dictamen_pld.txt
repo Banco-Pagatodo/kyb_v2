@@ -3,8 +3,8 @@
                                   DICTAMEN PLD/FT — PERSONA MORAL                                   
 ════════════════════════════════════════════════════════════════════════════════════════════════════
 
-  Dictamen ID:       DICT-PLD-SCX190531824-20260319-001
-  Fecha elaboración: 19/03/2026
+  Dictamen ID:       DICT-PLD-SCX190531824-20260406-001
+  Fecha elaboración: 06/04/2026
   Tipo producto:     Cuenta de cheques empresarial
   Grado riesgo:      MEDIO
 
@@ -16,7 +16,7 @@
   RFC:                    SCX190531824
   Fecha constitución:     2019-05-22
   Actividad económica:    Servicios relacionados con la intermediación crediticia
-  Domicilio:              AVENIDA PASEO ROYAL COUNTRY 4596, INT. 2B, COL. PUERTA DE HIERRO, ZAPOPAN, JALISCO
+  Domicilio:              AVENIDA PASEO ROYAL COUNTRY 4596 INT. 2B, COL. PUERTA DE HIERRO, ZAPOPAN, ZAPOPAN, JALISCO, CP 45116
   Uso de cuenta:          OPERACIONES PROPIAS DEL GIRO
   Folio mercantil:        N-2019050847
   Cláusula extranjeros:   EXCLUSION DE EXTRANJEROS
@@ -39,7 +39,7 @@
 
   ──── 4. DOMICILIO ───────────────────────────────────────────────────────────────────────────────
 
-  Domicilio registrado:           AVENIDA PASEO ROYAL COUNTRY 4596, INT. 2B, COL. PUERTA DE HIERRO, ZAPOPAN, JALISCO
+  Domicilio registrado:           AVENIDA PASEO ROYAL COUNTRY 4596 INT. 2B, COL. PUERTA DE HIERRO, ZAPOPAN, ZAPOPAN, JALISCO, CP 45116
   Concuerda con documentos:       SÍ
   Concuerda con actividad:        SÍ
   Vínculo con otra PM:            NO
@@ -80,24 +80,37 @@
   ┌──────┬────────────────────────────────────────────────┬────────────────────┬────────────────────────────┐
   │ #    │ Nombre                                         │ RFC / CURP         │ Coincidencia listas        │
   ├──────┼────────────────────────────────────────────────┼────────────────────┼────────────────────────────┤
-  │ 1    │ Arturo Pons Aguirre                            │ POAA950325HNLNGR02 │ NO                         │
+  │ 1    │ ARTURO PONS AGUIRRE                            │ POAA950325HNLNGR02 │ NO                         │
   └──────┴────────────────────────────────────────────────┴────────────────────┴────────────────────────────┘
 
   Poder notarial:
-    Tipo:        GENERAL JUDICIAL Y PARA PLEITOS Y COBRANZAS, GENERAL PARA ACTOS DE ADMINISTRACIÓN, PODER CAMBIARIO, PODER ESPECIAL PARA CONSTITUIR FIDEICOMISOS
-    Notario:     David Alfaro Ramirez — Notaría 26, Jalisco
+    Tipo:        PODER GENERAL JUDICIAL Y PARA PLEITOS Y COBRANZAS, PODER GENERAL PARA ACTOS DE ADMINISTRACIÓN, PODER CAMBIARIO, PODER ESPECIAL PARA CONSTITUIR FIDEICOMISOS
+    Notario:     DAVID ALFARO RAMIREZ — Notaría 26, Jalisco
     Escritura:   33181
     Fecha:       2025-08-14
     Facultades:  Representar a la sociedad con el poder más amplio judicial y para pleitos y
-                 cobranzas con todas las facultades generales y las especiales que requieran
-                 cláusula especial conforme a la Ley, incluyendo desistirse, transigir,
-                 comprometer en árbitros, recibir pagos, promover el juicio de amparo, asistir
-                 a la audiencia conciliatoria. Representar ante cualquier dependencia
-                 gubernamental y organismos públicos centralizados y descentralizados, así
-                 como facultades administrativas para hacer y recibir pagos, consentir actos
-                 liberatorios o de carga. Poder para expedir, suscribir, otorgar, negociar con
-                 títulos de crédito con limitaciones. Poder especial para constituir
-                 fideicomisos, abrir y cancelar cuentas bancarias.
+                 cobranzas, con todas las facultades generales y especiales que requieran
+                 cláusula especial conforme a la ley, incluyendo: desistirse, transigir,
+                 comprometer en árbitros, absolver y articular posiciones, recusar, recibir
+                 pagos, promover el juicio de amparo y desistirse del mismo, asistir a la
+                 audiencia conciliatoria del artículo 282 Bis del Código de Procedimientos
+                 Civiles de Jalisco y celebrar el convenio respectivo. Poder general para
+                 actos de administración, para ejercer todas las facultades generales y
+                 especiales que requieren cláusula especial, representar a “LA MANDANTE” ante
+                 cualquier dependencia gubernamental y organismos públicos centralizados y
+                 descentralizados, empresas de participación estatal, y autoridades
+                 municipales, estatales o federales, hacer y recibir pagos y consentir toda
+                 clase de actos liberatorios o de carga. Poder cambiario para expedir,
+                 suscribir, otorgar, garantizar y negociar con títulos de crédito y obligar
+                 cambiariamente al poderdante, con la limitación de que títulos que
+                 representen crédito a cargo de SOLUCIONES CAPITAL X, S.A.P.I. DE C.V. por
+                 monto superior a $5,000,000.00 deberán ser suscritos conjuntamente con otro
+                 miembro del consejo o con ALDO ACEVES GONZÁLEZ, sin límite para operaciones
+                 de factoraje ni créditos donde la sociedad sea acreedora. Poder especial para
+                 constituir fideicomisos a nombre de “LA MANDANTE” como fideicomisario o
+                 fideicomitente, y para abrir y cancelar cuentas bancarias a nombre de la
+                 sociedad o de los fideicomisos, designando y autorizando personas que giren
+                 contra ellas.
 
   Screening representantes:
       Coincidencia en listas:   NO
@@ -122,7 +135,7 @@
     Banco:            Scotiabank
     Cuenta:           25605088275
     CLABE:            044320256050882755
-    Período:          01/08/2025 - 29/08/2025
+    Período:          01-AGO-25/29-AGO-25
     Saldo inicial:    $23,318,422.09
     Saldo final:      $44,164,807.45
     Total depósitos:  $119,060,314.74
@@ -132,7 +145,7 @@
 
   Constancia de Situación Fiscal           ✗ No vigente  — Fecha: 2025-09-25 (excede 3 meses)
   Comprobante de domicilio                 ✗ No vigente  — Fecha: 2025-09-25 (excede 3 meses)
-  Estado de cuenta bancario                ? Sin verificar  — Fecha no parseable: 01/08/2025 - 29/08/2025
+  Estado de cuenta bancario                ? Sin verificar  — Fecha no parseable: 01-AGO-25/29-AGO-25
   e.Firma (FIEL)                           ✓ Vigente  — Vigente hasta: 2027-05-15
   INE del representante                    ? Sin verificar  — Sin fecha de emisión disponible
 
@@ -144,21 +157,21 @@
   Debida diligencia reforzada:    SÍ
   Medidas EDD:                    Monitoreo reforzado por grado de riesgo elevado
   Presentar a CCC:               NO
-  Observaciones:                  Hallazgos Colorado: [V3.3] Comprobante de domicilio tiene 6 meses de antigüedad (máximo 3); [V3.4] Constancia de Situación Fiscal tiene 6 meses de antigüedad (máximo 3); [V3.5] Estado de cuenta tiene 7 meses de antigüedad (máximo 3); [V5.3] Capital social $0 con confiabilidad 70.0% — probable extracción fallida; [V5.10] No se pudo determinar estructura vigente; [V8.1] Campos con confiabilidad < 70%:
-  domicilio.fecha_emision: 50.0%; [V9.2] Documentos complementarios faltantes: Reforma de estatutos, INE reverso
+  Observaciones:                  Hallazgos Colorado: [V2.2] Domicilios difieren parcialmente (77%); [V3.3] Comprobante de domicilio tiene 7 meses de antigüedad (máximo 3); [V3.4] Constancia de Situación Fiscal tiene 7 meses de antigüedad (máximo 3); [V4.5] Identificación INCOMPLETA: falta(n) INE reverso. Se requieren ambas caras de la INE para validar la identidad del apoderado.; [V5.3] Capital social $0 con confiabilidad 70.0% — probable extracción fallida; [V8.1] Campos con confiabilidad < 70%:
+  domicilio.fecha_emision: 50.0%; [V9.2] Documentos complementarios faltantes: Reforma de estatutos, INE reverso, INE del propietario real, Comprobante de domicilio (representante legal), Comprobante de domicilio (propietario real)
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────
   ELABORÓ:
     Agente Arizona v2.3
     Dictamen generado automáticamente por Agente Arizona — Pipeline PLD/FT
 
-  Pipeline:  DICT-PLD-SCX190531824-20260319-001
+  Pipeline:  DICT-PLD-SCX190531824-20260406-001
   Versión:   2.3
   Fuentes:   Dakota, Colorado, Arizona
   MER:       puntaje=150.0, grado=MEDIO
   Personas screened: 6
   Coincidencias:     0
-  Tiempo:    369437 ms
+  Tiempo:    366313 ms
 
 ════════════════════════════════════════════════════════════════════════════════════════════════════
                                       FIN DEL DICTAMEN PLD/FT                                       

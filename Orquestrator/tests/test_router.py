@@ -1,5 +1,6 @@
 """
 Tests de integración para el router del Orquestrator con TestClient.
+Flujo Dakota: archivos → Dakota OCR → Colorado → Arizona → Nevada.
 """
 from __future__ import annotations
 
@@ -64,7 +65,8 @@ class TestProcessEndpoint:
     def test_process_sin_rfc(self, mock_proc):
         resp = client.post(
             "/api/v1/pipeline/process",
-            json={"prospect_id": "abc-123", "document_type": "Csf", "rfc": ""},
+            data={"doc_type": "csf", "rfc": ""},
+            files={"file": ("test.pdf", b"fake-pdf", "application/pdf")},
         )
         assert resp.status_code == 422
 
@@ -72,7 +74,8 @@ class TestProcessEndpoint:
     def test_process_tipo_invalido(self, mock_proc):
         resp = client.post(
             "/api/v1/pipeline/process",
-            json={"prospect_id": "abc-123", "document_type": "Inventado", "rfc": "TST000101AA0"},
+            data={"doc_type": "inventado", "rfc": "TST000101AA0"},
+            files={"file": ("test.pdf", b"fake-pdf", "application/pdf")},
         )
         assert resp.status_code == 422
 
@@ -80,13 +83,14 @@ class TestProcessEndpoint:
     def test_process_exitoso(self, mock_proc):
         mock_proc.return_value = {
             "rfc": "TST000101AA0",
-            "pagatodo_ocr": {"ok": True},
-            "dakota_import": {"doc_type": "csf"},
+            "tipo_documento": "csf",
+            "extraccion": {"razon_social": "TEST SA"},
             "validacion_cruzada": {"dictamen": "APROBADO"},
         }
         resp = client.post(
             "/api/v1/pipeline/process",
-            json={"prospect_id": "abc-123", "document_type": "Csf", "rfc": "TST000101AA0"},
+            data={"doc_type": "csf", "rfc": "TST000101AA0"},
+            files={"file": ("test.pdf", b"fake-pdf", "application/pdf")},
         )
         assert resp.status_code == 200
         assert resp.json()["rfc"] == "TST000101AA0"
@@ -97,7 +101,8 @@ class TestExpedienteEndpoint:
     def test_expediente_sin_rfc(self, mock_proc):
         resp = client.post(
             "/api/v1/pipeline/expediente",
-            json={"prospect_id": "abc-123", "rfc": "", "document_types": ["Csf"]},
+            data={"doc_types": ["csf"], "rfc": ""},
+            files=[("files", ("csf.pdf", b"fake-pdf", "application/pdf"))],
         )
         assert resp.status_code == 422
 
@@ -105,7 +110,8 @@ class TestExpedienteEndpoint:
     def test_expediente_tipo_invalido(self, mock_proc):
         resp = client.post(
             "/api/v1/pipeline/expediente",
-            json={"prospect_id": "abc-123", "rfc": "TST000101AA0", "document_types": ["Inventado"]},
+            data={"doc_types": ["inventado"], "rfc": "TST000101AA0"},
+            files=[("files", ("test.pdf", b"fake-pdf", "application/pdf"))],
         )
         assert resp.status_code == 422
 
@@ -118,11 +124,11 @@ class TestExpedienteEndpoint:
         }
         resp = client.post(
             "/api/v1/pipeline/expediente",
-            json={
-                "prospect_id": "abc-123",
-                "rfc": "TST000101AA0",
-                "document_types": ["Csf", "ActaCons"],
-            },
+            data={"doc_types": ["csf", "ine"], "rfc": "TST000101AA0"},
+            files=[
+                ("files", ("csf.pdf", b"fake-pdf1", "application/pdf")),
+                ("files", ("ine.pdf", b"fake-pdf2", "application/pdf")),
+            ],
         )
         assert resp.status_code == 200
         assert resp.json()["documentos_procesados"] == 2
@@ -130,20 +136,15 @@ class TestExpedienteEndpoint:
 
 class TestStatusEndpoint:
     @patch("app.router.obtener_estado_por_rfc", new_callable=AsyncMock)
-    @patch("app.router.dakota_empresa_by_rfc", new_callable=AsyncMock)
-    def test_rfc_no_encontrado(self, mock_by_rfc, mock_pipeline):
-        mock_by_rfc.return_value = None
+    def test_rfc_no_encontrado(self, mock_pipeline):
         mock_pipeline.return_value = None
         resp = client.get("/api/v1/pipeline/status/XXXX")
         assert resp.status_code == 404
 
     @patch("app.router.obtener_estado_por_rfc", new_callable=AsyncMock)
-    @patch("app.router.dakota_empresa_by_rfc", new_callable=AsyncMock)
-    def test_rfc_encontrado(self, mock_by_rfc, mock_pipeline):
-        mock_by_rfc.return_value = {"rfc": "TST000101AA0", "razon_social": "TEST"}
+    def test_rfc_encontrado(self, mock_pipeline):
         mock_pipeline.return_value = {"pipeline_status": "COMPLETADO", "rfc": "TST000101AA0"}
         resp = client.get("/api/v1/pipeline/status/TST000101AA0")
         assert resp.status_code == 200
         body = resp.json()
-        assert body["empresa"]["rfc"] == "TST000101AA0"
         assert body["pipeline"]["pipeline_status"] == "COMPLETADO"

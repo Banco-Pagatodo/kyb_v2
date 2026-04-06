@@ -5,6 +5,19 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [1.3.0] - 2026-04-06
+
+### Changed — Optimización de rendimiento en portales (Bloque 10)
+- **Browser compartido** — Los 3 validadores de portales (FIEL, RFC, INE) ahora comparten **una sola instancia de Chromium** en lugar de lanzar 3 navegadores independientes. Nuevo método `usar_navegador_compartido(browser)` en `ValidadorPortalBase`. Ahorra ~12-16s de overhead por empresa.
+- **Carga de variables de entorno** — `core/config.py` ahora carga **todos** los archivos `.env` encontrados (con `override=False`) en lugar de detenerse en el primero. Esto asegura que las claves de Azure CV y OpenAI (necesarias para resolver CAPTCHAs) se carguen correctamente desde el `.env` de Dakota.
+- **Delays y reintentos reducidos** — `MAX_REINTENTOS` 3→2, `DELAY_MIN` 1→0.5s, `DELAY_MAX` 3→1.5s, `NAVEGACION_TIMEOUT` 20→15s. Reduce tiempos muertos ~50%.
+- **`validar_todas()` paralelo** — El motor (`engine.py`) ahora procesa empresas en paralelo con `asyncio.gather` + `Semaphore(3)`, en lugar de un bucle secuencial. Un lote de 10 empresas pasa de ~250s a ~30-40s.
+
+### Fixed
+- **Resolución de CAPTCHAs** — La cascada Azure CV → GPT-4o → Tesseract ahora funciona correctamente porque las variables `AZURE_CV_ENDPOINT`, `AZURE_CV_KEY`, `AZURE_OPENAI_ENDPOINT` y `AZURE_OPENAI_API_KEY` se cargan desde el `.env` de Dakota.
+
+---
+
 ## [1.1.0] - 2026-03-28
 
 ### Added

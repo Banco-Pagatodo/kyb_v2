@@ -1,12 +1,16 @@
 ════════════════════════════════════════════════════════════
-  REPORTE CONSOLIDADO PLD / AML — ARIZONA
+  REPORTE DE ANÁLISIS PLD / AML — ARIZONA
 ════════════════════════════════════════════════════════════
 
   EMPRESA: SOLUCIONES CAPITAL X
   RFC: SCX190531824
-  EMPRESA_ID: cf372a2d-0ef9-4070-9bae-aa9880ac9461
-  FECHA DE ANÁLISIS: 2026-03-20 15:04
+  EMPRESA_ID: 36577f01-b05d-4139-9242-b916304fc4bc
+  FECHA DE ANÁLISIS: 2026-04-06 16:14
   DOCUMENTOS EN EXPEDIENTE: acta_constitutiva, csf, domicilio, estado_cuenta, fiel, ine, poder
+
+  Base legal: Disposición 4ª de las DCG del artículo 115
+  de la Ley de Instituciones de Crédito.
+  Reforma LFPIORPI julio 2025 — umbral beneficiario controlador: 25%.
 
 ────────────────────────────────────────────────────────────
   DATOS CLAVE DE LA PERSONA MORAL
@@ -16,60 +20,57 @@
   RFC:          SCX190531824
 
   ▸ REPRESENTANTE LEGAL
-    Nombre:      Arturo Pons Aguirre
+    Nombre:      ARTURO PONS AGUIRRE
     CURP:        POAA950325HNLNGR02
     Fuente:      poder_notarial
 
   ▸ PODER PARA ABRIR CUENTAS BANCARIAS: ✅ SÍ
 
-  ▸ ACCIONISTAS / SOCIOS
-    #    Nombre                                  Tipo                   %  Fuente
-    ────────────────────────────────────────────────────────────────────────────────
-    1    ARTURO PONS AGUIRRE                     P. Física          45.0%  acta_constitutiva
-    2    ESTEBAN SANTIAGO VARELA VEGA            P. Física          35.0%  acta_constitutiva
-    3    ALEJANDRO PÉREZ ONTIVEROS               P. Física          15.0%  acta_constitutiva
-    4    RICARDO ELIAS FERNÁNDEZ                 P. Física           5.0%  acta_constitutiva
-
 ────────────────────────────────────────────────────────────
   ESTRUCTURA ACCIONARIA Y PROPIETARIOS REALES
 ────────────────────────────────────────────────────────────
 
-    Capital social: 0.00 MXN
+  Capital social: 0.00 MXN
 
-    #    Nombre                              RFC             Tipo                 %  Fuente
-    ══════════════════════════════════════════════════════════════════════════════════
-    1    ARTURO PONS AGUIRRE                                 fisica          45.00%  N/D
-    2    ESTEBAN SANTIAGO VARELA VEGA                        fisica          35.00%  N/D
-    3    ALEJANDRO PÉREZ ONTIVEROS                           fisica          15.00%  N/D
-    4    RICARDO ELIAS FERNÁNDEZ                             fisica           5.00%  N/D
-    ══════════════════════════════════════════════════════════════════════════════════
-    ✅ Suma de participación: 100.00%
+    #    Nombre                              Tipo                 %  Fuente
+    ────────────────────────────────────────────────────────────────────────
+    1    ARTURO PONS AGUIRRE                 P. Física        45.0%  acta_constitutiva
+    2    ESTEBAN SANTIAGO VARELA VEGA        P. Física        35.0%  acta_constitutiva
+    3    ALEJANDRO PÉREZ ONTIVEROS           P. Física        15.0%  acta_constitutiva
+    4    RICARDO ELIAS FERNÁNDEZ             P. Física         5.0%  acta_constitutiva
+    ────────────────────────────────────────────────────────────────────────
+    ✅ Suma de participación: 100.0%
 
-    PROPIETARIOS REALES (participación ≥25%):
-    ──────────────────────────────────────────────────
-      1. ARTURO PONS AGUIRRE — 45.00%
-      2. ESTEBAN SANTIAGO VARELA VEGA — 35.00%
-
+  ▸ PROPIETARIOS REALES (participación ≥25%)
+    1. ARTURO PONS AGUIRRE — 45.0%
+    2. ESTEBAN SANTIAGO VARELA VEGA — 35.0%
 
 ────────────────────────────────────────────────────────────
   RESUMEN EJECUTIVO
 ────────────────────────────────────────────────────────────
 
-  DICTAMEN: ❌ RECHAZADO / ESCALAR
+  DICTAMEN ARIZONA: ❌ RECHAZADO
 
-  Etapa 1 — Completitud:  ❌ INCOMPLETO (31/33)
-  Etapa 2 — Screening:    ✅ SIN COINCIDENCIAS (6 personas)
-  Colorado — Validación:  ❌ RECHAZADO
+  Etapa 1 — Completitud documental:   ❌ INCOMPLETO (33/36)
+  Etapa 2 — Screening listas negras:  🔴 INCOMPLETO (6 personas)
+  Etapa 3 — Verificación de datos:    ❌ RECHAZADO (Colorado)
+  Etapa 4 — Beneficiario controlador: 🔴 2 identificado(s) — NO VALIDADOS (screening incompleto)
+  Estructura accionaria:              ✅ Suma: 100.0%
+  Etapa 5 — Matriz de riesgo MER:     🟡 MEDIO (150 pts)
 
-  Validaciones que pasan (✅): 31
+  Validaciones que pasan (✅): 24
   Hallazgos Críticos  (🔴): 2
   Hallazgos Altos     (🟠): 0
-  Hallazgos Medios    (🟡): 0
+  Hallazgos Medios    (🟡): 1
   Hallazgos Informativos (ℹ️): 0
 
 ────────────────────────────────────────────────────────────
-  DETALLE DE VALIDACIONES — COMPLETITUD DOCUMENTAL
+  ETAPA 1 — RECEPCIÓN Y VERIFICACIÓN DE COMPLETITUD DOCUMENTAL
 ────────────────────────────────────────────────────────────
+
+  El analista PLD confirma la presencia de todos los elementos que exige
+  la Disposición 4ª de las DCG del artículo 115 de la LIC: documentos
+  soporte, datos de la persona moral, domicilio, personas y poder bancario.
 
   BLOQUE 1: DOCUMENTOS OBLIGATORIOS
   ··················································
@@ -79,6 +80,8 @@
       Aceptado: domicilio o estado de cuenta
     [A1.4] Testimonio del instrumento con poderes del representante legal: ✅ PASA
     [A1.5] Identificación oficial vigente (INE) del representante legal: ✅ PASA
+
+  → BLOQUE 1: ✅ PASA
 
   BLOQUE 2: DATOS DE LA PERSONA MORAL
   ··················································
@@ -95,7 +98,9 @@
     [A2.6] Giro mercantil / actividad económica: ✅ PASA
       Servicios relacionados con la intermediación crediticia
 
-  BLOQUE 3: DOMICILIO
+  → BLOQUE 2: ✅ PASA
+
+  BLOQUE 3: DOMICILIO COMPLETO
   ··················································
     [A3.1] Domicilio — calle: ✅ PASA
       AV PASEO ROYAL COUNTRY
@@ -110,6 +115,8 @@
     [A3.6] Domicilio — entidad_federativa: ✅ PASA
       Jalisco
 
+  → BLOQUE 3: ✅ PASA
+
   BLOQUE 4: PERSONAS IDENTIFICADAS
   ··················································
     [A4.1] Apoderado / representante legal identificado: ✅ PASA
@@ -118,42 +125,44 @@
       4 accionista(s)
     [A4.3] Administradores / directores / consejeros identificados: ✅ PASA
       1 persona(s)
+    [A4.4] Nombre completo de apoderados/representantes legales (Nombre + 1er Apellido + 2do Apellido): ✅ PASA
+      Todos los apoderados/representantes legales tienen nombre completo
+    [A4.5] Nombre completo de accionistas (Nombre + 1er Apellido + 2do Apellido): ✅ PASA
+      Todos los accionistas tienen nombre completo
+    [A4.6] Nombre completo de administradores/consejeros (Nombre + 1er Apellido + 2do Apellido): ✅ PASA
+      Todos los administradores/consejeros tienen nombre completo
+
+    Detalle de personas identificadas:
+      ▸ Apoderados:
+        • ARTURO PONS AGUIRRE (P. Física) [poder_notarial]
+      ▸ Representantes legales:
+        • ARTURO PONS AGUIRRE (P. Física) [poder_notarial]
+      ▸ Accionistas / Socios:
+        • ARTURO PONS AGUIRRE (P. Física — 45.0%) [acta_constitutiva]
+        • ESTEBAN SANTIAGO VARELA VEGA (P. Física — 35.0%) [acta_constitutiva]
+        • ALEJANDRO PÉREZ ONTIVEROS (P. Física — 15.0%) [acta_constitutiva]
+        • RICARDO ELIAS FERNÁNDEZ (P. Física — 5.0%) [acta_constitutiva]
+
+  → BLOQUE 4: ✅ PASA
 
   BLOQUE 5: PODER BANCARIO
   ··················································
     [A5.1] Poder para abrir/operar cuentas bancarias: ✅ PASA
       Se detectó poder para abrir/operar cuentas bancarias
 
-  BLOQUE 6: VALIDACIÓN CRUZADA (COLORADO)
-  ··················································
-    [A6.1] Validación cruzada (Colorado) ejecutada: ✅ PASA
-      Dictamen: RECHAZADO
-    [A6.2] Dictamen Colorado no rechazado: ❌ FALLA 🔴
-      Dictamen: RECHAZADO
-    [A6.3] Colorado — Identidad corporativa: ✅ PASA
-      3/3 validaciones pasan
-    [A6.4] Colorado — Domicilio: ✅ PASA
-      3/4 validaciones pasan
-    [A6.5] Colorado — Vigencia de documentos: ❌ FALLA 🔴
-      2/5 validaciones pasan | 3 hallazgo(s) crítico(s) fallido(s)
-    [A6.6] Colorado — Apoderado legal: ✅ PASA
-      5/6 validaciones pasan
-    [A6.7] Colorado — Estructura societaria: ✅ PASA
-      3/10 validaciones pasan
-    [A6.8] Colorado — Datos bancarios: ✅ PASA
-      2/2 validaciones pasan
-    [A6.9] Colorado — Consistencia notarial: ✅ PASA
-      3/4 validaciones pasan
-    [A6.10] Colorado — Calidad de extracción: ✅ PASA
-      3/4 validaciones pasan
-    [A6.11] Colorado — Completitud del expediente: ✅ PASA
-      1/2 validaciones pasan
-    [A6.12] Colorado — Portales gubernamentales: ✅ PASA
-      2/3 validaciones pasan
+  → BLOQUE 5: ✅ PASA
 
 ────────────────────────────────────────────────────────────
-  ETAPA 2: SCREENING CONTRA LISTAS NEGRAS / PEPs
+  ETAPA 2 — SCREENING CONTRA LISTAS NEGRAS / PEPs
 ────────────────────────────────────────────────────────────
+
+  Cruce obligatorio de cada persona vinculada (razón social, apoderados,
+  representantes legales, accionistas y beneficiarios controladores) contra
+  las listas PLD/AML. Una coincidencia en la LPB (UIF) provoca suspensión
+  inmediata y reporte de 24 horas. OFAC/ONU implica bloqueo. PEP activa
+  debida diligencia reforzada. Lista 69-B SAT es alerta roja.
+
+    🚨 SCREENING INCOMPLETO — No se puede descartar presencia en listas.
 
     Total personas verificadas   : 6
     Personas con coincidencias   : 0
@@ -162,14 +171,13 @@
     Coincidencias posibles       : 0
     Homónimos descartados        : 0
 
-    Listas objetivo:
+    Listas consultadas:
       • CatPLD69BPerson      — Lista 69-B SAT (EFOS/EDOS)
-      • CatPLDLockedPerson   — Personas Bloqueadas UIF
+      • CatPLDLockedPerson   — Personas Bloqueadas UIF (LPB)
       • TraPLDBlackListEntry — Lista Negra Consolidada (OFAC, PEP, SAT69)
 
-
   ────────────────────────────────────────────────────────────
-    [1] Arturo Pons Aguirre
+    [1] ARTURO PONS AGUIRRE
   ────────────────────────────────────────────────────────────
 
       CURP:  N/D
@@ -177,15 +185,15 @@
       Tipo:  fisica
       Rol:   apoderado
 
-      ✅ Listas consultadas con ÉXITO:
+      🚨 Listas FALLIDAS (no se pudo consultar):
          • CatPLD69BPerson (Lista 69-B SAT)
          • CatPLDLockedPerson (Bloqueados UIF)
          • TraPLDBlackListEntry (Lista Negra Consolidada)
 
-      ✅ SIN COINCIDENCIAS en las listas consultadas exitosamente.
+      ⛔ Screening incompleto — no se puede descartar presencia en listas.
 
   ────────────────────────────────────────────────────────────
-    [2] Arturo Pons Aguirre
+    [2] ARTURO PONS AGUIRRE
   ────────────────────────────────────────────────────────────
 
       CURP:  N/D
@@ -193,12 +201,12 @@
       Tipo:  fisica
       Rol:   representante_legal
 
-      ✅ Listas consultadas con ÉXITO:
+      🚨 Listas FALLIDAS (no se pudo consultar):
          • CatPLD69BPerson (Lista 69-B SAT)
          • CatPLDLockedPerson (Bloqueados UIF)
          • TraPLDBlackListEntry (Lista Negra Consolidada)
 
-      ✅ SIN COINCIDENCIAS en las listas consultadas exitosamente.
+      ⛔ Screening incompleto — no se puede descartar presencia en listas.
 
   ────────────────────────────────────────────────────────────
     [3] ARTURO PONS AGUIRRE
@@ -209,12 +217,12 @@
       Tipo:  fisica
       Rol:   accionista
 
-      ✅ Listas consultadas con ÉXITO:
+      🚨 Listas FALLIDAS (no se pudo consultar):
          • CatPLD69BPerson (Lista 69-B SAT)
          • CatPLDLockedPerson (Bloqueados UIF)
          • TraPLDBlackListEntry (Lista Negra Consolidada)
 
-      ✅ SIN COINCIDENCIAS en las listas consultadas exitosamente.
+      ⛔ Screening incompleto — no se puede descartar presencia en listas.
 
   ────────────────────────────────────────────────────────────
     [4] ESTEBAN SANTIAGO VARELA VEGA
@@ -225,12 +233,12 @@
       Tipo:  fisica
       Rol:   accionista
 
-      ✅ Listas consultadas con ÉXITO:
+      🚨 Listas FALLIDAS (no se pudo consultar):
          • CatPLD69BPerson (Lista 69-B SAT)
          • CatPLDLockedPerson (Bloqueados UIF)
          • TraPLDBlackListEntry (Lista Negra Consolidada)
 
-      ✅ SIN COINCIDENCIAS en las listas consultadas exitosamente.
+      ⛔ Screening incompleto — no se puede descartar presencia en listas.
 
   ────────────────────────────────────────────────────────────
     [5] ALEJANDRO PÉREZ ONTIVEROS
@@ -241,12 +249,12 @@
       Tipo:  fisica
       Rol:   accionista
 
-      ✅ Listas consultadas con ÉXITO:
+      🚨 Listas FALLIDAS (no se pudo consultar):
          • CatPLD69BPerson (Lista 69-B SAT)
          • CatPLDLockedPerson (Bloqueados UIF)
          • TraPLDBlackListEntry (Lista Negra Consolidada)
 
-      ✅ SIN COINCIDENCIAS en las listas consultadas exitosamente.
+      ⛔ Screening incompleto — no se puede descartar presencia en listas.
 
   ────────────────────────────────────────────────────────────
     [6] RICARDO ELIAS FERNÁNDEZ
@@ -257,28 +265,177 @@
       Tipo:  fisica
       Rol:   accionista
 
-      ✅ Listas consultadas con ÉXITO:
+      🚨 Listas FALLIDAS (no se pudo consultar):
          • CatPLD69BPerson (Lista 69-B SAT)
          • CatPLDLockedPerson (Bloqueados UIF)
          • TraPLDBlackListEntry (Lista Negra Consolidada)
 
-      ✅ SIN COINCIDENCIAS en las listas consultadas exitosamente.
+      ⛔ Screening incompleto — no se puede descartar presencia en listas.
 
-    ✅ RESULTADO ETAPA 2: SIN COINCIDENCIAS EN LISTAS
+  → ETAPA 2: 🔴 SCREENING INCOMPLETO — REINTENTAR
+
+────────────────────────────────────────────────────────────
+  ETAPA 3 — VERIFICACIÓN DE DATOS Y EXISTENCIA LEGAL
+────────────────────────────────────────────────────────────
+
+  Se valida RFC activo en SAT, consistencia entre razón social del RFC y
+  acta constitutiva, existencia legal en Registro Público de Comercio,
+  vigencia de documentos y consistencia cruzada de datos.
+
+  Esta etapa la ejecuta COLORADO (servicio de validación cruzada).
+  A continuación se presenta el resumen de su análisis.
+
+  DICTAMEN COLORADO: ❌ RECHAZADO
+
+
+  ALERTAS Y RIESGOS DE COLORADO:
+  ··················································
+
+  🔴 CRÍTICOS (requieren acción inmediata):
+    1. [V3.3] Comprobante de domicilio tiene 7 meses de antigüedad (máximo 3)
+    2. [V3.4] Constancia de Situación Fiscal tiene 7 meses de antigüedad (máximo 3)
+    3. [V4.5] Identificación INCOMPLETA: falta(n) INE reverso. Se requieren ambas caras de la INE para validar la identidad del apoderado.
+
+  🟡 MEDIOS (requieren seguimiento):
+    1. [V2.2] Domicilios difieren parcialmente (77%)
+    2. [V5.3] Capital social $0 con confiabilidad 70.0% — probable extracción fallida
+    3. [V9.2] Documentos complementarios faltantes: Reforma de estatutos, INE reverso, INE del propietario real, Comprobante de domicilio (representante legal), Comprobante de domicilio (propietario real)
+
+  ℹ️ INFORMATIVOS (para registro):
+    1. [V8.1] Campos con confiabilidad < 70%:
+       domicilio.fecha_emision: 50.0%
+
+  VALIDACIÓN EN PORTALES GUBERNAMENTALES
+  ··················································
+    V10.1 FIEL — Portal SAT: ⚪ N/A 🟡
+      Portal FIEL: CAPTCHA NO RESUELTO — No se pudo resolver el CAPTCHA del portal SAT ⚠️ SE REQUIERE VERIFICACIÓN MANUAL EN EL PORTAL
+        Módulo: FIEL
+        Identificador consultado: Serie:00001000000600172442
+        Estado portal: CAPTCHA NO RESUELTO
+        Screenshot: C:\Users\aperez\AppData\Local\Temp\portal_screenshots_9uqdbbyv\FIEL_fiel_captcha_SCX190531824_20260406_095901.png
+
+    V10.2 RFC — Portal SAT: ⚪ N/A 🟡
+      Portal RFC: CAPTCHA NO RESUELTO — No se pudo resolver el CAPTCHA del portal SAT RFC ⚠️ SE REQUIERE VERIFICACIÓN MANUAL EN EL PORTAL
+        Módulo: RFC
+        Identificador consultado: SCX190531824
+        Estado portal: CAPTCHA NO RESUELTO
+        Screenshot: C:\Users\aperez\AppData\Local\Temp\portal_screenshots_9uqdbbyv\RFC_rfc_captcha_SCX190531824_20260406_095856.png
+
+    V10.3 INE — Lista Nominal: ⚪ N/A 🟡
+      Portal INE: CAPTCHA NO RESUELTO — No se pudo resolver el reCAPTCHA del portal INE. Usa --visible para resolverlo manualmente. ⚠️ SE REQUIERE VERIFICACIÓN MANUAL EN EL PORTAL
+        Módulo: INE
+        Identificador consultado: A-C | CE:PNAGAR95...
+        Estado portal: CAPTCHA NO RESUELTO
+        Screenshot: C:\Users\aperez\AppData\Local\Temp\portal_screenshots_9uqdbbyv\INE_ine_recaptcha_SCX190531824_20260406_100514.png
+
+
+  → ETAPA 3: ❌ RECHAZADO — Resolver hallazgos críticos de Colorado antes de continuar
+
+────────────────────────────────────────────────────────────
+  ETAPA 4 — IDENTIFICACIÓN DEL BENEFICIARIO CONTROLADOR
+────────────────────────────────────────────────────────────
+
+  Se analiza la estructura accionaria para identificar a toda persona
+  física que posea directa o indirectamente más del 25% del capital social
+  o derechos de voto (umbral post-reforma LFPIORPI julio 2025).
+  Si ningún accionista alcanza ≥25%, se designa al administrador o consejo
+  de administración como beneficiario controlador.
+
+  Total accionistas identificados: 4
+  Suma de participación: 100.0%
+
+  BENEFICIARIOS CONTROLADORES IDENTIFICADOS (≥25%):
+    1. ARTURO PONS AGUIRRE — 45.0% del capital social
+       🚨 SCREENING BC: Incompleto — no se puede descartar presencia en listas
+    2. ESTEBAN SANTIAGO VARELA VEGA — 35.0% del capital social
+       🚨 SCREENING BC: Incompleto — no se puede descartar presencia en listas
+
+  Cada beneficiario controlador fue sometido a screening independiente
+  contra las listas 69-B SAT, UIF y PEP (Etapa 2 aplicada a BCs).
+
+  → ETAPA 4: 🔴 BENEFICIARIOS IDENTIFICADOS — SCREENING CON ALERTAS
+
+────────────────────────────────────────────────────────────
+  ETAPA 5 — EVALUACIÓN DE RIESGO MER PLD/FT v7.0
+────────────────────────────────────────────────────────────
+
+  Conforme a la Metodología de Evaluación de Riesgos (MER) v7.0,
+  se calcula el grado de riesgo de la Persona Moral considerando
+  15 factores ponderados. Clasificación PM: BAJO 85-142 │ MEDIO 143-199 │ ALTO 200+
+
+  #    Factor                                        Val   Peso      Pts
+  ································································
+  1    Tipo de persona                                 3   0.10     30.0
+      └─ SOLUCIONES CAPITAL X
+  2    Nacionalidad                                    1   0.05      5.0
+      └─ México
+  3    Antigüedad (fecha de constitución)              1   0.05      5.0
+      └─ 6.9 años (constituida 2019-05-22)
+  4    Giro o actividad económica                      3   0.15     45.0
+      └─ Servicios relacionados con la intermediación crediticia
+         🤖 Actividad no encontrada en catálogo CNBV. Requiere clasificación por LLM. → LLM: Clasificado por keywords (fallback): contiene 'INTERMEDIACIÓN CREDITICIA' → Resuelto por LLM: valor 3
+  5    Ubicación geográfica del domicilio              1   0.10     10.0
+      └─ Jalisco (zona riesgo 1)
+  6    Productos y servicios                           3   0.05     15.0
+      └─ corporativa
+  7    Volumen — monto recursos recibidos              1   0.05      5.0
+      └─ No proporcionado
+         ⚠️ DATO ASUMIDO — Sin monto declarado. Valor mínimo (1) aplicado. Recalificar a 3 meses.
+  8    Volumen — monto recursos enviados               1   0.05      5.0
+      └─ No proporcionado
+         ⚠️ DATO ASUMIDO — Sin monto declarado. Valor mínimo (1) aplicado. Recalificar a 3 meses.
+  9    Frecuencia — operaciones recibidas              1   0.05      5.0
+      └─ No proporcionado
+         ⚠️ DATO ASUMIDO — Sin frecuencia declarada. Valor mínimo (1) aplicado. Recalificar a 3 meses.
+  10   Frecuencia — operaciones enviadas               1   0.05      5.0
+      └─ No proporcionado
+         ⚠️ DATO ASUMIDO — Sin frecuencia declarada. Valor mínimo (1) aplicado. Recalificar a 3 meses.
+  11   Origen de los recursos                          2   0.05     10.0
+      └─ No proporcionado
+         ⚠️ DATO ASUMIDO — Asumido 'Otros' (valor 2). Confirmar con cliente.
+  12   Destino de los recursos                         2   0.05     10.0
+      └─ No proporcionado
+         ⚠️ DATO ASUMIDO — Asumido 'Otros' (valor 2). Confirmar con cliente.
+  13   Coincidencia en Lista de Personas Bloqueadas    0   0.10      0.0
+      └─ No (verificado Etapa 2)
+  14   Coincidencia en Listas/Noticias negativas       0   0.10      0.0
+      └─ No (verificado Etapa 2)
+  15   Persona Políticamente Expuesta (PEP)            0   0.10      0.0
+      └─ No (verificado Etapa 2)
+  ································································
+  PUNTAJE TOTAL                                            150.0
+
+  🟡 GRADO DE RIESGO: MEDIO  (150.0 puntos)
+
+  ⚠️ DATOS PENDIENTES DE CONFIRMACIÓN
+  ································································
+  Los siguientes factores fueron evaluados con valores asumidos:
+    • Factor 7: Volumen — monto recursos recibidos
+    • Factor 8: Volumen — monto recursos enviados
+    • Factor 9: Frecuencia — operaciones recibidas
+    • Factor 10: Frecuencia — operaciones enviadas
+    • Factor 11: Origen de los recursos
+    • Factor 12: Destino de los recursos
+  FECHA LÍMITE DE RECALIFICACIÓN: 2026-07-05
+
+  Alertas estructurales:
+    • ⚠️ 6 de 15 factores evaluados con datos asumidos. Calificación provisional sujeta a recalificación con datos reales.
+
+  → ETAPA 5: 🟡 MEDIO — Puntaje 150
 
 ────────────────────────────────────────────────────────────
   ALERTAS Y RIESGOS
 ────────────────────────────────────────────────────────────
 
   🔴 CRÍTICOS (requieren acción inmediata):
-    1. [A6.2] Dictamen Colorado no rechazado: Dictamen: RECHAZADO
-    2. [A6.5] Colorado — Vigencia de documentos: 2/5 validaciones pasan | 3 hallazgo(s) crítico(s) fallido(s)
+    1. Screening INCOMPLETO — no se puede descartar presencia en listas
+    2. Screening de beneficiarios controladores INCOMPLETO — no se puede descartar presencia en listas
 
   🟠 ALTOS (requieren acción antes de continuar):
     Ninguno ✅
 
-  🟡 MEDIOS (requieren seguimiento):
-    Ninguno ✅
+  🟡 MEDIOS / OBSERVACIONES (requieren seguimiento):
+    1. Colorado — Validación cruzada: RECHAZADO
 
   ℹ️ INFORMATIVOS (para registro):
     Ninguno
@@ -287,24 +444,20 @@
   RECOMENDACIONES
 ────────────────────────────────────────────────────────────
 
-    1. URGENTE: Colorado rechazó el expediente — resolver hallazgos críticos antes de continuar proceso PLD
-    2. ETAPA 2: 6 persona(s) identificada(s) pendiente(s) de screening contra listas (LPB, OFAC, PEP, 69-B)
-    3. ATENDER 3 hallazgo(s) crítico(s) de Colorado: V3.3, V3.4, V3.5
+    1. Resolver hallazgos de Colorado antes de continuar proceso PLD: V3.3, V3.4, V4.5.
+    2. MER MEDIO: Verificar documentación soporte y monitorear operaciones.
 
 ────────────────────────────────────────────────────────────
   SIGUIENTE PASO
 ────────────────────────────────────────────────────────────
 
     ❌ Expediente NO procede. Motivos:
-      • Documentación INCOMPLETA
-      • Colorado: RECHAZADO
+      • Screening INCOMPLETO — no se puede descartar presencia en listas
+      • Screening de beneficiarios controladores INCOMPLETO — no se puede descartar presencia en listas
 
     Acciones requeridas:
-      1. SUBSANAR documentos/datos críticos:
-         - [A6.2] Dictamen Colorado no rechazado: Dictamen: RECHAZADO
-         - [A6.5] Colorado — Vigencia de documentos: 2/5 validaciones pasan | 3 hallazgo(s) crítico(s) fallido(s)
-      2. RESOLVER hallazgos de validación cruzada (Colorado: RECHAZADO).
-      3. Una vez resueltos los puntos anteriores, reprocesar expediente.
+      1. Resolver hallazgos de validación cruzada (Colorado: RECHAZADO).
+      2. Reprocesar expediente una vez resueltos los puntos anteriores.
 
 ════════════════════════════════════════════════════════════
   Fin del reporte — SOLUCIONES CAPITAL X

@@ -1,7 +1,7 @@
 """
 Pipeline Service — Orquestación Dakota → Colorado → Arizona → Nevada.
 
-Flujo Dakota (sin PagaTodo Hub):
+Flujo Dakota:
   1. Recibe archivos (PDF/imagen) desde el router.
   2. Envía cada archivo a Dakota para OCR + persistencia en PostgreSQL.
   3. Dakota retorna datos_extraidos + empresa_id.

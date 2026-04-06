@@ -9,7 +9,7 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 - **Endpoint `POST /docs/import/{doc_type}`** — Importa datos OCR pre-extraídos (JSON) sin ejecutar Azure DI ni OpenAI.
-  Ejecuta validación de campos + persistencia sobre el JSON recibido. Pensado para el flujo **PagaTodo Hub → Dakota**.
+  Ejecuta validación de campos + persistencia sobre el JSON recibido. Pensado para importación de datos pre-extraídos.
 - **3 nuevos doc_types en validators** — `ine_propietario_real`, `domicilio_rl`, `domicilio_propietario_real`.
   También aliases `reforma_estatutos` y `poder_notarial` agregados al mapa de validadores.
 - **Pydantic model `ImportPayload`** — body: `datos_extraidos` (dict), `texto_ocr` (str), `archivo_procesado` (str).

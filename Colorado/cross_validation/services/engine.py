@@ -4,6 +4,7 @@ Orquesta todos los bloques y genera el reporte final.
 """
 from __future__ import annotations
 
+import asyncio
 from collections import Counter
 from datetime import datetime
 import logging
@@ -550,33 +551,37 @@ async def validar_todas(
     Genera un resumen global con tabla de dictámenes y hallazgos frecuentes.
     """
     empresas = await listar_empresas()
-    reportes: list[ReporteValidacion] = []
 
-    for emp in empresas:
-        try:
-            reporte = await validar_empresa(
-                emp["id"],
-                portales=portales,
-                modulos_portales=modulos_portales,
-                headless=headless,
-            )
-            reportes.append(reporte)
-        except Exception as e:
-            # Crear reporte de error
-            reportes.append(ReporteValidacion(
-                empresa_id=emp["id"],
-                rfc=emp["rfc"],
-                razon_social=emp["razon_social"],
-                fecha_analisis=datetime.now(),
-                documentos_presentes=emp.get("doc_types", []),
-                hallazgos=[],
-                dictamen=Dictamen.RECHAZADO,
-                total_criticos=0,
-                total_medios=0,
-                total_informativos=0,
-                total_pasan=0,
-                recomendaciones=[f"Error al procesar: {str(e)}"],
-            ))
+    sem = asyncio.Semaphore(3)  # max 3 empresas en paralelo (Playwright es pesado)
+
+    async def _procesar(emp: dict) -> ReporteValidacion:
+        async with sem:
+            try:
+                return await validar_empresa(
+                    emp["id"],
+                    portales=portales,
+                    modulos_portales=modulos_portales,
+                    headless=headless,
+                )
+            except Exception as e:
+                return ReporteValidacion(
+                    empresa_id=emp["id"],
+                    rfc=emp["rfc"],
+                    razon_social=emp["razon_social"],
+                    fecha_analisis=datetime.now(),
+                    documentos_presentes=emp.get("doc_types", []),
+                    hallazgos=[],
+                    dictamen=Dictamen.RECHAZADO,
+                    total_criticos=0,
+                    total_medios=0,
+                    total_informativos=0,
+                    total_pasan=0,
+                    recomendaciones=[f"Error al procesar: {str(e)}"],
+                )
+
+    reportes: list[ReporteValidacion] = await asyncio.gather(
+        *[_procesar(emp) for emp in empresas]
+    )
 
     # Tabla de dictámenes
     tabla_dictamenes = [

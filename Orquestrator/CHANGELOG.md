@@ -5,6 +5,23 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [2.0.0] - 2026-04-06
+
+### Changed — Migración a flujo Dakota (eliminación de PagaTodo Hub)
+- **Flujo único Dakota** — El Orquestrador ahora recibe archivos PDF/imagen + RFC y los envía directamente a Dakota para OCR (Azure DI + GPT-4o) + persistencia. Se eliminó completamente la integración con PagaTodo Hub.
+- **`clients.py`** — Eliminadas funciones `pagatodo_prospect_data()`, `pagatodo_ocr_result()`, `transformar_datos_prospecto()`, `get_or_create_empresa()`, `persist_documento()`. Nuevas funciones: `dakota_upload_document()`, `dakota_get_empresa()`, `dakota_health()`.
+- **`pipeline.py`** — `procesar_documento(doc_type, file_content, file_name, rfc)` y `procesar_expediente(rfc, archivos)` reescritos para flujo de archivos.
+- **`router.py`** — Endpoints ahora usan multipart/form-data (`File()` + `Form()`) en lugar de JSON body con `prospect_id`.
+- **`config.py`** — Eliminadas variables `PAGATODO_HUB_BASE_URL`, `PAGATODO_HUB_API_KEY`, `PAGATODO_HUB_TIMEOUT`, `PAGATODO_DOCTYPE_MAP`. Agregada `DAKOTA_API_KEY` y `DAKOTA_DOC_TYPES`.
+- **`persistence.py`** — Eliminadas `get_or_create_empresa()` y `persist_documento()` (ahora Dakota maneja la persistencia). Solo quedan funciones de tracking del pipeline.
+- **Tests** — Reescritos los 3 archivos de test para el flujo Dakota (file upload).
+
+### Removed
+- `ocr-results.postman_collection.json` — Colección Postman del flujo PagaTodo eliminada.
+- Dependencia de PagaTodo Hub (endpoints `/prospects/data/` y `POST /ocr`).
+
+---
+
 ## [1.11.0] - 2026-03-28
 
 ### Changed

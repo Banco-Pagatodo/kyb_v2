@@ -2,15 +2,13 @@
 Persistencia del estado del pipeline en PostgreSQL.
 Tabla: pipeline_resultados (migración 0008).
 
-Permite al Orquestador registrar el progreso end-to-end de cada empresa
-a través de los 4 agentes (Dakota → Colorado → Arizona → Nevada).
-Cualquier servicio puede leer esta tabla para obtener un resumen rápido.
+Versión Dakota: solo tracking del pipeline (Dakota se encarga de
+persistir empresas y documentos).
 """
 from __future__ import annotations
 
 import json
 import logging
-from datetime import datetime
 from typing import Any
 
 from .database import get_pool
@@ -30,9 +28,6 @@ async def iniciar_pipeline(
     """
     Crea (o reinicia) el registro de pipeline para una empresa.
     UPSERT por empresa_id.
-
-    Returns:
-        UUID del registro.
     """
     pool = await get_pool()
     async with pool.acquire() as conn:
@@ -250,94 +245,3 @@ async def obtener_estado_por_rfc(rfc: str) -> dict[str, Any] | None:
             rfc,
         )
         return dict(row) if row else None
-
-
-# ═══════════════════════════════════════════════════════════════════
-#  Persistencia directa: empresas + documentos
-#  (reemplaza la escritura a través de Dakota)
-# ═══════════════════════════════════════════════════════════════════
-
-async def get_or_create_empresa(
-    rfc: str,
-    razon_social: str = "",
-) -> str:
-    """
-    Busca una empresa por RFC.  Si no existe, la crea.
-
-    Returns:
-        empresa_id (UUID como string).
-    """
-    pool = await get_pool()
-    async with pool.acquire() as conn:
-        # Intentar encontrar primero
-        row = await conn.fetchrow(
-            "SELECT id FROM empresas WHERE rfc = $1",
-            rfc,
-        )
-        if row:
-            empresa_id = str(row["id"])
-            # Actualizar razón social si viene y la actual es placeholder
-            if razon_social:
-                await conn.execute(
-                    """
-                    UPDATE empresas SET razon_social = $2
-                    WHERE id = $1::uuid AND (razon_social = '' OR razon_social = rfc)
-                    """,
-                    empresa_id, razon_social,
-                )
-            return empresa_id
-
-        # Crear nueva empresa
-        row = await conn.fetchrow(
-            """
-            INSERT INTO empresas (id, rfc, razon_social)
-            VALUES (uuid_generate_v4(), $1, $2)
-            RETURNING id
-            """,
-            rfc, razon_social or rfc,
-        )
-        empresa_id = str(row["id"])
-        logger.info("Empresa creada: %s rfc=%s", empresa_id, rfc)
-        return empresa_id
-
-
-async def persist_documento(
-    empresa_id: str,
-    doc_type: str,
-    file_name: str,
-    datos_extraidos: dict[str, Any],
-) -> str:
-    """
-    UPSERT de un documento en la tabla ``documentos``.
-
-    Usa ON CONFLICT(empresa_id, doc_type) para ser idempotente:
-    la primera llamada inserta, las subsiguientes actualizan.
-
-    Returns:
-        documento_id (UUID como string).
-    """
-    pool = await get_pool()
-    # Serializar valores no-JSON-safe (datetime, UUID, etc.)
-    safe = json.dumps(datos_extraidos, default=str)
-
-    async with pool.acquire() as conn:
-        row = await conn.fetchrow(
-            """
-            INSERT INTO documentos (id, empresa_id, doc_type, file_name,
-                                    datos_extraidos, created_at)
-            VALUES (uuid_generate_v4(), $1::uuid, $2, $3,
-                    $4::jsonb, NOW())
-            ON CONFLICT (empresa_id, doc_type) DO UPDATE SET
-                file_name       = EXCLUDED.file_name,
-                datos_extraidos = EXCLUDED.datos_extraidos,
-                created_at      = NOW()
-            RETURNING id
-            """,
-            empresa_id, doc_type, file_name, safe,
-        )
-        doc_id = str(row["id"])
-        logger.debug(
-            "Documento persistido: %s empresa=%s type=%s",
-            doc_id, empresa_id, doc_type,
-        )
-        return doc_id

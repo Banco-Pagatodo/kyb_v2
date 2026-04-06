@@ -1,5 +1,5 @@
 """
-Configuración del Orquestrador.
+Configuración del Orquestrador (flujo Dakota).
 
 Lee variables de entorno desde .env y expone constantes.
 """
@@ -17,6 +17,9 @@ load_dotenv(dotenv_path=_env_path)
 DAKOTA_BASE_URL: str = os.getenv("DAKOTA_BASE_URL", "http://localhost:8010")
 COLORADO_BASE_URL: str = os.getenv("COLORADO_BASE_URL", "http://localhost:8011")
 ARIZONA_BASE_URL: str = os.getenv("ARIZONA_BASE_URL", "http://localhost:8012")
+
+# ── Autenticación Dakota ─────────────────────────────────────────
+DAKOTA_API_KEY: str = os.getenv("DAKOTA_API_KEY", "")
 
 # ── Timeouts (segundos) ─────────────────────────────────────────
 DAKOTA_TIMEOUT: float = float(os.getenv("DAKOTA_TIMEOUT", "300"))
@@ -50,38 +53,13 @@ CIRCUIT_BREAKER_RECOVERY: float = float(os.getenv("CIRCUIT_BREAKER_RECOVERY", "6
 # ── Puerto del orquestrador ──────────────────────────────────────────────
 ORQUESTRATOR_PORT: int = int(os.getenv("ORQUESTRATOR_PORT", "8002"))
 
-# ── API externa PagaTodo (Hub) ───────────────────────────────────────────
-PAGATODO_HUB_BASE_URL: str = os.getenv(
-    "PAGATODO_HUB_BASE_URL",
-    "https://sandbox-hub.pagatodo.com",
-)
-PAGATODO_HUB_API_KEY: str = os.getenv("PAGATODO_HUB_API_KEY", "")
-PAGATODO_HUB_TIMEOUT: float = float(os.getenv("PAGATODO_HUB_TIMEOUT", "60"))
-
-# Mapeo: DocumentType externo (PagaTodo Hub /ocr) → doc_type interno KYB.
-# Prefijos en el sistema externo:
-#   RL_ = Representante Legal
-#   PR_ = Propietario Real
-#   EM_ = Empresa (persona moral)
-# Nota: el sistema externo NO distingue INE reverso; se asume que el
-#       documento INE contiene ambas caras (anverso + reverso) en un solo
-#       archivo, lo cual ya se detecta en Colorado V4.5.
-PAGATODO_DOCTYPE_MAP: dict[str, str] = {
-    "Csf":              "csf",
-    "Fiel":             "fiel",
-    "ActaCons":         "acta_constitutiva",
-    "PoderNotarial":    "poder",
-    "ReformaEstatustos": "reforma",
-    "EdoCuenta":        "estado_cuenta",
-    "RL_FrenteIne":     "ine",
-    "PR_FrenteIne":     "ine_propietario_real",
-    "EM_ComDomicilio":  "domicilio",
-    "RL_ComDomicilio":  "domicilio_rl",
-    "PR_ComDomicilio":  "domicilio_propietario_real",
+# ── Tipos de documento soportados por Dakota ─────────────────────────────
+DAKOTA_DOC_TYPES: set[str] = {
+    "csf", "fiel", "acta_constitutiva", "poder_notarial",
+    "reforma_estatutos", "estado_cuenta", "domicilio",
+    "ine", "ine_reverso", "ine_propietario_real",
+    "domicilio_rl", "domicilio_propietario_real",
 }
-
-# Inverso: doc_type interno → DocumentType externo
-DOCTYPE_MAP_INVERSO: dict[str, str] = {v: k for k, v in PAGATODO_DOCTYPE_MAP.items()}
 
 # ── Base de datos PostgreSQL (compartida con los agentes) ────────────────
 DB_HOST: str = os.getenv("DB_HOST", "localhost")

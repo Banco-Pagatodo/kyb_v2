@@ -1,7 +1,7 @@
 """
 Orquestrator Dakota — FastAPI Application.
 
-Versión que usa Dakota para OCR + persistencia (sin PagaTodo Hub).
+Versión que usa Dakota para OCR + persistencia.
 
 Punto de entrada del servidor. Ejecutar con:
     uvicorn app.main:app --port 8002

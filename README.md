@@ -1,7 +1,6 @@
-﻿# Orquestrator Dakota â€” Agente Orquestador KYB (Flujo Dakota)
+﻿# Orquestrator Dakota — Agente Orquestador KYB
 
-VersiÃ³n del orquestador que usa **Dakota** para OCR y persistencia de documentos,
-en lugar de PagaTodo Hub.
+Orquestador que usa **Dakota** para OCR y persistencia de documentos.
 
 ## Flujo
 
@@ -81,12 +80,3 @@ DB_NAME=kyb
 DB_USER=kyb_app
 DB_PASS=<tu_password>
 ```
-
-## Diferencia vs Orquestrator (PagaTodo)
-
-| Aspecto | Orquestrator (PagaTodo) | Orquestrator (Dakota) |
-|---------|------------------------|----------------------|
-| **Entrada** | `prospect_id` + `DocumentType` | Archivo PDF/imagen + `doc_type` + `rfc` |
-| **OCR** | PagaTodo Hub externo | Dakota local (Azure DI + OpenAI) |
-| **Persistencia** | Directa via asyncpg | Dakota (ORM SQLAlchemy) |
-| **Dependencia** | PagaTodo Hub (internet) | Dakota (localhost:8010) |
